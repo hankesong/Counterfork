@@ -1,0 +1,6 @@
+{
+  "endpoint_variable": "ETH_RPC_URL",
+  "mode": "block_hash",
+  "max_span": 1,
+  "scope": "blockHash only accepts one block; range mode failed even at one block"
+}

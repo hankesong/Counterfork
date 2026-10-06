@@ -1,0 +1,732 @@
+{
+  "checked_at_utc": "2026-10-06T14:39:12.692070+00:00",
+  "topic_verification": {
+    "command": "cast keccak LiquidateBorrow(address,address,uint256,address,uint256)",
+    "result": "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+  },
+  "request_format": {
+    "method": "POST",
+    "Content-Type": "application/json",
+    "jsonrpc": "2.0",
+    "id": 1
+  },
+  "tests": [
+    {
+      "endpoint": "ETH_RPC_URL",
+      "test": "chain",
+      "method": "eth_chainId",
+      "params": [],
+      "ok": true,
+      "chain_id": "0x1"
+    },
+    {
+      "endpoint": "ETH_RPC_URL",
+      "test": "range_500",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace642"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 35: ranges over 10000 blocks are not supported on free plan"
+    },
+    {
+      "endpoint": "ETH_RPC_URL",
+      "test": "range_1",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace44f"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 27: Unknown state. First available state is 1"
+    },
+    {
+      "endpoint": "ETH_RPC_URL",
+      "test": "range_10",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace458"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 27: Unknown state. First available state is 1"
+    },
+    {
+      "endpoint": "ETH_RPC_URL",
+      "test": "range_50",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace480"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 27: Unknown state. First available state is 1"
+    },
+    {
+      "endpoint": "ETH_RPC_URL",
+      "test": "range_100",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace4b2"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 27: Unknown state. First available state is 1"
+    },
+    {
+      "endpoint": "ETH_RPC_URL",
+      "test": "no_topics",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace44f"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 27: Unknown state. First available state is 1"
+    },
+    {
+      "endpoint": "ETH_RPC_URL",
+      "test": "no_address",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace44f"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 27: Unknown state. First available state is 1"
+    },
+    {
+      "endpoint": "ETH_RPC_URL",
+      "test": "no_filters",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace44f"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 27: Unknown state. First available state is 1"
+    },
+    {
+      "endpoint": "ETH_RPC_URL",
+      "test": "block_hash",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "blockHash": "0x406c4ba4b0b9e404a359b53a5738ea69c8cc8d2e1623869eb31d7c10814196c3"
+        }
+      ],
+      "ok": true,
+      "count": 0
+    },
+    {
+      "endpoint": "ETH_RPC_URL",
+      "test": "historical_block",
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "0xace44f",
+        false
+      ],
+      "ok": true,
+      "block_hash": "0x406c4ba4b0b9e404a359b53a5738ea69c8cc8d2e1623869eb31d7c10814196c3"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_1",
+      "test": "chain",
+      "method": "eth_chainId",
+      "params": [],
+      "ok": true,
+      "chain_id": "0x1"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_1",
+      "test": "range_500",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace642"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code -32602: Archive requests require a personal token. Get one at: [redacted URL]"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_1",
+      "test": "range_1",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace44f"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code -32602: Archive requests require a personal token. Get one at: [redacted URL]"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_1",
+      "test": "range_10",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace458"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code -32602: Archive requests require a personal token. Get one at: [redacted URL]"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_1",
+      "test": "range_50",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace480"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code -32602: Archive requests require a personal token. Get one at: [redacted URL]"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_1",
+      "test": "range_100",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace4b2"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code -32602: Archive requests require a personal token. Get one at: [redacted URL]"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_1",
+      "test": "no_topics",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace44f"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code -32602: Archive requests require a personal token. Get one at: [redacted URL]"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_1",
+      "test": "no_address",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace44f"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code -32602: Archive requests require a personal token. Get one at: [redacted URL]"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_1",
+      "test": "no_filters",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace44f"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code -32602: Archive requests require a personal token. Get one at: [redacted URL]"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_1",
+      "test": "block_hash",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "blockHash": "0x406c4ba4b0b9e404a359b53a5738ea69c8cc8d2e1623869eb31d7c10814196c3"
+        }
+      ],
+      "ok": true,
+      "count": 0
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_1",
+      "test": "historical_block",
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "0xace44f",
+        false
+      ],
+      "ok": false,
+      "error": "eth_getBlockByNumber: RPC error code 4444: pruned history unavailable: requested 11330639, earliest available 15500000"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_2",
+      "test": "chain",
+      "method": "eth_chainId",
+      "params": [],
+      "ok": true,
+      "chain_id": "0x1"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_2",
+      "test": "range_500",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace642"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 35: ranges over 10000 blocks are not supported on free plan"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_2",
+      "test": "range_1",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace44f"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 27: Unknown state. First available state is 1"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_2",
+      "test": "range_10",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace458"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 27: Unknown state. First available state is 1"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_2",
+      "test": "range_50",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace480"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 27: Unknown state. First available state is 1"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_2",
+      "test": "range_100",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace4b2"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 27: Unknown state. First available state is 1"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_2",
+      "test": "no_topics",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace44f"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 27: Unknown state. First available state is 1"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_2",
+      "test": "no_address",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace44f"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 27: Unknown state. First available state is 1"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_2",
+      "test": "no_filters",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace44f"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 27: Unknown state. First available state is 1"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_2",
+      "test": "block_hash",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "blockHash": "0x406c4ba4b0b9e404a359b53a5738ea69c8cc8d2e1623869eb31d7c10814196c3"
+        }
+      ],
+      "ok": true,
+      "count": 0
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_2",
+      "test": "historical_block",
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "0xace44f",
+        false
+      ],
+      "ok": true,
+      "block_hash": "0x406c4ba4b0b9e404a359b53a5738ea69c8cc8d2e1623869eb31d7c10814196c3"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_3",
+      "test": "chain",
+      "method": "eth_chainId",
+      "params": [],
+      "ok": false,
+      "error": "eth_chainId: invalid or null response"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_3",
+      "test": "range_500",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace642"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: invalid or null response"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_3",
+      "test": "range_1",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace44f"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: invalid or null response"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_3",
+      "test": "range_10",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace458"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: invalid or null response"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_3",
+      "test": "range_50",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace480"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: invalid or null response"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_3",
+      "test": "range_100",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace4b2"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: invalid or null response"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_3",
+      "test": "no_topics",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace44f"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: invalid or null response"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_3",
+      "test": "no_address",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace44f"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: invalid or null response"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_3",
+      "test": "no_filters",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "fromBlock": "0xace44f",
+          "toBlock": "0xace44f"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: invalid or null response"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_3",
+      "test": "block_hash",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "blockHash": "0x406c4ba4b0b9e404a359b53a5738ea69c8cc8d2e1623869eb31d7c10814196c3"
+        }
+      ],
+      "ok": false,
+      "error": "eth_getLogs: invalid or null response"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_3",
+      "test": "historical_block",
+      "method": "eth_getBlockByNumber",
+      "params": [
+        "0xace44f",
+        false
+      ],
+      "ok": false,
+      "error": "eth_getBlockByNumber: invalid or null response"
+    }
+  ],
+  "rpcfree_urllib": {
+    "http_status": 200,
+    "content_type": "text/html",
+    "html_title": "Free Ethereum RPC — No Signup, No API Key"
+  },
+  "rpcfree_cast": {
+    "command": "cast chain-id --rpc-url [redacted RPC; shared rate-limiting proxy]",
+    "returncode": 1,
+    "upstream_observations": [
+      {
+        "request": {
+          "method": "eth_chainId",
+          "id": 0,
+          "jsonrpc": "2.0"
+        },
+        "http_status": 200,
+        "content_type": "text/html",
+        "html_title": "Free Ethereum RPC — No Signup, No API Key"
+      }
+    ]
+  },
+  "stats": {
+    "network_requests": 46,
+    "cache_hits": 0
+  },
+  "complete": true,
+  "candidate3_followup": {
+    "endpoint": "CANDIDATE_RPC_3",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_chainId",
+      "params": []
+    },
+    "http_status": 525,
+    "content_type": "application/json; charset=utf-8",
+    "response_type": "dict",
+    "fields": [
+      "type",
+      "title",
+      "status",
+      "detail",
+      "instance",
+      "error_code",
+      "error_name",
+      "error_category",
+      "ray_id",
+      "timestamp",
+      "zone",
+      "cloudflare_error",
+      "retryable",
+      "owner_action_required",
+      "what_you_should_do",
+      "footer"
+    ],
+    "response_metadata": {
+      "status": 525
+    }
+  },
+  "rpcfree_cast_direct": {
+    "command": "cast chain-id --rpc-url [redacted RPC] --rpc-timeout 25 --compute-units-per-second 1",
+    "returncode": 1,
+    "error_summary": "Error: deserialization error: expected value at line 1 column 1",
+    "html_title": "Free Ethereum RPC — No Signup, No API Key"
+  }
+}

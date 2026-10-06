@@ -1,0 +1,8 @@
+{
+  "oracle": "0x922018674c12a7F0D394ebEEf9B58F186CdE13c1",
+  "dai_price_raw": "1004040000000000000",
+  "underlying": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+  "underlying_decimals": 18,
+  "block": 11330639,
+  "timestamp": 1606348824
+}

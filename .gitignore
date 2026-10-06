@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+.tools/
+.venv/
+__pycache__/
+out/
+cache/
+data/private/

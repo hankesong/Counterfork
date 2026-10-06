@@ -1,0 +1,48 @@
+{
+  "phase": 0,
+  "status": "passed",
+  "python": "3.14.6",
+  "forge": {
+    "available": true,
+    "version": "forge Version: 1.8.5\nCommit SHA: 51a52c59cffd940f76eddd0b4bb1791aa4b5ac7f\nBuild Timestamp: 2026-10-05T17:01:32.131957300Z (1791219692)\nBuild Profile: dist"
+  },
+  "cast": {
+    "available": true,
+    "version": "cast Version: 1.8.5\nCommit SHA: 51a52c59cffd940f76eddd0b4bb1791aa4b5ac7f\nBuild Timestamp: 2026-10-05T17:01:32.131957300Z (1791219692)\nBuild Profile: dist"
+  },
+  "rpc_probe": {
+    "checked_at_utc": "2026-10-06T14:07:09.624818+00:00",
+    "request": {
+      "jsonrpc": "2.0",
+      "method": "eth_chainId",
+      "params": [],
+      "id": 1
+    },
+    "http_status": 200,
+    "content_type": "application/json",
+    "body_sha256": "79226432df73e05966f20e4d291fb5048bfef1138d7078f8feab534126df1aa5",
+    "ok": true,
+    "chain_id": 1,
+    "cache_hit": true
+  },
+  "archive_verified": true,
+  "foundry_fork_verified": true,
+  "liquidation_transaction": null,
+  "fork_block": 11330639,
+  "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+  "dai_price_raw": "1004040000000000000",
+  "dai_price_usd": "1.00404",
+  "verification_kind": "historical_environment_smoke_test_not_pre_liquidation",
+  "comptroller": "0x3d9819210A31b4961b30EF54bE2aeD79B9c9Cd3B",
+  "cdai": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+  "fork_block_hash": "0x406c4ba4b0b9e404a359b53a5738ea69c8cc8d2e1623869eb31d7c10814196c3",
+  "fork_timestamp_utc": "2020-11-26T00:00:24+00:00",
+  "underlying": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+  "underlying_decimals": 18,
+  "implementation_sha256": "2681b62142e2f3cc91702479e60d7d2193a0bacd730eae4ade2d067306e856e1",
+  "result_cache_hit": false,
+  "limitations": [
+    "This fork is an environment check; the separately verified sample is in data/phase0/sample.json. Phase 1 must use its N-1.",
+    "A successful archive read does not establish historical getLogs availability."
+  ]
+}

@@ -1,0 +1,8 @@
+[profile.default]
+src = "src"
+test = "test"
+out = "out"
+cache_path = "cache"
+solc = ".tools/solc.exe"
+evm_version = "istanbul"
+fs_permissions = [{ access = "write", path = "./data/phase0" }]

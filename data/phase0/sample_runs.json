@@ -1,0 +1,16 @@
+[
+  {
+    "checked_at_utc": "2026-10-06T14:45:30.920707+00:00",
+    "network_requests": 0,
+    "cache_hits": 52,
+    "receipt_verified": true,
+    "transaction": "0xb4ff3f106761e83691d12305fdb8b53da46c26928af50637a44fa43765c053ce"
+  },
+  {
+    "checked_at_utc": "2026-10-06T14:51:54.770716+00:00",
+    "network_requests": 0,
+    "cache_hits": 52,
+    "receipt_verified": true,
+    "transaction": "0xb4ff3f106761e83691d12305fdb8b53da46c26928af50637a44fa43765c053ce"
+  }
+]

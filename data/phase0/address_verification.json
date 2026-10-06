@@ -1,0 +1,28 @@
+[
+  {
+    "page_title": "Compound: Comptroller | Address: 0x3d981921...9B9c9Cd3B | Etherscan",
+    "source_checks": {
+      "Unitroller": true,
+      "CErc20Delegator": false,
+      "oracle_getter": false,
+      "liquidation_event": true
+    },
+    "checked_at_utc": "2026-10-06T14:10:14.6460352Z",
+    "address": "0x3d9819210A31b4961b30EF54bE2aeD79B9c9Cd3B",
+    "source_url": "https://etherscan.io/address/0x3d9819210A31b4961b30EF54bE2aeD79B9c9Cd3B#code",
+    "name": "comptroller"
+  },
+  {
+    "page_title": "Compound Dai | Address: 0x5d3a536E...B948E3643 | Etherscan",
+    "source_checks": {
+      "Unitroller": false,
+      "CErc20Delegator": true,
+      "oracle_getter": false,
+      "liquidation_event": true
+    },
+    "checked_at_utc": "2026-10-06T14:10:18.8728247Z",
+    "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+    "source_url": "https://etherscan.io/address/0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643#code",
+    "name": "cdai"
+  }
+]

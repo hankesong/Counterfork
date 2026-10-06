@@ -1,0 +1,13 @@
+{
+  "method": "eth_getLogs",
+  "params": [
+    {
+      "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+      "topics": [
+        "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+      ],
+      "blockHash": "0x1c7f058e96ec36a04d95422396eb81ca1c05ca8b2e71338cd4fd7f9c7d78ccd0"
+    }
+  ],
+  "result": []
+}
