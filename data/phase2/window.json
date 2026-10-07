@@ -1,0 +1,29 @@
+{
+  "start_utc": "2020-11-26T00:00:00+00:00",
+  "end_utc": "2020-11-26T23:59:59+00:00",
+  "block_count": "6533",
+  "first": {
+    "block": "11330639",
+    "timestamp": "1606348824",
+    "utc": "2020-11-26T00:00:24+00:00",
+    "hash": "0x406c4ba4b0b9e404a359b53a5738ea69c8cc8d2e1623869eb31d7c10814196c3"
+  },
+  "last": {
+    "block": "11337171",
+    "timestamp": "1606435178",
+    "utc": "2020-11-26T23:59:38+00:00",
+    "hash": "0xce3c02bc2b840796bdcc02881bb2e7314b4c96f1611b8badc9c9fe8fccd29109"
+  },
+  "preceding": {
+    "block": "11330638",
+    "timestamp": "1606348798",
+    "utc": "2020-11-25T23:59:58+00:00",
+    "hash": "0xbe959cd0bdef4a5d2b1074b397dbb4f154a3294b1de49c2d215956ef3f8a1878"
+  },
+  "following": {
+    "block": "11337172",
+    "timestamp": "1606435218",
+    "utc": "2020-11-27T00:00:18+00:00",
+    "hash": "0xd1d2ba7eecf0f16c75c6ad9dd9a810753086b58bcb7464e116fa6418e312b602"
+  }
+}

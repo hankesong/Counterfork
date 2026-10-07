@@ -1,0 +1,37 @@
+{
+  "seed": "38567847824498860136755924878165003243",
+  "method": "Python random.Random(seed).sample(sorted events, 5)",
+  "event_set_sha256": "ef86f70eab64edc777a341d0577fdf08b4ab653f20f4a81bcf22fb3083e13207",
+  "events": [
+    {
+      "tx_hash": "0x4cdc4cba96b2c9f21e37b226becd4718adab4bbfa0bfaa34780e2e4873dca2fe",
+      "logIndex": "228",
+      "blockNumber": "11333075",
+      "verified": true
+    },
+    {
+      "tx_hash": "0x6819285185d491baa9bf019a686c104baae7db01dc23c4f3cbd1b45e421f9a21",
+      "logIndex": "250",
+      "blockNumber": "11333019",
+      "verified": true
+    },
+    {
+      "tx_hash": "0x397f3b5a862cbe69fa0d70568da9378aa01871f4642a2189d2ef92be177a8949",
+      "logIndex": "178",
+      "blockNumber": "11333135",
+      "verified": true
+    },
+    {
+      "tx_hash": "0x6a5542a9e62c86fb2592c788f88265e23f319f582181b10cc43d33a112bd6e42",
+      "logIndex": "107",
+      "blockNumber": "11333038",
+      "verified": true
+    },
+    {
+      "tx_hash": "0x663586abd0b7a1ebbf651afdff2f44cb42eb2ddbfec31cc672b3fc0896a0f8ec",
+      "logIndex": "17",
+      "blockNumber": "11333135",
+      "verified": true
+    }
+  ]
+}

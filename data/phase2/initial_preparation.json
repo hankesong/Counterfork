@@ -1,0 +1,7 @@
+{
+  "command": "python scripts/phase2_events.py --prepare-only",
+  "rpc_requests_this_run": "67",
+  "cache_hits": "33",
+  "elapsed_seconds": null,
+  "note": "Initial source and metadata preparation completed before per-stage timing instrumentation was added. Request counters were printed by the process; elapsed time was not recorded and is not inferred. Subsequent runs.json records measure complete instrumented runs."
+}

@@ -1,0 +1,218 @@
+{
+  "accounts.json": {
+    "provenance": {
+      "mode": "FROZEN",
+      "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+      "capturedAt": "2026-10-07T03:28:30Z"
+    },
+    "accounts": [
+      {
+        "borrower": "0x909b443761bbd7fbb876ecde71a37e1433f6af6f",
+        "liquidation_count": "1",
+        "status": "analyzed",
+        "first_liquidation_block": "11333037",
+        "last_liquidation_block": "11333037",
+        "repay_usd_estimate_total": "49833822.8826528552",
+        "dai_related": true,
+        "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+        "events": [
+          {
+            "tx_hash": "0x53e09adb77d1e3ea593c933a85bd4472371e03da12e3fec853b5bc7fac50f3e4",
+            "logIndex": "59"
+          }
+        ],
+        "rank": "1",
+        "top20": true
+      },
+      {
+        "borrower": "0xb1adceddb2941033a090dd166a462fe1c2029484",
+        "liquidation_count": "8",
+        "status": "pending",
+        "first_liquidation_block": "11333040",
+        "last_liquidation_block": "11333125",
+        "repay_usd_estimate_total": "23018183.710125373487193679885064",
+        "dai_related": true,
+        "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+        "events": [
+          {
+            "tx_hash": "0x4ea3c5cbde0014e11f906d190cd1819422469ec91bf236ecc2b6603352ad7f17",
+            "logIndex": "113"
+          },
+          {
+            "tx_hash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+            "logIndex": "154"
+          },
+          {
+            "tx_hash": "0x88b016d8ce395661036d53faf8f020d690552774a17c363cdc50564ef7e65290",
+            "logIndex": "17"
+          },
+          {
+            "tx_hash": "0x14dc11609c4c8e6f66bfb545d549ae8f02b212e3efde9afc1a55e59e4261dad1",
+            "logIndex": "151"
+          },
+          {
+            "tx_hash": "0xd3232b270894f237dff808976f6189ca3c2fc30e7293cb6039d12b16ab73d6dd",
+            "logIndex": "19"
+          },
+          {
+            "tx_hash": "0xcedcbc6ee4ac26bb389d89451c521296cf9ec6c9b5e36b7892f7fe28bb7c9ad1",
+            "logIndex": "97"
+          },
+          {
+            "tx_hash": "0x846537f6aa6c301ac6c64a14108643920bdcbbc59b509b3833d213635cf5c264",
+            "logIndex": "47"
+          },
+          {
+            "tx_hash": "0x988fe12325b2d2f33da43e5203ee8ba21e25b8c55f2ea705a1024a057a9718e6",
+            "logIndex": "40"
+          }
+        ],
+        "rank": "2",
+        "top20": true
+      },
+      {
+        "borrower": "0xed3c4c5d7a9abfd74f33c1042793dfd6a6daef42",
+        "liquidation_count": "6",
+        "status": "pending",
+        "first_liquidation_block": "11333019",
+        "last_liquidation_block": "11333050",
+        "repay_usd_estimate_total": "6872183.777287647951871326121604",
+        "dai_related": true,
+        "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+        "events": [
+          {
+            "tx_hash": "0xa8794a4d6f3e6ed394a2d822272a2d73d1de585b8b3ddbd1c06d0769710db6d6",
+            "logIndex": "60"
+          },
+          {
+            "tx_hash": "0x0e2ec8a6368c1388c9cd06a7b63ec95bf345413a513e165b6f4f605914aff1a9",
+            "logIndex": "76"
+          },
+          {
+            "tx_hash": "0x3e1cf8d73b45949fa70531f75d6a453edc6c40dfd54001042538d9112b457fbe",
+            "logIndex": "91"
+          },
+          {
+            "tx_hash": "0x0a363e6fd757ba7416bce8b1716d86b1837e0ed48668e5c312c055e04f16b577",
+            "logIndex": "26"
+          },
+          {
+            "tx_hash": "0x5b81c67dadb41596391c9025b79357d9026893c62837b669b7adb803c704e109",
+            "logIndex": "55"
+          },
+          {
+            "tx_hash": "0x3e082eb771af8c0783c6fe962cbbb6c93fae53175280c2c3e029b92fefed9f98",
+            "logIndex": "228"
+          }
+        ],
+        "rank": "3",
+        "top20": true
+      }
+    ]
+  },
+  "events.json": {
+    "provenance": {
+      "mode": "FROZEN",
+      "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+      "capturedAt": "2026-10-07T03:28:30Z"
+    },
+    "events": [
+      {
+        "tx_hash": "0x20ef87bdc66c512179fdf524cfc751e35757182c003b739004ce243f37c0c506",
+        "blockNumber": "11330710",
+        "blockHash": "0x486490e3492df83b4150966acae103853f8b49c4b977226440dcd10f8f16d306",
+        "blockTimestamp": "1606349730",
+        "block_utc": "2020-11-26T00:15:30+00:00",
+        "transactionIndex": "150",
+        "logIndex": "336",
+        "liquidator": "0x6780846518290724038e86c98a1e903888338875",
+        "borrower": "0x62217e7fa62dff42e7925bbd906b8410fc8dd254",
+        "repayAmount": "905220275870596868",
+        "repaid_market": "0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5",
+        "repaid_market_symbol": "cETH",
+        "underlying_symbol": "ETH",
+        "underlying_decimals": "18",
+        "cTokenCollateral": "0xc11b1268c1a384e55c48c2391d8d480264a3a7f4",
+        "collateral_market_symbol": "cWBTC",
+        "collateral_underlying_symbol": "WBTC",
+        "collateral_underlying_decimals": "8",
+        "seizeTokens": "147651904",
+        "dai_related": false,
+        "raw_log": {
+          "address": "0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "data": "0x0000000000000000000000006780846518290724038e86c98a1e90388833887500000000000000000000000062217e7fa62dff42e7925bbd906b8410fc8dd2540000000000000000000000000000000000000000000000000c8ffd0b7abf7f04000000000000000000000000c11b1268c1a384e55c48c2391d8d480264a3a7f40000000000000000000000000000000000000000000000000000000008ccfd40",
+          "blockNumber": "0xace496",
+          "transactionHash": "0x20ef87bdc66c512179fdf524cfc751e35757182c003b739004ce243f37c0c506",
+          "transactionIndex": "0x96",
+          "blockHash": "0x486490e3492df83b4150966acae103853f8b49c4b977226440dcd10f8f16d306",
+          "blockTimestamp": "0x5fbef3a2",
+          "logIndex": "0x150",
+          "removed": false
+        },
+        "oracle_block": "11330709",
+        "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+        "oracle_price_raw": "559710000000000000000",
+        "oracle_price_usd": "559.71",
+        "repay_usd_estimate": "506.66084060753177298828",
+        "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+        "display": {
+          "borrower_short": "0x6221…d254",
+          "market_symbol": "cETH",
+          "repay_amount": "0.905220275870596868",
+          "block": "11330710"
+        }
+      },
+      {
+        "tx_hash": "0xa50eaacfbfa80a21d4225a061816ec0aca1d1008d640b9196b9df8a163619188",
+        "blockNumber": "11331058",
+        "blockHash": "0x01b9cac11d84332adbcf22ee2f23b50bac2ebba43d76d14a5bb60c28c437ec81",
+        "blockTimestamp": "1606354361",
+        "block_utc": "2020-11-26T01:32:41+00:00",
+        "transactionIndex": "1",
+        "logIndex": "14",
+        "liquidator": "0x6780846518290724038e86c98a1e903888338875",
+        "borrower": "0xc8ab7043837d58f339897dee38e531a09f96c881",
+        "repayAmount": "967991244",
+        "repaid_market": "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9",
+        "repaid_market_symbol": "cUSDT",
+        "underlying_symbol": "USDT",
+        "underlying_decimals": "6",
+        "cTokenCollateral": "0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5",
+        "collateral_market_symbol": "cETH",
+        "collateral_underlying_symbol": "ETH",
+        "collateral_underlying_decimals": "18",
+        "seizeTokens": "9181999389",
+        "dai_related": false,
+        "raw_log": {
+          "address": "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "data": "0x0000000000000000000000006780846518290724038e86c98a1e903888338875000000000000000000000000c8ab7043837d58f339897dee38e531a09f96c8810000000000000000000000000000000000000000000000000000000039b25fcc0000000000000000000000004ddc2d193948926d02f9b1fe9e1daa0718270ed500000000000000000000000000000000000000000000000000000002234a311d",
+          "blockNumber": "0xace5f2",
+          "transactionHash": "0xa50eaacfbfa80a21d4225a061816ec0aca1d1008d640b9196b9df8a163619188",
+          "transactionIndex": "0x1",
+          "blockHash": "0x01b9cac11d84332adbcf22ee2f23b50bac2ebba43d76d14a5bb60c28c437ec81",
+          "blockTimestamp": "0x5fbf05b9",
+          "logIndex": "0xe",
+          "removed": false
+        },
+        "oracle_block": "11331057",
+        "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+        "oracle_price_raw": "1000000000000000000000000000000",
+        "oracle_price_usd": "1",
+        "repay_usd_estimate": "967.991244",
+        "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+        "display": {
+          "borrower_short": "0xc8ab…c881",
+          "market_symbol": "cUSDT",
+          "repay_amount": "967.991244",
+          "block": "11331058"
+        }
+      }
+    ]
+  }
+}

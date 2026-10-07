@@ -1,0 +1,9 @@
+{
+  "blocks": "493",
+  "cdai_log_cache_hits": "493",
+  "headers_cached": true,
+  "cdai_log_sets_match": true,
+  "cdai_events": "139",
+  "all_market_events_in_phase1_window": "152",
+  "scope_note": "Phase 1 cached cDAI only; all-market array queries have distinct keys and require one new query per block on first run."
+}

@@ -1,0 +1,2893 @@
+{
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+    "capturedAt": "2026-10-07T03:28:30Z"
+  },
+  "accounts": [
+    {
+      "borrower": "0x909b443761bbd7fbb876ecde71a37e1433f6af6f",
+      "liquidation_count": "1",
+      "status": "analyzed",
+      "first_liquidation_block": "11333037",
+      "last_liquidation_block": "11333037",
+      "repay_usd_estimate_total": "49833822.8826528552",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x53e09adb77d1e3ea593c933a85bd4472371e03da12e3fec853b5bc7fac50f3e4",
+          "logIndex": "59"
+        }
+      ],
+      "rank": "1",
+      "top20": true
+    },
+    {
+      "borrower": "0xb1adceddb2941033a090dd166a462fe1c2029484",
+      "liquidation_count": "8",
+      "status": "pending",
+      "first_liquidation_block": "11333040",
+      "last_liquidation_block": "11333125",
+      "repay_usd_estimate_total": "23018183.710125373487193679885064",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x4ea3c5cbde0014e11f906d190cd1819422469ec91bf236ecc2b6603352ad7f17",
+          "logIndex": "113"
+        },
+        {
+          "tx_hash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+          "logIndex": "154"
+        },
+        {
+          "tx_hash": "0x88b016d8ce395661036d53faf8f020d690552774a17c363cdc50564ef7e65290",
+          "logIndex": "17"
+        },
+        {
+          "tx_hash": "0x14dc11609c4c8e6f66bfb545d549ae8f02b212e3efde9afc1a55e59e4261dad1",
+          "logIndex": "151"
+        },
+        {
+          "tx_hash": "0xd3232b270894f237dff808976f6189ca3c2fc30e7293cb6039d12b16ab73d6dd",
+          "logIndex": "19"
+        },
+        {
+          "tx_hash": "0xcedcbc6ee4ac26bb389d89451c521296cf9ec6c9b5e36b7892f7fe28bb7c9ad1",
+          "logIndex": "97"
+        },
+        {
+          "tx_hash": "0x846537f6aa6c301ac6c64a14108643920bdcbbc59b509b3833d213635cf5c264",
+          "logIndex": "47"
+        },
+        {
+          "tx_hash": "0x988fe12325b2d2f33da43e5203ee8ba21e25b8c55f2ea705a1024a057a9718e6",
+          "logIndex": "40"
+        }
+      ],
+      "rank": "2",
+      "top20": true
+    },
+    {
+      "borrower": "0xed3c4c5d7a9abfd74f33c1042793dfd6a6daef42",
+      "liquidation_count": "6",
+      "status": "pending",
+      "first_liquidation_block": "11333019",
+      "last_liquidation_block": "11333050",
+      "repay_usd_estimate_total": "6872183.777287647951871326121604",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xa8794a4d6f3e6ed394a2d822272a2d73d1de585b8b3ddbd1c06d0769710db6d6",
+          "logIndex": "60"
+        },
+        {
+          "tx_hash": "0x0e2ec8a6368c1388c9cd06a7b63ec95bf345413a513e165b6f4f605914aff1a9",
+          "logIndex": "76"
+        },
+        {
+          "tx_hash": "0x3e1cf8d73b45949fa70531f75d6a453edc6c40dfd54001042538d9112b457fbe",
+          "logIndex": "91"
+        },
+        {
+          "tx_hash": "0x0a363e6fd757ba7416bce8b1716d86b1837e0ed48668e5c312c055e04f16b577",
+          "logIndex": "26"
+        },
+        {
+          "tx_hash": "0x5b81c67dadb41596391c9025b79357d9026893c62837b669b7adb803c704e109",
+          "logIndex": "55"
+        },
+        {
+          "tx_hash": "0x3e082eb771af8c0783c6fe962cbbb6c93fae53175280c2c3e029b92fefed9f98",
+          "logIndex": "228"
+        }
+      ],
+      "rank": "3",
+      "top20": true
+    },
+    {
+      "borrower": "0x189c2c1834b1414a6aee9eba5dc4b4d547c9a44c",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333047",
+      "last_liquidation_block": "11333047",
+      "repay_usd_estimate_total": "6739427.531036193824562",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x7cd6f851520447abc4258e5a7b0dd3bd6be3907a7ea7b7bf3c7d34eca51c56c6",
+          "logIndex": "256"
+        }
+      ],
+      "rank": "4",
+      "top20": true
+    },
+    {
+      "borrower": "0x39c09fdc4e5c5ab72f6319ddbc2cae40e67b2a60",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333050",
+      "last_liquidation_block": "11333050",
+      "repay_usd_estimate_total": "1745263.939090459395790175393371",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x250bb4bc30ba3a1afe0e24ebcbdb45ec88f1aa36e6cec2c86c0a3069c4f58187",
+          "logIndex": "49"
+        }
+      ],
+      "rank": "5",
+      "top20": true
+    },
+    {
+      "borrower": "0x889abdd2bc0f3a884e607279ba132501698fbcd5",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333029",
+      "last_liquidation_block": "11333029",
+      "repay_usd_estimate_total": "1304636.59850057294175",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x730ff4726ed7fcc85d16b13cc631a3b102600c89c655eb298858a5330522a0e8",
+          "logIndex": "46"
+        }
+      ],
+      "rank": "6",
+      "top20": true
+    },
+    {
+      "borrower": "0xc9493738f07ddc43f1a004d4bb461fa42de23225",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333060",
+      "last_liquidation_block": "11333060",
+      "repay_usd_estimate_total": "1044060.15325966090567621480866",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x8db4f2051b9fbd260551c3f3ae3ffd964225439b57faf2a0946b6b979fce68cb",
+          "logIndex": "34"
+        }
+      ],
+      "rank": "7",
+      "top20": true
+    },
+    {
+      "borrower": "0x161fac24d54698755dab0fcd65e2c883928ca724",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333040",
+      "last_liquidation_block": "11333040",
+      "repay_usd_estimate_total": "942277.468366687937861670943973",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xb8331c09fc876669224cf363a43e5bb20626c4ff98e09472d4fae976b68fa551",
+          "logIndex": "172"
+        }
+      ],
+      "rank": "8",
+      "top20": true
+    },
+    {
+      "borrower": "0x03324cfffabc10193de63186a374d7cfe932b162",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333019",
+      "last_liquidation_block": "11333019",
+      "repay_usd_estimate_total": "921968.704264529082408",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x083a94b934ba5355cc2575d58e4f74a94c39fc8f57f0a47b240bf683fdeab5f1",
+          "logIndex": "30"
+        }
+      ],
+      "rank": "9",
+      "top20": true
+    },
+    {
+      "borrower": "0xdf63be2e473ba04c26b1609e51d08cf0d78e0913",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11335996",
+      "last_liquidation_block": "11335996",
+      "repay_usd_estimate_total": "870097.6202182301288352",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x75c495b422973b9566992262c5db20e8129090bac38e075f90dd19956fedb44b",
+          "logIndex": "28"
+        }
+      ],
+      "rank": "10",
+      "top20": true
+    },
+    {
+      "borrower": "0xf2df969f59b2c86e4b230da88918cdebcfc4ccbc",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332948",
+      "last_liquidation_block": "11332948",
+      "repay_usd_estimate_total": "769374.180429247351788",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x80c770e280aed5dce5bd9be3a123e393bf242834ea87a7e6973e65f367eb62d1",
+          "logIndex": "26"
+        }
+      ],
+      "rank": "11",
+      "top20": true
+    },
+    {
+      "borrower": "0x141f59a0283303a6b882b4d6973e418f8d75f9b3",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333065",
+      "last_liquidation_block": "11333065",
+      "repay_usd_estimate_total": "636414.163917195056681757027966",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x696962cd86a6678b7bdb40f008636c7eede1dd8ceeffc65e5db13d22bf496d73",
+          "logIndex": "22"
+        }
+      ],
+      "rank": "12",
+      "top20": true
+    },
+    {
+      "borrower": "0xe24286adfc053f76888aa51d9a94f6c1519b4cba",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333053",
+      "last_liquidation_block": "11333053",
+      "repay_usd_estimate_total": "363906.738935621618065332994456",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xef248c5f7c07ba5897cd44d5db501b9b9c844bc5f320b1a3abc9359615e0227f",
+          "logIndex": "238"
+        }
+      ],
+      "rank": "13",
+      "top20": true
+    },
+    {
+      "borrower": "0xdac0db00fd0953d8731f86c6908366388bfcc1f8",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11331593",
+      "last_liquidation_block": "11331593",
+      "repay_usd_estimate_total": "315077.67348",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xe4e7932208610685bff9f98e3e9657e6d27292b635c108d65ffdc14cb7dfef6a",
+          "logIndex": "55"
+        }
+      ],
+      "rank": "14",
+      "top20": true
+    },
+    {
+      "borrower": "0x339dab47bdd20b4c05950c4306821896cfb1ff1a",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333025",
+      "last_liquidation_block": "11333025",
+      "repay_usd_estimate_total": "199022.458586030689375065105",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x8804d5245d070f03bfc3e553b56c3218b4387467d77a6f417826a6ba16a76f5d",
+          "logIndex": "47"
+        }
+      ],
+      "rank": "15",
+      "top20": true
+    },
+    {
+      "borrower": "0xb6c0276ad1d87c6cf6dfa323d0c3f6840121c0ba",
+      "liquidation_count": "2",
+      "status": "pending",
+      "first_liquidation_block": "11333040",
+      "last_liquidation_block": "11333045",
+      "repay_usd_estimate_total": "186230.9460459871419314880087",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xc92130654bb8ef0f339cc95205a0fccb46873555e6d4abb260bcfb50600d2754",
+          "logIndex": "95"
+        },
+        {
+          "tx_hash": "0xf94e0045f86d340d74a10e47bd6283a0b7b460080ef9aaff21fcf9e1f0f2b200",
+          "logIndex": "122"
+        }
+      ],
+      "rank": "16",
+      "top20": true
+    },
+    {
+      "borrower": "0x5c7c6d069ba232718f37c27a9549b547c359e31c",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333067",
+      "last_liquidation_block": "11333067",
+      "repay_usd_estimate_total": "172357.754718760330320686553678",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x2bccb478781e1f50ead5381cb6ed5fcc97814d1b524f8a4ba2d1c0b041408b3c",
+          "logIndex": "142"
+        }
+      ],
+      "rank": "17",
+      "top20": true
+    },
+    {
+      "borrower": "0x57adad5729e839acd4019fc9e79c2685a42ed489",
+      "liquidation_count": "3",
+      "status": "pending",
+      "first_liquidation_block": "11331593",
+      "last_liquidation_block": "11333067",
+      "repay_usd_estimate_total": "164739.291817091567414420703822",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x1758182cf0daa53515e490981fbf373041ccdc5dd204e22d2a26cbe69f0abe99",
+          "logIndex": "96"
+        },
+        {
+          "tx_hash": "0x544a3c8d88b26620d4a0d8dfbc9fd202c90e15c099659f3e83e01b9393e23237",
+          "logIndex": "69"
+        },
+        {
+          "tx_hash": "0x366bb820ea292c5528014d6881510e33a2c16565add1c6c52b3e69791768385e",
+          "logIndex": "62"
+        }
+      ],
+      "rank": "18",
+      "top20": true
+    },
+    {
+      "borrower": "0x01adb5a14196d302004e3a1970a8bb3183dd2565",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333029",
+      "last_liquidation_block": "11333029",
+      "repay_usd_estimate_total": "163884.18650685278054172255",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x9da5001112f30b2190dec730ff0458c58e541d71b7e9a6905076a60892658e9f",
+          "logIndex": "141"
+        }
+      ],
+      "rank": "19",
+      "top20": true
+    },
+    {
+      "borrower": "0xdb16bb1e9208c46fa0cd1d64fd290d017958f476",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333059",
+      "last_liquidation_block": "11333059",
+      "repay_usd_estimate_total": "162755.196060996444694882521133",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xfb57c8807d565dc8efb1f406e10244babcdb0f486897f6c17da5587909e6b085",
+          "logIndex": "25"
+        }
+      ],
+      "rank": "20",
+      "top20": true
+    },
+    {
+      "borrower": "0x1821a39c87e4d8a3dc5a8391a1ba7057e4eadd06",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332984",
+      "last_liquidation_block": "11332984",
+      "repay_usd_estimate_total": "155335.8015696052163236081002",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xabb52cf25349f3312ae3b794dd79d844d541c9e0abfd2ce5ace5e9ce535b3da9",
+          "logIndex": "148"
+        }
+      ],
+      "rank": "21",
+      "top20": false
+    },
+    {
+      "borrower": "0xe21623cdf2a6f464ad21c920521980ebde28ba91",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333045",
+      "last_liquidation_block": "11333045",
+      "repay_usd_estimate_total": "151759.983755615065722580715004",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x18df757480a51e1d55cdee6dba47bd6ab061ebad2270de7352fc01464282b2fc",
+          "logIndex": "46"
+        }
+      ],
+      "rank": "22",
+      "top20": false
+    },
+    {
+      "borrower": "0x543657598f7b237ab7289c2ced5d5418551cd057",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333029",
+      "last_liquidation_block": "11333029",
+      "repay_usd_estimate_total": "148249.65658445215831908063",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x31ec3d211de486844f0baa0c0866cd752c58bcc2301e284b2a77d286ac124d64",
+          "logIndex": "273"
+        }
+      ],
+      "rank": "23",
+      "top20": false
+    },
+    {
+      "borrower": "0x2e4ae4d3bd0af45040b4f17e0bb7e6dc548626b1",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333049",
+      "last_liquidation_block": "11333049",
+      "repay_usd_estimate_total": "133254.328744631642462074412734",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x9e8765b40a46850dd88482fe202b3bf1904e91e6a8650fd506a5e0eb096551a8",
+          "logIndex": "98"
+        }
+      ],
+      "rank": "24",
+      "top20": false
+    },
+    {
+      "borrower": "0x9fd991c006cd1d4b71b7630f305212bb0ef8903a",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333067",
+      "last_liquidation_block": "11333067",
+      "repay_usd_estimate_total": "110818.199989737590394995492117",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x2ecc1726bcd17e7a48ee055749501aa6d34db9e76adc6e6b3ea5534ac5cf67a9",
+          "logIndex": "22"
+        }
+      ],
+      "rank": "25",
+      "top20": false
+    },
+    {
+      "borrower": "0x60a71287353f3ac632f3e75fd1be532850aa5f4d",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11331613",
+      "last_liquidation_block": "11331613",
+      "repay_usd_estimate_total": "98419.70673",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x19e75dae9722d9c26d1457ec3fb2088328a575fda4ae8a1103d653b0729a9954",
+          "logIndex": "36"
+        }
+      ],
+      "rank": "26",
+      "top20": false
+    },
+    {
+      "borrower": "0x815afec2721dc50ca75c633906147a46c439e52e",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333027",
+      "last_liquidation_block": "11333027",
+      "repay_usd_estimate_total": "97818.28588732378112841393",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x960249679415823c7eca8cc597746ff69f020b23caf36145284897b3758637df",
+          "logIndex": "20"
+        }
+      ],
+      "rank": "27",
+      "top20": false
+    },
+    {
+      "borrower": "0xdf9924a483d946e8e2cc50652a6b3907e64edd5d",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332984",
+      "last_liquidation_block": "11332984",
+      "repay_usd_estimate_total": "88384.985829798921582",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x8b5c1b33c74c5cd7bdb3cec1964009ceb119c411526ed91428bbf3a2c88866ea",
+          "logIndex": "122"
+        }
+      ],
+      "rank": "28",
+      "top20": false
+    },
+    {
+      "borrower": "0x2c4ef3a24b1f38d848283c65b05b00987ee43fd8",
+      "liquidation_count": "3",
+      "status": "pending",
+      "first_liquidation_block": "11331534",
+      "last_liquidation_block": "11335286",
+      "repay_usd_estimate_total": "79474.217204285783260843314",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xdbfabee4c6e210601e429645fc8233429c30ce9ad781862578eb11725c9f83b3",
+          "logIndex": "19"
+        },
+        {
+          "tx_hash": "0x96a536e01c9acea42248d8cd0afc7717886f560fae1af753d09613f355f4ec29",
+          "logIndex": "218"
+        },
+        {
+          "tx_hash": "0x025c14df12ea94a5a2e418b003af4fb04bc6a27ba95aecbfbc01d2d927e9f0e9",
+          "logIndex": "44"
+        }
+      ],
+      "rank": "29",
+      "top20": false
+    },
+    {
+      "borrower": "0xe2bb94210b41ce4c01b9b97f3ac62e728e472f9c",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333019",
+      "last_liquidation_block": "11333019",
+      "repay_usd_estimate_total": "77811.31728209061214332033744",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xe2983a79241c3c49b66c34ce6487186ca4a99ee91a11c03474a4d89693c9d4fe",
+          "logIndex": "128"
+        }
+      ],
+      "rank": "30",
+      "top20": false
+    },
+    {
+      "borrower": "0x99ed04c212dd3929e9063bd78b26ef41858cb62c",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333075",
+      "last_liquidation_block": "11333075",
+      "repay_usd_estimate_total": "74939.51573538758848074358818",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x4cdc4cba96b2c9f21e37b226becd4718adab4bbfa0bfaa34780e2e4873dca2fe",
+          "logIndex": "228"
+        }
+      ],
+      "rank": "31",
+      "top20": false
+    },
+    {
+      "borrower": "0xa4f2b2557d78e31d48e1ffa8af8b25db8524ea3c",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333056",
+      "last_liquidation_block": "11333056",
+      "repay_usd_estimate_total": "74352.952774069613403574394343",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xe35a8b6f03a71bc5a56e6ed80873e94b80feeca8da4ba0815fae377e86c580f8",
+          "logIndex": "100"
+        }
+      ],
+      "rank": "32",
+      "top20": false
+    },
+    {
+      "borrower": "0x3af015f6e3ac79d217198f00ef36af099d223e29",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333029",
+      "last_liquidation_block": "11333029",
+      "repay_usd_estimate_total": "73794.2916833340407995632075",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x1fe5a1b2d70b4830961fc35748cbedf538903000208936e088b600f44f9ee12b",
+          "logIndex": "246"
+        }
+      ],
+      "rank": "33",
+      "top20": false
+    },
+    {
+      "borrower": "0x641d24f1dd0c80f0b5ddd9ecf60d7a32f41020f4",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332980",
+      "last_liquidation_block": "11332980",
+      "repay_usd_estimate_total": "70836.6423832639028325282211",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xf9e5f07bb7e48a00d39f79d8cc00a61ca4b22bcc67a0880a360ee650045b3576",
+          "logIndex": "25"
+        }
+      ],
+      "rank": "34",
+      "top20": false
+    },
+    {
+      "borrower": "0x8313722178211283cf5b2e9a07987ff26574b37d",
+      "liquidation_count": "2",
+      "status": "pending",
+      "first_liquidation_block": "11332948",
+      "last_liquidation_block": "11333054",
+      "repay_usd_estimate_total": "69594.754535742201938527057325",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xb7fbfc3823b5cc7c598352fe9c8b078f7198e29d2b123dc726e068f46fc2e5de",
+          "logIndex": "70"
+        },
+        {
+          "tx_hash": "0x9f7ea69d5f60071437147037858830aa84351ca5081a9c1e8be49a9e12e6aa36",
+          "logIndex": "85"
+        }
+      ],
+      "rank": "35",
+      "top20": false
+    },
+    {
+      "borrower": "0xac8ec8ce2c927b263ba05dcf872308c0e7d49dca",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333115",
+      "last_liquidation_block": "11333115",
+      "repay_usd_estimate_total": "67089.004840653822588181199265",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xaf990fc97a20d21d4d16371d906f6eccc77c7a72794d8f8f2ff87f05e4edd577",
+          "logIndex": "201"
+        }
+      ],
+      "rank": "36",
+      "top20": false
+    },
+    {
+      "borrower": "0xddc3abca0fc6f0cbb336db049347453c9aaa2460",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333123",
+      "last_liquidation_block": "11333123",
+      "repay_usd_estimate_total": "64027.102018828149968924531997",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x0af408473617105f24ed80117a267315eeadc65048fce857cf52529419629e3d",
+          "logIndex": "18"
+        }
+      ],
+      "rank": "37",
+      "top20": false
+    },
+    {
+      "borrower": "0xd4c5226e2108c722bb86ff8327727410dc120b42",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333058",
+      "last_liquidation_block": "11333058",
+      "repay_usd_estimate_total": "55785.565397733776468980939036",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xb4ff3f106761e83691d12305fdb8b53da46c26928af50637a44fa43765c053ce",
+          "logIndex": "92"
+        }
+      ],
+      "rank": "38",
+      "top20": false
+    },
+    {
+      "borrower": "0x0f189fcfeb7335447b5ace6f65da1ac81ff9169a",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333064",
+      "last_liquidation_block": "11333064",
+      "repay_usd_estimate_total": "49936.085475032087193995",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x1f26888ccf3566a5e517a28362c8df89016a2c3e2ef9485cd602fe029a4eec79",
+          "logIndex": "188"
+        }
+      ],
+      "rank": "39",
+      "top20": false
+    },
+    {
+      "borrower": "0x72d4d59f31d0cb4a4213a5dc81fc0108241ecc71",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333053",
+      "last_liquidation_block": "11333053",
+      "repay_usd_estimate_total": "43312.234473813475217005193206",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x8072641f23598571ca9cd29ae35800489a5a010806fcefe43efe45a0ab6c652b",
+          "logIndex": "88"
+        }
+      ],
+      "rank": "40",
+      "top20": false
+    },
+    {
+      "borrower": "0x6655459bab7a5e99f2d61279316f6d0a465be784",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333043",
+      "last_liquidation_block": "11333043",
+      "repay_usd_estimate_total": "39177.619548579231626522609148",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x86942860ec37180f96182203688be7ab85462fe5970f7f9d30a9198770cacd21",
+          "logIndex": "19"
+        }
+      ],
+      "rank": "41",
+      "top20": false
+    },
+    {
+      "borrower": "0x8a6f60edd941a501d44deb1ff5130c1d4a221a5f",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333042",
+      "last_liquidation_block": "11333042",
+      "repay_usd_estimate_total": "34918.82296618540375788",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xc6b34e12ba9da45ef611046f8569184010994449a3229d59682df44f10518981",
+          "logIndex": "250"
+        }
+      ],
+      "rank": "42",
+      "top20": false
+    },
+    {
+      "borrower": "0x674be6fa9ce93405e824bbd2fa6afe27290ba3aa",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333029",
+      "last_liquidation_block": "11333029",
+      "repay_usd_estimate_total": "33536.64937367177336183913",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xe5b127fd5e7b5d533c8ce835540d39eddc6e9cd81bb6b3306ae9753b987d3fb6",
+          "logIndex": "175"
+        }
+      ],
+      "rank": "43",
+      "top20": false
+    },
+    {
+      "borrower": "0xf3373969cea17f5f83c416836debce6356f8ee0c",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333044",
+      "last_liquidation_block": "11333044",
+      "repay_usd_estimate_total": "32466.605027925249999875926275",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x370c1af2caa0c5ab7009aa9a34ca577729fc320cb3a9266aec7b09c0d1ec9e56",
+          "logIndex": "85"
+        }
+      ],
+      "rank": "44",
+      "top20": false
+    },
+    {
+      "borrower": "0xfa6eb19ecbd862f0de6ec12bba05f92b77b0b08f",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333063",
+      "last_liquidation_block": "11333063",
+      "repay_usd_estimate_total": "29736.326169794768702741616163",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xc749c5b5fdec5c036ed56468387f0119de0c1c8c55d870e500727f536067a227",
+          "logIndex": "103"
+        }
+      ],
+      "rank": "45",
+      "top20": false
+    },
+    {
+      "borrower": "0x737d5f02975318e35e830c23f8962727b9ac1fc8",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11335286",
+      "last_liquidation_block": "11335286",
+      "repay_usd_estimate_total": "29724.594539",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x184fb3e9641ee62bb074f136583430ae4c1392f82852a8fd3a3880c157cb9e5b",
+          "logIndex": "20"
+        }
+      ],
+      "rank": "46",
+      "top20": false
+    },
+    {
+      "borrower": "0x8e949b62a177452f5b327b539eaa63802a3ab6a4",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333074",
+      "last_liquidation_block": "11333074",
+      "repay_usd_estimate_total": "26531.511761912179228567972989",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x4a1c2cf1b974a51e359bb4f66df892fe4e550229aac3c9a06421b4cc2cece0a8",
+          "logIndex": "295"
+        }
+      ],
+      "rank": "47",
+      "top20": false
+    },
+    {
+      "borrower": "0xf2b5a1aa79355ee5784160d69b04ff985aed19fb",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332953",
+      "last_liquidation_block": "11332953",
+      "repay_usd_estimate_total": "25695.1365520632332225115921",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x8cfa0ee479602a4b06c60567d4b50245bda09c3bbd36a5f223250440948e1f06",
+          "logIndex": "86"
+        }
+      ],
+      "rank": "48",
+      "top20": false
+    },
+    {
+      "borrower": "0x83a46ff2666568cadddea8300d6a17be5f5aabb1",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333123",
+      "last_liquidation_block": "11333123",
+      "repay_usd_estimate_total": "21383.272673944842377516368212",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xa3f959aabcaa43bb1ae9689301bb90278f4ff58579c7eb60f20b5e6e8cae1f28",
+          "logIndex": "316"
+        }
+      ],
+      "rank": "49",
+      "top20": false
+    },
+    {
+      "borrower": "0xdeb08d04004ea00bb6898d19267f7d3399e2827d",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333124",
+      "last_liquidation_block": "11333124",
+      "repay_usd_estimate_total": "20116.474274592434922595183863",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x29814040cec1b1a430481716ac565d8afe662aea064885b4c77326067b71665d",
+          "logIndex": "68"
+        }
+      ],
+      "rank": "50",
+      "top20": false
+    },
+    {
+      "borrower": "0x02b6590601400feae2a00e826025af233a569967",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333048",
+      "last_liquidation_block": "11333048",
+      "repay_usd_estimate_total": "19680.309636140381112567293052",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x557921ebcd4ff61b071aaf19938279ef5fca26f3f936a36d323482ea961903dd",
+          "logIndex": "155"
+        }
+      ],
+      "rank": "51",
+      "top20": false
+    },
+    {
+      "borrower": "0x42d02f4cd48bdac116b7e3a4895f586777948fae",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333052",
+      "last_liquidation_block": "11333052",
+      "repay_usd_estimate_total": "18889.686204833447873398273236",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x17aafd250de5d80fcfb4454dc2f828065f96b96c476fcbf44864a0f00d8cc823",
+          "logIndex": "84"
+        }
+      ],
+      "rank": "52",
+      "top20": false
+    },
+    {
+      "borrower": "0xe8657850adaceaeb985f8fdf557f359094457623",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333062",
+      "last_liquidation_block": "11333062",
+      "repay_usd_estimate_total": "18583.078056230895819802120137",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x080931a5059cfcba52d0af4e94d8162fa981cccfe9da8e50e9be286495ab7ffa",
+          "logIndex": "104"
+        }
+      ],
+      "rank": "53",
+      "top20": false
+    },
+    {
+      "borrower": "0x3ebc99631db3c4a7768430a3e57b1f047811e6fb",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333019",
+      "last_liquidation_block": "11333019",
+      "repay_usd_estimate_total": "18138.953914359707029772120592",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x97b9d70ab7ae8049a700bbd1cbc49234b4dec577c6e1421f0d164c460b857a43",
+          "logIndex": "154"
+        }
+      ],
+      "rank": "54",
+      "top20": false
+    },
+    {
+      "borrower": "0xa2745bbf0790494a08c8ffcc295065cae19d4e5f",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11331593",
+      "last_liquidation_block": "11331593",
+      "repay_usd_estimate_total": "17883.090262757115418951843175",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x391c88782aed2de392d6ff98ef9ef81d1aef611e4417f992df9a57cbf1b85bf2",
+          "logIndex": "124"
+        }
+      ],
+      "rank": "55",
+      "top20": false
+    },
+    {
+      "borrower": "0xbbad1b5984bf3508b223379798e2f053993efaa7",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332985",
+      "last_liquidation_block": "11332985",
+      "repay_usd_estimate_total": "17812.839550775823658040634165",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x05774544c841e8edcbce43e4247c821c1133d892e7f3d0d96d992ae1a3cf6953",
+          "logIndex": "19"
+        }
+      ],
+      "rank": "56",
+      "top20": false
+    },
+    {
+      "borrower": "0xa97c3d39de10c67e4bd3dc3b7c245a6be8a25b6b",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333057",
+      "last_liquidation_block": "11333057",
+      "repay_usd_estimate_total": "16729.253946329441707098545968",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x38a43da78295ee9d4c795674f29750e8d52c4658d9656c74380fb725615375c9",
+          "logIndex": "170"
+        }
+      ],
+      "rank": "57",
+      "top20": false
+    },
+    {
+      "borrower": "0x2fb1abf81832728082f63b07b7ea1fdd4f134e31",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333126",
+      "last_liquidation_block": "11333126",
+      "repay_usd_estimate_total": "16417.97106418749023101263906",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xdbc26549a3bb949d37e8c9acc686cfbe0bf64f127421301fba374f9191e3fc75",
+          "logIndex": "38"
+        }
+      ],
+      "rank": "58",
+      "top20": false
+    },
+    {
+      "borrower": "0x505008a654c321d93b7d2ebdf6389aaa876b16ab",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332959",
+      "last_liquidation_block": "11332959",
+      "repay_usd_estimate_total": "14862.494447",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xfc7c495f35d4c9991f285acff25b6b4c51edd88ae40ebee851eacd6ea63b3e2c",
+          "logIndex": "28"
+        }
+      ],
+      "rank": "59",
+      "top20": false
+    },
+    {
+      "borrower": "0x71be3a54c07cd49195cc12fc26f64535f00eba29",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333074",
+      "last_liquidation_block": "11333074",
+      "repay_usd_estimate_total": "14657.955692415779013492999588",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xb3c1030c9edbc2b4ac743aa2d7f1d6f9c1bee8468f88a19e1f6f61cd225291ad",
+          "logIndex": "275"
+        }
+      ],
+      "rank": "60",
+      "top20": false
+    },
+    {
+      "borrower": "0x26828dbffd78657c4b6da46fc5b570b8535b08ab",
+      "liquidation_count": "3",
+      "status": "pending",
+      "first_liquidation_block": "11331600",
+      "last_liquidation_block": "11333068",
+      "repay_usd_estimate_total": "14419.476980568400625145016557",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x532496919be0db38c66cd04410fe50af6efd898f37970832eb5b56d935bd5a92",
+          "logIndex": "19"
+        },
+        {
+          "tx_hash": "0x636b4450abd3dc9f839c839fd038962efb5a1c5736a57f81afe2c8699fc2016c",
+          "logIndex": "174"
+        },
+        {
+          "tx_hash": "0x9ac8ce31f549df28f0ca665b9936b25fafb268d9d41c7d9ce4a0abd37aa80704",
+          "logIndex": "207"
+        }
+      ],
+      "rank": "61",
+      "top20": false
+    },
+    {
+      "borrower": "0x00809b9263aab2856bf65be3d3bc3fcb9e19c1fb",
+      "liquidation_count": "2",
+      "status": "pending",
+      "first_liquidation_block": "11331536",
+      "last_liquidation_block": "11332945",
+      "repay_usd_estimate_total": "13118.551109",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x0a7ee00ff045dbca22febbae3c3fd4c2d0faf2f4f0942f7ab0c377e3449e80b2",
+          "logIndex": "35"
+        },
+        {
+          "tx_hash": "0xa49b3596d2bd96c4ee670819a976aefeeff146b9ce4446842b5220b90851d52e",
+          "logIndex": "121"
+        }
+      ],
+      "rank": "62",
+      "top20": false
+    },
+    {
+      "borrower": "0xbd178fe085a12505473a96a57d6f2ce0bbf3a490",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333059",
+      "last_liquidation_block": "11333059",
+      "repay_usd_estimate_total": "13076.746190188568904112016734",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x05112fe37c0d9e163555972a95fbc45dbe84925f1af14fddab33acfb37e90430",
+          "logIndex": "149"
+        }
+      ],
+      "rank": "63",
+      "top20": false
+    },
+    {
+      "borrower": "0xe630b16a6c270708f546086d64bcba69cec1f453",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333060",
+      "last_liquidation_block": "11333060",
+      "repay_usd_estimate_total": "12960.675712095378626265384451",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xb3f942e13badbc06ee748eb27cf1a04f67122c059d9c93cf9dc0a8c4f4b1bf5a",
+          "logIndex": "127"
+        }
+      ],
+      "rank": "64",
+      "top20": false
+    },
+    {
+      "borrower": "0x40862f5a6b104ce7f666f172c509c071bdb42e32",
+      "liquidation_count": "2",
+      "status": "pending",
+      "first_liquidation_block": "11331607",
+      "last_liquidation_block": "11333038",
+      "repay_usd_estimate_total": "12752.033025577342123402607308",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x96d3e0c0321c456026b99dfe39208a5cd4b32d959ce4a5414c9bd53c23982422",
+          "logIndex": "27"
+        },
+        {
+          "tx_hash": "0x6a5542a9e62c86fb2592c788f88265e23f319f582181b10cc43d33a112bd6e42",
+          "logIndex": "107"
+        }
+      ],
+      "rank": "65",
+      "top20": false
+    },
+    {
+      "borrower": "0x9c67dd13645be82695e71c3ebb0e5767532609b5",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333132",
+      "last_liquidation_block": "11333132",
+      "repay_usd_estimate_total": "11927.172614207848062791602674",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x778a25a910ce0bde1cc2e2f0dcd02fd9fbda8d56ecb5fd388694fccafc354575",
+          "logIndex": "36"
+        }
+      ],
+      "rank": "66",
+      "top20": false
+    },
+    {
+      "borrower": "0x0be0ecc301a1c0175f07a66243cff628c24db852",
+      "liquidation_count": "2",
+      "status": "pending",
+      "first_liquidation_block": "11332733",
+      "last_liquidation_block": "11333133",
+      "repay_usd_estimate_total": "11665.558006547008558167985172",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x769a9d3fc70265cc87a014ec3884d461523624159364173ee3d19c3b95d48e10",
+          "logIndex": "64"
+        },
+        {
+          "tx_hash": "0x0d8fcce084666c378c0f35202e38f6a694e01ee9d83eaae4aa5213c9c605749a",
+          "logIndex": "145"
+        }
+      ],
+      "rank": "67",
+      "top20": false
+    },
+    {
+      "borrower": "0xc9459bf2e0a1f89ec29c77b3944581cf590f9a7e",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333027",
+      "last_liquidation_block": "11333027",
+      "repay_usd_estimate_total": "11587.727727",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x387634f7ed99254dd66f9e27b6c47fc2e73710dbe13b618bcd4314b60add1e13",
+          "logIndex": "51"
+        }
+      ],
+      "rank": "68",
+      "top20": false
+    },
+    {
+      "borrower": "0x93b220bc7c36ea8e4c64192301b680273a184ec3",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333019",
+      "last_liquidation_block": "11333019",
+      "repay_usd_estimate_total": "10543.934440524647821670716704",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x04a02a954a865941099d241c6fb4292261963475a6f3d41231d59fe41d1978cb",
+          "logIndex": "192"
+        }
+      ],
+      "rank": "69",
+      "top20": false
+    },
+    {
+      "borrower": "0x260887431eaeb1c996366e406efbfc58a834ca30",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333029",
+      "last_liquidation_block": "11333029",
+      "repay_usd_estimate_total": "9945.6012276079996498127175",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x6a8f7714dc29d726229ecf7d2d24866c89f99dff78c2eba88c8e1fb2d92dc907",
+          "logIndex": "117"
+        }
+      ],
+      "rank": "70",
+      "top20": false
+    },
+    {
+      "borrower": "0x66215d23b8a247c80c2d1b7bef4befc2ab384bce",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333031",
+      "last_liquidation_block": "11333031",
+      "repay_usd_estimate_total": "9830.45251042783613375904",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x87b7c845a3c8fce068a5d73f317c593b270d0f7d35feea6d4b58236398846048",
+          "logIndex": "22"
+        }
+      ],
+      "rank": "71",
+      "top20": false
+    },
+    {
+      "borrower": "0x05c0f2d1978a1da91e5d82b8935c610b3f93f36b",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333019",
+      "last_liquidation_block": "11333019",
+      "repay_usd_estimate_total": "7969.29421020415757249252712",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x6819285185d491baa9bf019a686c104baae7db01dc23c4f3cbd1b45e421f9a21",
+          "logIndex": "250"
+        }
+      ],
+      "rank": "72",
+      "top20": false
+    },
+    {
+      "borrower": "0xf5f017b1e9532aa86936ec922dbe334f48b7da46",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333037",
+      "last_liquidation_block": "11333037",
+      "repay_usd_estimate_total": "7944.85051950501402366744",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x7fe4cf62476a5c401ca0665c08a7bd939f15a14074d65b2984101a6c8f1ea4c6",
+          "logIndex": "21"
+        }
+      ],
+      "rank": "73",
+      "top20": false
+    },
+    {
+      "borrower": "0x2af9da9c8c08b71ea1f916672e462c82b6ccec5d",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333059",
+      "last_liquidation_block": "11333059",
+      "repay_usd_estimate_total": "7895.730964285401171343",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xd3a8ef12d1a80f10cdcaa52278d9ce33e70b138da3e378e72d015fa66bb43670",
+          "logIndex": "111"
+        }
+      ],
+      "rank": "74",
+      "top20": false
+    },
+    {
+      "borrower": "0x5443b2f07dc0af2c6629fb2853365a6f1f6e51ff",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333019",
+      "last_liquidation_block": "11333019",
+      "repay_usd_estimate_total": "7851.96955039080843011435256",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x2e3d24e350564b78007b6905946f1ea9e340230a328a72c7c02599664f478e1b",
+          "logIndex": "225"
+        }
+      ],
+      "rank": "75",
+      "top20": false
+    },
+    {
+      "borrower": "0x667111254f8d2414635f89b2375ee7fa14e5d519",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333131",
+      "last_liquidation_block": "11333131",
+      "repay_usd_estimate_total": "7392.585245445391687813542243",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x9ff0c70d91cb9247299082be364eb01a933ed01151577b7e0cfd2ff6f4212f39",
+          "logIndex": "38"
+        }
+      ],
+      "rank": "76",
+      "top20": false
+    },
+    {
+      "borrower": "0xc3b91d7b118f8ba68734693d7077b45ecd5edb55",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333045",
+      "last_liquidation_block": "11333045",
+      "repay_usd_estimate_total": "7258.387589872331677479290364",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xa222cf47a02ef949f792efa247a6a38fefc392f8c151cf934035028f8d4aa476",
+          "logIndex": "199"
+        }
+      ],
+      "rank": "77",
+      "top20": false
+    },
+    {
+      "borrower": "0x916e06c6eab2ee40d443cb2e9ac2e7019b59c239",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332981",
+      "last_liquidation_block": "11332981",
+      "repay_usd_estimate_total": "6885.4784443620825468114489",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x65f0aeb20d06493f992b40407e99bc3b160fe0ab6411a42efec2909991f742f8",
+          "logIndex": "16"
+        }
+      ],
+      "rank": "78",
+      "top20": false
+    },
+    {
+      "borrower": "0x26a6dc267e276fded7b40251c8fc08b1b40df367",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333038",
+      "last_liquidation_block": "11333038",
+      "repay_usd_estimate_total": "6847.382374955385658365490388",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x136785a50397fd298fb7d6cff1328f36d3e0fdbc207dd41abc79b346d5aa63a3",
+          "logIndex": "21"
+        }
+      ],
+      "rank": "79",
+      "top20": false
+    },
+    {
+      "borrower": "0x9ccc9b4ba41087f12c5d621be401388d9c1ee761",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333128",
+      "last_liquidation_block": "11333128",
+      "repay_usd_estimate_total": "6471.174062252122720708283184",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xa8ecfff486a4379e38194faae84ef89ca19aead20476d32fd114111c2ade3d16",
+          "logIndex": "32"
+        }
+      ],
+      "rank": "80",
+      "top20": false
+    },
+    {
+      "borrower": "0xfd970da1613b2656777a500b7f410dcb4f8b5136",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333128",
+      "last_liquidation_block": "11333128",
+      "repay_usd_estimate_total": "6326.070505006065039440886609",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x1896c0fc94fabc1f7917683b62b93c4b93bfe887466f64528a9f3b27063a9f82",
+          "logIndex": "53"
+        }
+      ],
+      "rank": "81",
+      "top20": false
+    },
+    {
+      "borrower": "0x767d222a509d107522e50161ca17ffcf0e5aa3de",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333033",
+      "last_liquidation_block": "11333033",
+      "repay_usd_estimate_total": "6305.28826926166613939664",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x69ff3c4045a8e07c0cc62383eb627ab3e11b3734cee6e5a2822582362255d34b",
+          "logIndex": "26"
+        }
+      ],
+      "rank": "82",
+      "top20": false
+    },
+    {
+      "borrower": "0x008b1ffe244bf31896c833bff4ad9009e7a0f4eb",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333135",
+      "last_liquidation_block": "11333135",
+      "repay_usd_estimate_total": "6095.460948967289813085274452",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x663586abd0b7a1ebbf651afdff2f44cb42eb2ddbfec31cc672b3fc0896a0f8ec",
+          "logIndex": "17"
+        }
+      ],
+      "rank": "83",
+      "top20": false
+    },
+    {
+      "borrower": "0x47fea52a4b79954fede50ee07b3f5d22696c8586",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333128",
+      "last_liquidation_block": "11333128",
+      "repay_usd_estimate_total": "6093.341840907229347083550465",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xe6dbc9413b9693b6696eab6ae76273e95816fd6508e5f7aa079a5cd2413c7269",
+          "logIndex": "71"
+        }
+      ],
+      "rank": "84",
+      "top20": false
+    },
+    {
+      "borrower": "0xa5c07b2c9d55de33d3b9d9bf1c36a8915140fd4d",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333020",
+      "last_liquidation_block": "11333020",
+      "repay_usd_estimate_total": "6074.6952636609756777948375",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x60c4d15eb5a2608b9dd2ba109e850c8a95ca7e49fd301010a9a288f33c0380ee",
+          "logIndex": "49"
+        }
+      ],
+      "rank": "85",
+      "top20": false
+    },
+    {
+      "borrower": "0xc940c870a54ba91c3e2a8dd0d01d0bc96fc2672a",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333079",
+      "last_liquidation_block": "11333079",
+      "repay_usd_estimate_total": "5983.692048949062003746651727",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x3b9be628e855f027e09620b940b296424581cc0e719583b94fe18bb470664724",
+          "logIndex": "45"
+        }
+      ],
+      "rank": "86",
+      "top20": false
+    },
+    {
+      "borrower": "0xe9ed6d999f8640285bd6252c1ad12c65f987358e",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333131",
+      "last_liquidation_block": "11333131",
+      "repay_usd_estimate_total": "5714.904537965132800906118832",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x94fd894ae3b608f03d116dcacc7c21f5ec59275464ef55a7518902b363c53aaa",
+          "logIndex": "79"
+        }
+      ],
+      "rank": "87",
+      "top20": false
+    },
+    {
+      "borrower": "0xe79e19286e6c146f4e8d0ef11b67940177a1f240",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333051",
+      "last_liquidation_block": "11333051",
+      "repay_usd_estimate_total": "5680.571630798142610666705295",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x646e7a4c6c41972043f9c7a5288647e67d88f01b712e84ede225cfb1e8970064",
+          "logIndex": "129"
+        }
+      ],
+      "rank": "88",
+      "top20": false
+    },
+    {
+      "borrower": "0x6d16d74d0f6afe567b84a546cd2ef78076ce27e6",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333132",
+      "last_liquidation_block": "11333132",
+      "repay_usd_estimate_total": "5492.891855422794627275374932",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x5222af15ee6723d34335fa077bf28c51d19dbb963d183bf7d16e46166341f1b0",
+          "logIndex": "223"
+        }
+      ],
+      "rank": "89",
+      "top20": false
+    },
+    {
+      "borrower": "0x967cf72ba4158f5b348ece7afc67de68d2e6cbc4",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333040",
+      "last_liquidation_block": "11333040",
+      "repay_usd_estimate_total": "4852.907998",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x28c4788a222f75eb9240792a603aa2cc59e5aca91660e9d92c63be27462a96c3",
+          "logIndex": "230"
+        }
+      ],
+      "rank": "90",
+      "top20": false
+    },
+    {
+      "borrower": "0xdedd6d6eb6056470d687c832c477b8770ac20ed5",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333068",
+      "last_liquidation_block": "11333068",
+      "repay_usd_estimate_total": "4849.950642857883429968288817",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x909c0f7b71b3ac03ed8971f5a0bda71109787b5a772e587d5ae3bbe964ff1eaa",
+          "logIndex": "85"
+        }
+      ],
+      "rank": "91",
+      "top20": false
+    },
+    {
+      "borrower": "0x3d23ab914f5c6552689d824e7802e1b242e3f588",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333038",
+      "last_liquidation_block": "11333038",
+      "repay_usd_estimate_total": "4815.013315931890126220260095",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x4860a2fc28ce4e89c4f58b7362419d0fbfeb7fb7099af417bc66c40b30ee46f5",
+          "logIndex": "160"
+        }
+      ],
+      "rank": "92",
+      "top20": false
+    },
+    {
+      "borrower": "0xbb0db514daee431b9faf1281131fe269745b1690",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333132",
+      "last_liquidation_block": "11333132",
+      "repay_usd_estimate_total": "4635.478204894168293270775005",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xe18981930e71378f09b14c843fd3c9dfa7a82a86dc71b85e7b88ca6a4966c61c",
+          "logIndex": "68"
+        }
+      ],
+      "rank": "93",
+      "top20": false
+    },
+    {
+      "borrower": "0x8b05dc8566edd67abde1a4be2ca7807a542fa214",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333128",
+      "last_liquidation_block": "11333128",
+      "repay_usd_estimate_total": "4583.343744082779661131570291",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xeca792914d1e1774be2dc9c1670edddf2ea7441862591f5beb8343b86b0f04be",
+          "logIndex": "100"
+        }
+      ],
+      "rank": "94",
+      "top20": false
+    },
+    {
+      "borrower": "0xdd10664a1f77c915048908587e6961fbf9d0813e",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333132",
+      "last_liquidation_block": "11333132",
+      "repay_usd_estimate_total": "4480.230893679734586760577364",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x9794bfbd3f4d7469d92674822126201202bae2132e7029a530eb28bf43f845e3",
+          "logIndex": "197"
+        }
+      ],
+      "rank": "95",
+      "top20": false
+    },
+    {
+      "borrower": "0x44588eda41bab760dce9e92eb7bb0f83d8845a23",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333032",
+      "last_liquidation_block": "11333032",
+      "repay_usd_estimate_total": "4205.0336202054021264192",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xb9a4a8cec62acf5437f0510ab2cf85c8b2f69e9845074f269549e7ff0b9b8132",
+          "logIndex": "70"
+        }
+      ],
+      "rank": "96",
+      "top20": false
+    },
+    {
+      "borrower": "0x5f6b9ee169f036f0c826f9664545fcb4049d49c8",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333063",
+      "last_liquidation_block": "11333063",
+      "repay_usd_estimate_total": "4068.917539919182103469622474",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xdb587af711f65cb75483d9c468c0d875b9195e7f7cc5527562b834ad331f4104",
+          "logIndex": "71"
+        }
+      ],
+      "rank": "97",
+      "top20": false
+    },
+    {
+      "borrower": "0x4ac757b018b703bfb51189ee6cd2f84ef4eee0ae",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333132",
+      "last_liquidation_block": "11333132",
+      "repay_usd_estimate_total": "3993.462605087877167094461781",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x975282e436ac10fe123c59e543d9f4b7b9bf2e624e5673166f093d0963ef8911",
+          "logIndex": "100"
+        }
+      ],
+      "rank": "98",
+      "top20": false
+    },
+    {
+      "borrower": "0x8052a27c4c03150949f2edf39bb28f8bb7c707bc",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332922",
+      "last_liquidation_block": "11332922",
+      "repay_usd_estimate_total": "3761.126893",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x00c6b9ed88db9ef94838abed35ac4b95dea52e95cd08e971c4dee7e26b291676",
+          "logIndex": "18"
+        }
+      ],
+      "rank": "99",
+      "top20": false
+    },
+    {
+      "borrower": "0x5a9294da5a0fb5b75c9b19a92d8c9cb81da94bbd",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333128",
+      "last_liquidation_block": "11333128",
+      "repay_usd_estimate_total": "3494.896602743973540884531922",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x5794fd761488b1a39b42a848b289136e3d554de96252a75c1583cdcd453adfd3",
+          "logIndex": "119"
+        }
+      ],
+      "rank": "100",
+      "top20": false
+    },
+    {
+      "borrower": "0x9c84be7ba23a5034c56d0289eefb6c083e96dd94",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333039",
+      "last_liquidation_block": "11333039",
+      "repay_usd_estimate_total": "3451.553609378824660007579784",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x8bfd3b173bf984684377df6b7d53e00987e67a99652dc6be707e2a50b5e9f2c1",
+          "logIndex": "77"
+        }
+      ],
+      "rank": "101",
+      "top20": false
+    },
+    {
+      "borrower": "0x11f061e95da5d0dff33dc83406f0bbf7177d3a86",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332955",
+      "last_liquidation_block": "11332955",
+      "repay_usd_estimate_total": "3396.193747",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xcb2c3acd9a6084f2f258acfe4804c8bc9839580092f87aa1f4a6947357a23657",
+          "logIndex": "91"
+        }
+      ],
+      "rank": "102",
+      "top20": false
+    },
+    {
+      "borrower": "0x3a7a0d512493c58ae5bd6ea652207f30ea75c2f5",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333134",
+      "last_liquidation_block": "11333134",
+      "repay_usd_estimate_total": "3283.218042588452188559311896",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xc286335d46a218219fc665ba8da00dfd3031a221a0edeb005bdadd2fca3ff77c",
+          "logIndex": "103"
+        }
+      ],
+      "rank": "103",
+      "top20": false
+    },
+    {
+      "borrower": "0x87e3cf2b34e54d8870f9d00b9d97dcd9b35322ed",
+      "liquidation_count": "2",
+      "status": "pending",
+      "first_liquidation_block": "11333068",
+      "last_liquidation_block": "11333109",
+      "repay_usd_estimate_total": "3117.280788969776693142533928",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xac1c5dbe9071ce04d8ab38583c8568db11951ed301c186792aa780a8715c80e3",
+          "logIndex": "153"
+        },
+        {
+          "tx_hash": "0xa1f2470e0ef084114fa0f09fe18ec267fc59a8fbbc72f16b3b13efb6e61bdca4",
+          "logIndex": "170"
+        }
+      ],
+      "rank": "104",
+      "top20": false
+    },
+    {
+      "borrower": "0x54734fb2738c1dfdaa4de703126db149ab7855f4",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11331596",
+      "last_liquidation_block": "11331596",
+      "repay_usd_estimate_total": "3115.077803",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x9cdca67af2ab6e19fd3bd7d4850e0cbae8e4a376b6a990bc88961273eb90975c",
+          "logIndex": "280"
+        }
+      ],
+      "rank": "105",
+      "top20": false
+    },
+    {
+      "borrower": "0x23b6d8e09cb33b1550de19ac25cc3f41ae4603bb",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333135",
+      "last_liquidation_block": "11333135",
+      "repay_usd_estimate_total": "3096.946493272523319840948564",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x397f3b5a862cbe69fa0d70568da9378aa01871f4642a2189d2ef92be177a8949",
+          "logIndex": "178"
+        }
+      ],
+      "rank": "106",
+      "top20": false
+    },
+    {
+      "borrower": "0x0b3abf8391fabe5f3d504c83363185354e2ae37a",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333135",
+      "last_liquidation_block": "11333135",
+      "repay_usd_estimate_total": "3049.302893693905696857080148",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xeed864e6da30102c531e99259fc5f53bbaa93aa8b1c16f78da380f62e48646f9",
+          "logIndex": "155"
+        }
+      ],
+      "rank": "107",
+      "top20": false
+    },
+    {
+      "borrower": "0x11f0c183051d94ac9d98703589d102f24f6d9b1b",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333136",
+      "last_liquidation_block": "11333136",
+      "repay_usd_estimate_total": "2926.737723691570653196017735",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x8f0fbca661569fc577afc89ad297407e20322e40a35d0ff6fe198f34df10dbfb",
+          "logIndex": "164"
+        }
+      ],
+      "rank": "108",
+      "top20": false
+    },
+    {
+      "borrower": "0x1b7550aa83e9b82563194758949dc19fb39926eb",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333134",
+      "last_liquidation_block": "11333134",
+      "repay_usd_estimate_total": "2864.506025023666666541184258",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x7eefa732b67ec68eeee9bdaccf8f10ae7b6eb3106617277e28a232136139e1ce",
+          "logIndex": "312"
+        }
+      ],
+      "rank": "109",
+      "top20": false
+    },
+    {
+      "borrower": "0x3fbe910100bab901f389b69431b9de597264bf90",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333074",
+      "last_liquidation_block": "11333074",
+      "repay_usd_estimate_total": "2685.140618491940727482272797",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xc00e503eebd7124ee47e93bbddf88886bbee7da1ae9a96ac305ea27d4a3ddfea",
+          "logIndex": "255"
+        }
+      ],
+      "rank": "110",
+      "top20": false
+    },
+    {
+      "borrower": "0x4c3ac06e10c7aebd4daa17832f724fcc7b19b850",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333108",
+      "last_liquidation_block": "11333108",
+      "repay_usd_estimate_total": "2537.03490223657609514241723",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xc2bc0762d4046249ce6a8afa2482b9b4ee81f08c5d4d9f2c4f9921aca67c8aed",
+          "logIndex": "21"
+        }
+      ],
+      "rank": "111",
+      "top20": false
+    },
+    {
+      "borrower": "0x078fc151d46911a80f611fcd01f381d9fcdd2c03",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333136",
+      "last_liquidation_block": "11333136",
+      "repay_usd_estimate_total": "2436.283499068626386399401104",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xff469702be7901eba4c43a10599b5aa5b5060ee368593e09d42f6044772d228b",
+          "logIndex": "224"
+        }
+      ],
+      "rank": "112",
+      "top20": false
+    },
+    {
+      "borrower": "0x0060f3570331bf192682afc1aabee27af2ce8e3d",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333136",
+      "last_liquidation_block": "11333136",
+      "repay_usd_estimate_total": "2327.12403943850868816748578",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x56d21c673cc77f2aa4354a9b2949cbd227ad6b4714ed2e66aa6e00fe0ff1041e",
+          "logIndex": "97"
+        }
+      ],
+      "rank": "113",
+      "top20": false
+    },
+    {
+      "borrower": "0x320a1d7a7f8c46cfeb85f46c9bcbe5b3df9956de",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333137",
+      "last_liquidation_block": "11333137",
+      "repay_usd_estimate_total": "2314.332009478401955950313812",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x5f2b235fc85d93f1b138c877669594d0ef8f0f9d6ae0accd23eff55c78ec9b99",
+          "logIndex": "84"
+        }
+      ],
+      "rank": "114",
+      "top20": false
+    },
+    {
+      "borrower": "0x6b5554e9ceb15649ca558bb0a442912313673e53",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333138",
+      "last_liquidation_block": "11333138",
+      "repay_usd_estimate_total": "2113.80919323776376036270114",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xcb20054fbbf653fcfc6019791a1817476274b0ffb570bf344768e60604e8048e",
+          "logIndex": "131"
+        }
+      ],
+      "rank": "115",
+      "top20": false
+    },
+    {
+      "borrower": "0x3dc48cff6a78990222fbae7bae0ad6d99d41d5ab",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11331400",
+      "last_liquidation_block": "11331400",
+      "repay_usd_estimate_total": "2094.440832618027627654480185",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x65236279b3411070d3ead001bcb7720d580d33ea434f0c7eaf0878284e467aa3",
+          "logIndex": "30"
+        }
+      ],
+      "rank": "116",
+      "top20": false
+    },
+    {
+      "borrower": "0x88d695250c2d6f9568dbf2ce8044f50fc644a07f",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333137",
+      "last_liquidation_block": "11333137",
+      "repay_usd_estimate_total": "2008.494768071558435484211893",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x8bb7592b763792eba346be9479062949085d075cabb974daa3a2278cb15ecc5b",
+          "logIndex": "23"
+        }
+      ],
+      "rank": "117",
+      "top20": false
+    },
+    {
+      "borrower": "0x9901a742e0b0873c83eee2826b97319ac085b94a",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332963",
+      "last_liquidation_block": "11332963",
+      "repay_usd_estimate_total": "1817.17609404556561036636254",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x3fb593bd1495e56543935dd75b327ab1c84435e8eeda898c0eb18f550f2eb2fa",
+          "logIndex": "142"
+        }
+      ],
+      "rank": "118",
+      "top20": false
+    },
+    {
+      "borrower": "0xe10fa11d966f172755e7baf6a7064c1bb345bf4b",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333141",
+      "last_liquidation_block": "11333141",
+      "repay_usd_estimate_total": "1816.241243761224335824538427",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x208038ebe8ec2f5cd5731f831b8979a2d8d7c0cb791904a6fc41132eff811961",
+          "logIndex": "73"
+        }
+      ],
+      "rank": "119",
+      "top20": false
+    },
+    {
+      "borrower": "0x196d7a2f4f78a15fc52c35d9d4456db1e0e628d8",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333138",
+      "last_liquidation_block": "11333138",
+      "repay_usd_estimate_total": "1805.006193757924582137802887",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x0574d6575ef91cc1d87a011027e6dd02b1ea072d3765c73a4647fb51aa755b54",
+          "logIndex": "15"
+        }
+      ],
+      "rank": "120",
+      "top20": false
+    },
+    {
+      "borrower": "0x9efc76d55ffda4ab4e5d4c370a1449799351626e",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333137",
+      "last_liquidation_block": "11333137",
+      "repay_usd_estimate_total": "1765.533045083858838274985085",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xf19ceb77d26cc2d6857f6ca7a1dd8666b836074b3fa3986355c126d1b79c65f0",
+          "logIndex": "56"
+        }
+      ],
+      "rank": "121",
+      "top20": false
+    },
+    {
+      "borrower": "0x036a24ee3e1fb7aa7eb34be000a6195d1d25123e",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333138",
+      "last_liquidation_block": "11333138",
+      "repay_usd_estimate_total": "1727.566906133169547143102804",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x699edc4d9dcdd74f71841ef2e24492ffe609d0e7f5bcb73c2ee90c3bf2806b82",
+          "logIndex": "70"
+        }
+      ],
+      "rank": "122",
+      "top20": false
+    },
+    {
+      "borrower": "0xced4df8eb3691facd180bf6d976cbab8483b3d5e",
+      "liquidation_count": "2",
+      "status": "pending",
+      "first_liquidation_block": "11332119",
+      "last_liquidation_block": "11333962",
+      "repay_usd_estimate_total": "1701.47397316186466245098",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x35bb29e9fcc60095551aaaf73aa030cd049112c9d44b36b2ca3c7d656b98fb9e",
+          "logIndex": "137"
+        },
+        {
+          "tx_hash": "0x2eb55dcd64cf51a7d06ccf1daa7cbf1eca756e25bd9837ffb2cef592eda88cc0",
+          "logIndex": "31"
+        }
+      ],
+      "rank": "123",
+      "top20": false
+    },
+    {
+      "borrower": "0xcaa33a01c9b7466ff9f3130f094b27ca916bc939",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333140",
+      "last_liquidation_block": "11333140",
+      "repay_usd_estimate_total": "1644.560795345176020783561741",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x8dd71197b1844207d9aeb63a385d46c7d555a74f4a47336f0579f8d76cf30d59",
+          "logIndex": "32"
+        }
+      ],
+      "rank": "124",
+      "top20": false
+    },
+    {
+      "borrower": "0xf43d6a3e07a99d52969fa72764ffbb3772a2ca80",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333141",
+      "last_liquidation_block": "11333141",
+      "repay_usd_estimate_total": "1638.101082288896503822411707",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x44421dd3145ca7d9da5561fd7c6b59b5b8f08a973e330ec769efa1b23fbdd512",
+          "logIndex": "46"
+        }
+      ],
+      "rank": "125",
+      "top20": false
+    },
+    {
+      "borrower": "0xe4c3b87dfb2c95c61384f9f5345e462912a735d1",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332982",
+      "last_liquidation_block": "11332982",
+      "repay_usd_estimate_total": "1505.15923571037308370695055",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x9675343325336eb234f38231b25a2f33b099dd5301cce0281f7053d6d47062c3",
+          "logIndex": "187"
+        }
+      ],
+      "rank": "126",
+      "top20": false
+    },
+    {
+      "borrower": "0x8a5d3479663e6927f6c527de8b8c85add4444097",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333033",
+      "last_liquidation_block": "11333033",
+      "repay_usd_estimate_total": "1429.02315863529899912028",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x08365e5a906f88ce28be82761aa3203595c551b76c1505ad2ca226dbb530c252",
+          "logIndex": "65"
+        }
+      ],
+      "rank": "127",
+      "top20": false
+    },
+    {
+      "borrower": "0xda629b790f4bd947a7569b6510b39a2cd0a8a05a",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333036",
+      "last_liquidation_block": "11333036",
+      "repay_usd_estimate_total": "1400.46966370960731526608",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x4362fe616858c6442f9c8cabc4b3b0f8e85cdc37f9ce99608209e08e527f0689",
+          "logIndex": "22"
+        }
+      ],
+      "rank": "128",
+      "top20": false
+    },
+    {
+      "borrower": "0xbf5c6d85510e491cd45d1264fffec0c2c4282564",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332893",
+      "last_liquidation_block": "11332893",
+      "repay_usd_estimate_total": "1277.985909687497813466714816",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xe5890ecd51ed5fdd1b04fe56858461e29d2e68db13eac6b22a868a55c7f01c20",
+          "logIndex": "27"
+        }
+      ],
+      "rank": "129",
+      "top20": false
+    },
+    {
+      "borrower": "0xa0062627174959249819f9802dcc0e0426a41891",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11336336",
+      "last_liquidation_block": "11336336",
+      "repay_usd_estimate_total": "1234.804565240537594775693",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x01bd8eb7b5f554157575e425829f7912a646bbdec46ce79025077e39bc7300ae",
+          "logIndex": "115"
+        }
+      ],
+      "rank": "130",
+      "top20": false
+    },
+    {
+      "borrower": "0x1d22493e58cc7f268fa0acbc4bb36f41ab1d41d8",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332955",
+      "last_liquidation_block": "11332955",
+      "repay_usd_estimate_total": "1229.917867",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x47d065906e2a90e031d9df645acd1447c555401e819650629a5e6d96180ec28a",
+          "logIndex": "44"
+        }
+      ],
+      "rank": "131",
+      "top20": false
+    },
+    {
+      "borrower": "0xd138bb878d632f99d181f2dcbce3f934b2dcb474",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333161",
+      "last_liquidation_block": "11333161",
+      "repay_usd_estimate_total": "1104.420383300475650954393205",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xbe770174ce85fdf27e06449c765d04901453595802be6ba5661faf8e92783568",
+          "logIndex": "112"
+        }
+      ],
+      "rank": "132",
+      "top20": false
+    },
+    {
+      "borrower": "0x2836545d6e07e9e96a9b622a2e5f4787ec9cc2ae",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333160",
+      "last_liquidation_block": "11333160",
+      "repay_usd_estimate_total": "1085.814771177129419519257311",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x85c174ede711cdbf5a54a3d960bb454649a3aca84482564ce29c20269b5f1707",
+          "logIndex": "254"
+        }
+      ],
+      "rank": "133",
+      "top20": false
+    },
+    {
+      "borrower": "0x135bd1f2d83f453c0d70869a2917e0cffe367d42",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332846",
+      "last_liquidation_block": "11332846",
+      "repay_usd_estimate_total": "1083.732172",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x7480e1c37dd21b7a1087c7e8cf62ace838a44dda31fa8b7c82469b8db032ba47",
+          "logIndex": "86"
+        }
+      ],
+      "rank": "134",
+      "top20": false
+    },
+    {
+      "borrower": "0x8352b7f9a2e9df2cc54aa4ee3a6ab5c6ba2ad67a",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11336442",
+      "last_liquidation_block": "11336442",
+      "repay_usd_estimate_total": "1063.429697428007863845456266",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xe69cc0837a6d9912d04e538fca83e76277282585d936a5159b19f87f15482042",
+          "logIndex": "44"
+        }
+      ],
+      "rank": "135",
+      "top20": false
+    },
+    {
+      "borrower": "0x846a5646c906c3f564771830c7d6e75929dafe00",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332949",
+      "last_liquidation_block": "11332949",
+      "repay_usd_estimate_total": "1043.375369",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x64966943d8c09e98b4b16c9df03ae0aba0099659386eb81a2cddb192391b6a50",
+          "logIndex": "254"
+        }
+      ],
+      "rank": "136",
+      "top20": false
+    },
+    {
+      "borrower": "0x62217e7fa62dff42e7925bbd906b8410fc8dd254",
+      "liquidation_count": "2",
+      "status": "pending",
+      "first_liquidation_block": "11330710",
+      "last_liquidation_block": "11336110",
+      "repay_usd_estimate_total": "1038.335126168874554734482088",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x20ef87bdc66c512179fdf524cfc751e35757182c003b739004ce243f37c0c506",
+          "logIndex": "336"
+        },
+        {
+          "tx_hash": "0xc173b50ce6c6e4757d4eb3c4c8b8e27faeb2c641da9440eef6917d68c33406d7",
+          "logIndex": "47"
+        }
+      ],
+      "rank": "137",
+      "top20": false
+    },
+    {
+      "borrower": "0xc968ecbc3d20915bcb9e2cdcecb473c263dbab93",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333160",
+      "last_liquidation_block": "11333160",
+      "repay_usd_estimate_total": "1021.167109389611496300167508",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x35f7ce4f244c49d072358dfebc5eb9f94b24c901995bfabf52906ed2e5f57967",
+          "logIndex": "76"
+        }
+      ],
+      "rank": "138",
+      "top20": false
+    },
+    {
+      "borrower": "0xdda8b6f3124cfe8c520563a1ae89699ecc787933",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333039",
+      "last_liquidation_block": "11333039",
+      "repay_usd_estimate_total": "989.504511093942892800233348",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x391c0043117b0d670d36390292ceecdf1243ff865141dd7ddf002942e8998748",
+          "logIndex": "143"
+        }
+      ],
+      "rank": "139",
+      "top20": false
+    },
+    {
+      "borrower": "0xc8ab7043837d58f339897dee38e531a09f96c881",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11331058",
+      "last_liquidation_block": "11331058",
+      "repay_usd_estimate_total": "967.991244",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xa50eaacfbfa80a21d4225a061816ec0aca1d1008d640b9196b9df8a163619188",
+          "logIndex": "14"
+        }
+      ],
+      "rank": "140",
+      "top20": false
+    },
+    {
+      "borrower": "0x77e25da0d77773277e722f2d17d7fffe7b6486ba",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333040",
+      "last_liquidation_block": "11333040",
+      "repay_usd_estimate_total": "958.891255669831065604426138",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xdafb443372cf688b12a9b3dc1892421466a9ca817a2e64f518577f7416d0bcb6",
+          "logIndex": "323"
+        }
+      ],
+      "rank": "141",
+      "top20": false
+    },
+    {
+      "borrower": "0x2aefafa691982dd8431b03e584988b80c5c0b977",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333260",
+      "last_liquidation_block": "11333260",
+      "repay_usd_estimate_total": "892.019372",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x5e34530b8444ac92c992e6da03c742c1312f0f720b2c3af230d2236d98d50d44",
+          "logIndex": "162"
+        }
+      ],
+      "rank": "142",
+      "top20": false
+    },
+    {
+      "borrower": "0xadd03f7448798723379e62c2b59f768a714ca206",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333177",
+      "last_liquidation_block": "11333177",
+      "repay_usd_estimate_total": "885.893021841288988010091552",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x9d37f5056bf4f21daab403f6c7025568ed7b4aaf86f9965a3901a66b71e80b9d",
+          "logIndex": "139"
+        }
+      ],
+      "rank": "143",
+      "top20": false
+    },
+    {
+      "borrower": "0xcdbfabd0c716d05a3e03bbef95e62b32761aea84",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333177",
+      "last_liquidation_block": "11333177",
+      "repay_usd_estimate_total": "794.27650913955738819436578",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x393af4153fe8e82522388a9b200fcd3c600185f31c35398ac8cf3dcdb956083a",
+          "logIndex": "170"
+        }
+      ],
+      "rank": "144",
+      "top20": false
+    },
+    {
+      "borrower": "0xc44f621fd412714606c793d96dd31ee9275adbc4",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333180",
+      "last_liquidation_block": "11333180",
+      "repay_usd_estimate_total": "750.538605958060899165618516",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xd161b6ec8bc469668efdba6fe70b837158893f09e59ea2d0898771eb738974eb",
+          "logIndex": "171"
+        }
+      ],
+      "rank": "145",
+      "top20": false
+    },
+    {
+      "borrower": "0x3918665830e6e044a75f56dbffb1b925fc3987fa",
+      "liquidation_count": "2",
+      "status": "pending",
+      "first_liquidation_block": "11331460",
+      "last_liquidation_block": "11335746",
+      "repay_usd_estimate_total": "741.647149",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x92948f2cb692c198a28b9bd9e9ef923557e20d6fac6c325890003b517cf274e6",
+          "logIndex": "231"
+        },
+        {
+          "tx_hash": "0x7688826f65a95e0487acbf9f87fa90f0b00b159e2d3e6324c7bf8d28b86948f2",
+          "logIndex": "129"
+        }
+      ],
+      "rank": "146",
+      "top20": false
+    },
+    {
+      "borrower": "0xb00dbe1b1523306655a638dbe0824d0a77592d10",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11333180",
+      "last_liquidation_block": "11333180",
+      "repay_usd_estimate_total": "738.166606070442815624636145",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x3ef7d442d1f50718aae153df8266fd0162ce74ccc0bc493347ee8d1bcb270131",
+          "logIndex": "64"
+        }
+      ],
+      "rank": "147",
+      "top20": false
+    },
+    {
+      "borrower": "0xf12e70eb5bd116461907d8c451636a9aa90dd0c2",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332841",
+      "last_liquidation_block": "11332841",
+      "repay_usd_estimate_total": "723.062763",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xda825a2d9ae2d21200ca5f210386897f3d11f7fbcbf523aec4ba7c7e306a01b9",
+          "logIndex": "253"
+        }
+      ],
+      "rank": "148",
+      "top20": false
+    },
+    {
+      "borrower": "0xb7f90aacb380676479170558d8f477b1537e5d2c",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11331906",
+      "last_liquidation_block": "11331906",
+      "repay_usd_estimate_total": "598.849117312304474318013762",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xf2f9e118762fa1cbdc470769471cd74b004ffc9b7ed3d4f648352e72eec96cb1",
+          "logIndex": "229"
+        }
+      ],
+      "rank": "149",
+      "top20": false
+    },
+    {
+      "borrower": "0x2e85ed8339156174fe2e2d2af0acc3da36b44a98",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332715",
+      "last_liquidation_block": "11332715",
+      "repay_usd_estimate_total": "572.361248",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x411406221e69798ca45c9008aa3a27018bca7997961471ce9ffbfa7339a07e69",
+          "logIndex": "187"
+        }
+      ],
+      "rank": "150",
+      "top20": false
+    },
+    {
+      "borrower": "0x79fad9fc5ca80868a56a1824bd85b025f20b03a6",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11332022",
+      "last_liquidation_block": "11332022",
+      "repay_usd_estimate_total": "447.6357261457",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x1a9de7c4d4d6af7f935bb3cd5aeab45272fc90f400040af6bf078bbe2191ce25",
+          "logIndex": "260"
+        }
+      ],
+      "rank": "151",
+      "top20": false
+    },
+    {
+      "borrower": "0x68cb1f6eabcaec4526155910b7d39d5fa8d8ea8e",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11336094",
+      "last_liquidation_block": "11336094",
+      "repay_usd_estimate_total": "398.18270809976874747546",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0xb6f819c3d6ae43662dfffa1c6f3bbee8cb2022b6249ed9d2f995972d0b6ae8eb",
+          "logIndex": "207"
+        }
+      ],
+      "rank": "152",
+      "top20": false
+    },
+    {
+      "borrower": "0x652cefeb1ee21d19348edabf59b587936f272d29",
+      "liquidation_count": "1",
+      "status": "pending",
+      "first_liquidation_block": "11335056",
+      "last_liquidation_block": "11335056",
+      "repay_usd_estimate_total": "373.28562",
+      "dai_related": false,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x59a4bb1d03b8668225f4dc99a03292cde5b03b8fc1d1e37f3274630bf95e842a",
+          "logIndex": "169"
+        }
+      ],
+      "rank": "153",
+      "top20": false
+    },
+    {
+      "borrower": "0xda874f844389df33c0fad140df4970fe1b366726",
+      "liquidation_count": "2",
+      "status": "pending",
+      "first_liquidation_block": "11335746",
+      "last_liquidation_block": "11336663",
+      "repay_usd_estimate_total": "118.023206",
+      "dai_related": true,
+      "valuation_note": "N−1 预言机价格估值，仅用于排序，不等于清算实际价格",
+      "events": [
+        {
+          "tx_hash": "0x45e888be5e684fbdfbe5d4b514a3a99beb095421e1ff6c64261bf8aad0f76201",
+          "logIndex": "152"
+        },
+        {
+          "tx_hash": "0x72c9fb6bcc84899b5b5be0ae80eae9b6a247be9dbc18bc4a1b764c58d33143fc",
+          "logIndex": "238"
+        }
+      ],
+      "rank": "154",
+      "top20": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "before": {
+    "events": "3829827fa63c9c255eebc908c0a48bc205513ffc1ef4e1bf4c030d648d374c3e",
+    "accounts": "ce596591a0c0950d7248cb3ace04f4b4715253dccfcf93ee911a4376aefc992c",
+    "summary": "fd82b9e8d995333da1e21c20ca28a34d4c3f9ef8b374105dcb5c8f114b036033"
+  },
+  "after": {
+    "events": "3829827fa63c9c255eebc908c0a48bc205513ffc1ef4e1bf4c030d648d374c3e",
+    "accounts": "ce596591a0c0950d7248cb3ace04f4b4715253dccfcf93ee911a4376aefc992c",
+    "summary": "fd82b9e8d995333da1e21c20ca28a34d4c3f9ef8b374105dcb5c8f114b036033"
+  },
+  "identical": true,
+  "rpc_requests_this_run": "0"
+}

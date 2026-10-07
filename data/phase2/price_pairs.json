@@ -1,0 +1,674 @@
+[
+  {
+    "block": "11330709",
+    "market": "0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "559710000000000000000"
+  },
+  {
+    "block": "11331057",
+    "market": "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11331399",
+    "market": "0x6c8c6b02e7b2be14d4fa6022dfd6d75921d90e4e",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "252767000000000000"
+  },
+  {
+    "block": "11331459",
+    "market": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11331533",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1003285000000000000"
+  },
+  {
+    "block": "11331535",
+    "market": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11331592",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1002455000000000000"
+  },
+  {
+    "block": "11331592",
+    "market": "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11331595",
+    "market": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11331599",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1001654000000000000"
+  },
+  {
+    "block": "11331606",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1001654000000000000"
+  },
+  {
+    "block": "11331612",
+    "market": "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11331905",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1001083000000000000"
+  },
+  {
+    "block": "11332021",
+    "market": "0xc11b1268c1a384e55c48c2391d8d480264a3a7f4",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "179486350000000000000000000000000"
+  },
+  {
+    "block": "11332118",
+    "market": "0x70e36f6bf80a52b3b46b3af8e106cc0ed743e8e4",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "108095000000000000000"
+  },
+  {
+    "block": "11332714",
+    "market": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11332732",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1001083000000000000"
+  },
+  {
+    "block": "11332840",
+    "market": "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11332845",
+    "market": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11332892",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1007568000000000000"
+  },
+  {
+    "block": "11332921",
+    "market": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11332944",
+    "market": "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11332947",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1017655000000000000"
+  },
+  {
+    "block": "11332948",
+    "market": "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11332952",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1018095000000000000"
+  },
+  {
+    "block": "11332954",
+    "market": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11332958",
+    "market": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11332962",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1019485000000000000"
+  },
+  {
+    "block": "11332979",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1019485000000000000"
+  },
+  {
+    "block": "11332980",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1036950000000000000"
+  },
+  {
+    "block": "11332981",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1036950000000000000"
+  },
+  {
+    "block": "11332983",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1036950000000000000"
+  },
+  {
+    "block": "11332984",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1047111000000000000"
+  },
+  {
+    "block": "11333018",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1036176000000000000"
+  },
+  {
+    "block": "11333019",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1057500000000000000"
+  },
+  {
+    "block": "11333024",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1057500000000000000"
+  },
+  {
+    "block": "11333026",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1057500000000000000"
+  },
+  {
+    "block": "11333026",
+    "market": "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11333028",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1057500000000000000"
+  },
+  {
+    "block": "11333030",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1080000000000000000"
+  },
+  {
+    "block": "11333031",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1080000000000000000"
+  },
+  {
+    "block": "11333032",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1080000000000000000"
+  },
+  {
+    "block": "11333035",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1080000000000000000"
+  },
+  {
+    "block": "11333036",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1080000000000000000"
+  },
+  {
+    "block": "11333037",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1095299000000000000"
+  },
+  {
+    "block": "11333038",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1095299000000000000"
+  },
+  {
+    "block": "11333039",
+    "market": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11333039",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1095299000000000000"
+  },
+  {
+    "block": "11333039",
+    "market": "0xc11b1268c1a384e55c48c2391d8d480264a3a7f4",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "164542799990000000000000000000000"
+  },
+  {
+    "block": "11333039",
+    "market": "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11333041",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1134249000000000000"
+  },
+  {
+    "block": "11333042",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1134249000000000000"
+  },
+  {
+    "block": "11333043",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1134249000000000000"
+  },
+  {
+    "block": "11333044",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1134249000000000000"
+  },
+  {
+    "block": "11333046",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1134249000000000000"
+  },
+  {
+    "block": "11333047",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1238179000000000000"
+  },
+  {
+    "block": "11333048",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1238179000000000000"
+  },
+  {
+    "block": "11333049",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1238179000000000000"
+  },
+  {
+    "block": "11333050",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1238179000000000000"
+  },
+  {
+    "block": "11333051",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1238179000000000000"
+  },
+  {
+    "block": "11333052",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1238179000000000000"
+  },
+  {
+    "block": "11333053",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1238179000000000000"
+  },
+  {
+    "block": "11333055",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1238179000000000000"
+  },
+  {
+    "block": "11333056",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1238179000000000000"
+  },
+  {
+    "block": "11333057",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1238179000000000000"
+  },
+  {
+    "block": "11333058",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1238179000000000000"
+  },
+  {
+    "block": "11333059",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1238179000000000000"
+  },
+  {
+    "block": "11333061",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1238179000000000000"
+  },
+  {
+    "block": "11333062",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1238179000000000000"
+  },
+  {
+    "block": "11333063",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1238179000000000000"
+  },
+  {
+    "block": "11333064",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1238179000000000000"
+  },
+  {
+    "block": "11333066",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1238179000000000000"
+  },
+  {
+    "block": "11333067",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333068",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333073",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333074",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333078",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333082",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333107",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333108",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333114",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333122",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333123",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333124",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333125",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333127",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333130",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333131",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333132",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333133",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333134",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333135",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333136",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333137",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333139",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333140",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333159",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333160",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333176",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333179",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1218147000000000000"
+  },
+  {
+    "block": "11333259",
+    "market": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11333961",
+    "market": "0x70e36f6bf80a52b3b46b3af8e106cc0ed743e8e4",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "101695000000000000000"
+  },
+  {
+    "block": "11335055",
+    "market": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11335285",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1002926000000000000"
+  },
+  {
+    "block": "11335285",
+    "market": "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11335745",
+    "market": "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1000000000000000000000000000000"
+  },
+  {
+    "block": "11335995",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1006454000000000000"
+  },
+  {
+    "block": "11336093",
+    "market": "0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "501740000000000000000"
+  },
+  {
+    "block": "11336109",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1006454000000000000"
+  },
+  {
+    "block": "11336335",
+    "market": "0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "515789999000000000000"
+  },
+  {
+    "block": "11336441",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1008562000000000000"
+  },
+  {
+    "block": "11336662",
+    "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "price_raw": "1008562000000000000"
+  }
+]

@@ -1,0 +1,133 @@
+{
+  "before": {
+    "events": "928a9d330ca88137bb4f2a3492baa1f5521e2ffb08c1ec79b849e1697a8c01af",
+    "accounts": "ff5d48a9479591a2ecea362b7248c815895064270df733dbb40a151af8eee91d",
+    "summary": "d7c81094fa0829859eec9745667742ff95b27da75aa473296052607bee50c8a1"
+  },
+  "first_run": {
+    "started_utc": "2026-10-07T04:48:38+00:00",
+    "stages": [
+      {
+        "stage": "prepare",
+        "status": "passed",
+        "elapsed_seconds": "0.191",
+        "rpc_requests": "0",
+        "cache_hits": "100"
+      },
+      {
+        "stage": "headers",
+        "status": "passed",
+        "elapsed_seconds": "0.931",
+        "rpc_requests": "0",
+        "cache_hits": "6533"
+      },
+      {
+        "stage": "logs",
+        "status": "passed",
+        "elapsed_seconds": "0.769",
+        "rpc_requests": "0",
+        "cache_hits": "7026"
+      },
+      {
+        "stage": "decode",
+        "status": "passed",
+        "elapsed_seconds": "0.001",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      },
+      {
+        "stage": "receipts",
+        "status": "passed",
+        "elapsed_seconds": "0.002",
+        "rpc_requests": "0",
+        "cache_hits": "5"
+      },
+      {
+        "stage": "valuation",
+        "status": "passed",
+        "elapsed_seconds": "0.117",
+        "rpc_requests": "0",
+        "cache_hits": "218"
+      },
+      {
+        "stage": "outputs",
+        "status": "passed",
+        "elapsed_seconds": "0.012",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      }
+    ],
+    "cache_only": true,
+    "status": "passed",
+    "rpc_requests_this_run": "0",
+    "cache_hits": "13882",
+    "web_requests": "0",
+    "elapsed_seconds": "2.028"
+  },
+  "after": {
+    "events": "928a9d330ca88137bb4f2a3492baa1f5521e2ffb08c1ec79b849e1697a8c01af",
+    "accounts": "ff5d48a9479591a2ecea362b7248c815895064270df733dbb40a151af8eee91d",
+    "summary": "d7c81094fa0829859eec9745667742ff95b27da75aa473296052607bee50c8a1"
+  },
+  "second_run": {
+    "started_utc": "2026-10-07T04:49:10+00:00",
+    "stages": [
+      {
+        "stage": "prepare",
+        "status": "passed",
+        "elapsed_seconds": "0.188",
+        "rpc_requests": "0",
+        "cache_hits": "100"
+      },
+      {
+        "stage": "headers",
+        "status": "passed",
+        "elapsed_seconds": "0.834",
+        "rpc_requests": "0",
+        "cache_hits": "6533"
+      },
+      {
+        "stage": "logs",
+        "status": "passed",
+        "elapsed_seconds": "0.688",
+        "rpc_requests": "0",
+        "cache_hits": "7026"
+      },
+      {
+        "stage": "decode",
+        "status": "passed",
+        "elapsed_seconds": "0.001",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      },
+      {
+        "stage": "receipts",
+        "status": "passed",
+        "elapsed_seconds": "0.002",
+        "rpc_requests": "0",
+        "cache_hits": "5"
+      },
+      {
+        "stage": "valuation",
+        "status": "passed",
+        "elapsed_seconds": "0.116",
+        "rpc_requests": "0",
+        "cache_hits": "218"
+      },
+      {
+        "stage": "outputs",
+        "status": "passed",
+        "elapsed_seconds": "0.011",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      }
+    ],
+    "cache_only": true,
+    "status": "passed",
+    "rpc_requests_this_run": "0",
+    "cache_hits": "13882",
+    "web_requests": "0",
+    "elapsed_seconds": "1.844"
+  },
+  "identical": true
+}
