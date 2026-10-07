@@ -17,7 +17,7 @@ Oct 6, 2026 · @Rory Xiao
 | 事实 | 内容 | 来源 |
 | --- | --- | --- |
 | 触发 | DAI 在 Coinbase Pro 短暂冲到约 1.30 美元；Compound 的预言机以 Coinbase 价格为基准，Uniswap 作锚定校验 | [Invezz](https://invezz.com/news/2020/11/27/increased-dai-price-allowed-compound-comp-liquidator-to-earn-4-million/) |
-| 规模 | 24 小时内约 8,900 万美元被清算，其中 DAI 相关约 5,200 万 | [Decrypt](https://decrypt.co/49657/oracle-exploit-sees-100-million-liquidated-on-compound) |
+| 规模 | Decrypt 报道 24 小时约 8,900 万美元被清算；链上实测 2020-11-26 UTC 全天 Compound v2 共 182 笔清算，按 N−1 预言机估值约 9,906 万美元，其中 DAI 相关 153 笔、约 9,687 万美元（data/phase2/summary.json） | [Decrypt](https://decrypt.co/49657/oracle-exploit-sees-100-million-liquidated-on-compound) |
 | 最大单笔 | 一个循环借贷的大户被清算约 4,600 万 DAI | [Invezz](https://invezz.com/news/2020/11/27/increased-dai-price-allowed-compound-comp-liquidator-to-earn-4-million/) |
 | 争议 | 合约按设计运行，问题在预言机；是市场波动还是操纵，缺少量化证据 | [The Block](https://www.theblock.co/post/85850/dai-compound-dydx-liquidations-defi) |
 

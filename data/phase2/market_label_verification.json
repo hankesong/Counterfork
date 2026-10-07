@@ -1,0 +1,16 @@
+{
+  "market": "0xf5dce57282a584d2746faf1593d3121fcac444dc",
+  "underlying": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+  "market_label": "cSAI",
+  "verified": true,
+  "source": "https://etherscan.io/token/0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+  "page_title": "Sai Stablecoin v1.0 (SAI) | ERC-20 | Address: 0x89d24a6b...a23260359 | Etherscan",
+  "page_sha256": "5d684f1e24864ac48c7bedfbd723f56375d820e2688a720b105ad3e9fcf8f323",
+  "snapshot": "data/private/sai_etherscan.html",
+  "basis": "Etherscan title identifies Sai Stablecoin v1.0 (SAI); notice says rebranded to SAI and displayed name differs from contract. Historical underlying mapping: cached Phase 2 setup.",
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+    "capturedAt": "2026-10-07T03:28:30Z"
+  }
+}

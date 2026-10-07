@@ -48,6 +48,7 @@
 | valuation_note | string | — | N−1 预言机价格估值，仅用于排序，不等于清算实际价格 |
 | display | object | — | 仅派生展示字段，原始字段不变 |
 | display.borrower_short | string | — | borrower 前 6 字符…后 4 字符 |
+| display.market_label | string | — | 前端一律显示此字段，旧市场为 cSAI，其余为链上 cToken symbol |
 | display.market_symbol | string | — | repaid_market_symbol 的副本，如 cDAI |
 | display.repay_amount | string（十进制小数） | 标的单位 | repayAmount / 10^underlying_decimals；整数分拆生成，保留全部小数位（含末尾零），不四舍五入 |
 | display.block | string（整数） | 区块 | blockNumber 的副本 |
@@ -130,6 +131,7 @@ Market（用于 markets[] 与 market_totals[]）：
 | 字段 | 类型 | 单位 | 含义 |
 | --- | --- | --- | --- |
 | ctoken | string | 地址 | 市场唯一键 |
+| market_label | string | — | 前端市场展示名；不用原始 symbol 展示 |
 | ctoken_symbol | string | — | 链上原始 cToken symbol |
 | ctoken_decimals | string（整数） | 小数位数 | cToken 精度 |
 | underlying | string / null | 地址 | ERC20 标的；原生 ETH 为 null |
@@ -169,10 +171,11 @@ CrossChecks 及其嵌套字段：
 | receipt_sample.events[].verified | boolean | — | 收据核对是否通过 |
 | report_comparison | object | — | 与公开报道基准的差额 |
 | report_comparison.public_report_total_usd | string（十进制数） | USD | 报道全部清算近似基准 |
-| report_comparison.public_report_dai_related_usd | string（十进制数） | USD | 任务给定的 DAI 比较基准，来源限制见正文 |
+| report_comparison.public_report_dai_related_usd | null | — | 无可核实 DAI 报道基准，已移除 |
 | report_comparison.total_difference_usd | string（十进制小数） | USD | 本次全部估值减基准，可为负 |
-| report_comparison.dai_related_difference_usd | string（十进制小数） | USD | 任一侧涉及 DAI 的估值减基准 |
-| report_comparison.dai_repaid_difference_usd | string（十进制小数） | USD | 仅偿还 DAI 的估值减基准 |
+| report_comparison.dai_related_difference_usd | null | — | 无可核实 DAI 报道基准，已移除 |
+| report_comparison.dai_repaid_difference_usd | null | — | 无可核实 DAI 报道基准，已移除 |
+| report_comparison.dai_benchmark_note | string | — | 移除无出处基准的说明 |
 | report_comparison.source | string | HTTPS URL | 媒体公开来源，不是 RPC URL |
 
 离线重新生成及验收命令：`python scripts/phase2_events.py --cache-only`。此选项在缓存缺失时直接报错，禁止访问 RPC 或网页；不改变任何请求参数、抓取顺序或限速方式。重复执行后 rpc_requests_this_run 应为 "0"，provenance.mode 为 FROZEN，capturedAt 不变。

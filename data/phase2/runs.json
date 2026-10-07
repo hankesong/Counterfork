@@ -269,5 +269,195 @@
     "cache_hits": "13882",
     "web_requests": "0",
     "elapsed_seconds": "1.844"
+  },
+  {
+    "started_utc": "2026-10-07T05:10:51+00:00",
+    "stages": [
+      {
+        "stage": "prepare",
+        "status": "passed",
+        "elapsed_seconds": "0.189",
+        "rpc_requests": "0",
+        "cache_hits": "100"
+      },
+      {
+        "stage": "headers",
+        "status": "passed",
+        "elapsed_seconds": "0.838",
+        "rpc_requests": "0",
+        "cache_hits": "6533"
+      },
+      {
+        "stage": "logs",
+        "status": "passed",
+        "elapsed_seconds": "0.866",
+        "rpc_requests": "0",
+        "cache_hits": "7026"
+      },
+      {
+        "stage": "decode",
+        "status": "passed",
+        "elapsed_seconds": "0.001",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      },
+      {
+        "stage": "receipts",
+        "status": "passed",
+        "elapsed_seconds": "0.002",
+        "rpc_requests": "0",
+        "cache_hits": "5"
+      },
+      {
+        "stage": "valuation",
+        "status": "passed",
+        "elapsed_seconds": "0.084",
+        "rpc_requests": "0",
+        "cache_hits": "218"
+      },
+      {
+        "stage": "outputs",
+        "status": "failed",
+        "error": "[Errno 2] No such file or directory: 'F:\\\\hankesong\\\\hanworkspace\\\\data\\\\phase2\\\\market_label_verification.json'",
+        "elapsed_seconds": "0.001",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      }
+    ],
+    "cache_only": true,
+    "status": "failed",
+    "error": "[Errno 2] No such file or directory: 'F:\\\\hankesong\\\\hanworkspace\\\\data\\\\phase2\\\\market_label_verification.json'",
+    "rpc_requests_this_run": "0",
+    "cache_hits": "13882",
+    "web_requests": "0",
+    "elapsed_seconds": "1.986"
+  },
+  {
+    "started_utc": "2026-10-07T05:11:29+00:00",
+    "stages": [
+      {
+        "stage": "prepare",
+        "status": "passed",
+        "elapsed_seconds": "0.180",
+        "rpc_requests": "0",
+        "cache_hits": "100"
+      },
+      {
+        "stage": "headers",
+        "status": "passed",
+        "elapsed_seconds": "0.824",
+        "rpc_requests": "0",
+        "cache_hits": "6533"
+      },
+      {
+        "stage": "logs",
+        "status": "failed",
+        "error": "[WinError 5] 拒绝访问。: 'F:\\\\hankesong\\\\hanworkspace\\\\data\\\\phase2\\\\scan_progress.tmp' -> 'F:\\\\hankesong\\\\hanworkspace\\\\data\\\\phase2\\\\scan_progress.json'",
+        "elapsed_seconds": "0.319",
+        "rpc_requests": "0",
+        "cache_hits": "2093"
+      }
+    ],
+    "cache_only": true,
+    "status": "failed",
+    "error": "[WinError 5] 拒绝访问。: 'F:\\\\hankesong\\\\hanworkspace\\\\data\\\\phase2\\\\scan_progress.tmp' -> 'F:\\\\hankesong\\\\hanworkspace\\\\data\\\\phase2\\\\scan_progress.json'",
+    "rpc_requests_this_run": "0",
+    "cache_hits": "8726",
+    "web_requests": "0",
+    "elapsed_seconds": "1.325"
+  },
+  {
+    "started_utc": "2026-10-07T05:11:48+00:00",
+    "stages": [
+      {
+        "stage": "prepare",
+        "status": "passed",
+        "elapsed_seconds": "0.179",
+        "rpc_requests": "0",
+        "cache_hits": "100"
+      },
+      {
+        "stage": "headers",
+        "status": "passed",
+        "elapsed_seconds": "0.805",
+        "rpc_requests": "0",
+        "cache_hits": "6533"
+      },
+      {
+        "stage": "logs",
+        "status": "failed",
+        "error": "[WinError 5] 拒绝访问。: 'F:\\\\hankesong\\\\hanworkspace\\\\data\\\\phase2\\\\scan_progress.tmp' -> 'F:\\\\hankesong\\\\hanworkspace\\\\data\\\\phase2\\\\scan_progress.json'",
+        "elapsed_seconds": "0.349",
+        "rpc_requests": "0",
+        "cache_hits": "2573"
+      }
+    ],
+    "cache_only": true,
+    "status": "failed",
+    "error": "[WinError 5] 拒绝访问。: 'F:\\\\hankesong\\\\hanworkspace\\\\data\\\\phase2\\\\scan_progress.tmp' -> 'F:\\\\hankesong\\\\hanworkspace\\\\data\\\\phase2\\\\scan_progress.json'",
+    "rpc_requests_this_run": "0",
+    "cache_hits": "9206",
+    "web_requests": "0",
+    "elapsed_seconds": "1.335"
+  },
+  {
+    "started_utc": "2026-10-07T05:12:07+00:00",
+    "stages": [
+      {
+        "stage": "prepare",
+        "status": "passed",
+        "elapsed_seconds": "0.181",
+        "rpc_requests": "0",
+        "cache_hits": "100"
+      },
+      {
+        "stage": "headers",
+        "status": "passed",
+        "elapsed_seconds": "0.978",
+        "rpc_requests": "0",
+        "cache_hits": "6533"
+      },
+      {
+        "stage": "logs",
+        "status": "passed",
+        "elapsed_seconds": "0.818",
+        "rpc_requests": "0",
+        "cache_hits": "7026"
+      },
+      {
+        "stage": "decode",
+        "status": "passed",
+        "elapsed_seconds": "0.001",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      },
+      {
+        "stage": "receipts",
+        "status": "passed",
+        "elapsed_seconds": "0.002",
+        "rpc_requests": "0",
+        "cache_hits": "5"
+      },
+      {
+        "stage": "valuation",
+        "status": "passed",
+        "elapsed_seconds": "0.077",
+        "rpc_requests": "0",
+        "cache_hits": "218"
+      },
+      {
+        "stage": "outputs",
+        "status": "passed",
+        "elapsed_seconds": "0.019",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      }
+    ],
+    "cache_only": true,
+    "status": "passed",
+    "rpc_requests_this_run": "0",
+    "cache_hits": "13882",
+    "web_requests": "0",
+    "elapsed_seconds": "2.080"
   }
 ]

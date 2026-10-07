@@ -25,7 +25,7 @@ python scripts/phase2_events.py
 
 Comptroller `0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b` 的历史实现由 comptrollerImplementation() 动态读取：`0x7b5e3521a049c8ff88e6349f33044c6cc33c113c`。Etherscan Exact Match 源码及 ABI 确认 `getAllMarkets() public view returns (CToken[] memory)`；读取窗口首块状态得到以下市场。
 
-| 链上 cToken symbol | cToken 地址 | 标的 symbol | decimals | 事件数 | 偿还美元估值 |
+| 市场展示名 | cToken 地址 | 标的 symbol | decimals | 事件数 | 偿还美元估值 |
 | --- | --- | --- | ---: | ---: | ---: |
 | cBAT | `0x6c8c6b02e7b2be14d4fa6022dfd6d75921d90e4e` | BAT | 18 | 1 | 2,094.44 |
 | cDAI | `0x5d3a536e4d6dbd6114cc1ead35777bab948e3643` | DAI | 18 | 151 | 96,769,063.37 |
@@ -35,11 +35,13 @@ Comptroller `0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b` 的历史实现由 comp
 | cUSDT | `0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9` | USDT | 6 | 11 | 2,214,396.51 |
 | cWBTC | `0xc11b1268c1a384e55c48c2391d8d480264a3a7f4` | WBTC | 8 | 2 | 33,362.45 |
 | cZRX | `0xb3319f5d18bc0d84dd1b4825dcde5d5f7266d407` | ZRX | 18 | 0 | 0.00 |
-| cDAI | `0xf5dce57282a584d2746faf1593d3121fcac444dc` | DAI | 18 | 0 | 0.00 |
+| cSAI | `0xf5dce57282a584d2746faf1593d3121fcac444dc` | DAI | 18 | 0 | 0.00 |
 | cUNI | `0x35a18000230da775cac24873d00ff85bccded550` | UNI | 18 | 0 | 0.00 |
 | cCOMP | `0x70e36f6bf80a52b3b46b3af8e106cc0ed743e8e4` | COMP | 18 | 2 | 1,701.47 |
 
 标的地址、原始 symbol 和 decimals 全部保存在 summary.json，ERC20 标的元数据逐个在窗口首块读取。两个历史市场的链上 symbol 都是 cDAI/DAI，不能按 symbol 合并；DAI 相关标记仅使用 Phase 0/1 已验证的 cDAI `0x5d3a536e4d6dbd6114cc1ead35777bab948e3643`。另一个同名市场 `0xf5dce57282a584d2746faf1593d3121fcac444dc` 的标的为 `0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359`。
+
+旧市场已核实为 cSAI：Etherscan 标的页面标题为 Sai Stablecoin v1.0 (SAI)，并注明 rebranded to SAI。证据见 data/phase2/market_label_verification.json，快照 data/private/sai_etherscan.html。原始 symbol 保留不变。
 
 cETH 单独处理依据：Etherscan 已验证 CEther 源码继承 CToken，mint() 为 payable，接收 msg.value，ABI 没有 underlying()。原生 ETH 的金额单位为 wei（18 位）；输出 underlying=null。
 
@@ -56,10 +58,17 @@ cETH 单独处理依据：Etherscan 已验证 CEther 源码继承 CToken，mint(
 | 3 | passed | 0 | 13882 | 2.690 |
 | 4 | passed | 0 | 13882 | 2.028 |
 | 5 | passed | 0 | 13882 | 1.844 |
+| 6 | failed | 0 | 13882 | 1.986 |
+| 7 | failed | 0 | 8726 | 1.325 |
+| 8 | failed | 0 | 9206 | 1.335 |
+| 9 | passed | 0 | 13882 | 2.080 |
 
 实际失败原文（已脱敏，保留记录；随后从缺失缓存续跑）：
 
 - `NETWORK_ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>`
+- `[Errno 2] No such file or directory: 'F:\\hankesong\\hanworkspace\\data\\phase2\\market_label_verification.json'`
+- `[WinError 5] 拒绝访问。: 'F:\\hankesong\\hanworkspace\\data\\phase2\\scan_progress.tmp' -> 'F:\\hankesong\\hanworkspace\\data\\phase2\\scan_progress.json'`
+- `[WinError 5] 拒绝访问。: 'F:\\hankesong\\hanworkspace\\data\\phase2\\scan_progress.tmp' -> 'F:\\hankesong\\hanworkspace\\data\\phase2\\scan_progress.json'`
 
 含独立准备在内，已记录的 Phase 2 RPC 请求累计为 12548 次。
 
@@ -67,7 +76,7 @@ cETH 单独处理依据：Etherscan 已验证 CEther 源码继承 CToken，mint(
 
 **Phase 1 缓存口径：**11332824–11333316 共 493 块的旧 cDAI 日志查询全部强制命中缓存，区块头也复用。但旧缓存的 address 是单个 cDAI，不能当作全部市场查询缓存；首轮另对这 493 块各发一次全市场数组查询，逐块核对其 cDAI 子集与旧缓存完全一致；原窗口有 139 条 cDAI、152 条全市场事件。成功抓取后的完整复跑（运行 3）直接命中全部缓存。这一必要差异已在执行前说明；没有把窄过滤结果冒充全市场缓存。
 
-运行 1 因 SSL EOF 中断，运行 2 从缺失缓存续跑并完成；运行 3 重新执行全部读取、解码、校验、估值与汇总，`rpc_requests_this_run=0`，耗时 2.690 秒。events/accounts/summary 三份 JSON 的重跑前后 SHA-256 一致，见 replay_verification.json。截至本次计时运行合计 4,178.588 秒（含中断等待）；另有初始准备运行未记录耗时。
+运行 1 因 SSL EOF 中断，运行 2 从缺失缓存续跑并完成；运行 3 重新执行全部读取、解码、校验、估值与汇总，`rpc_requests_this_run=0`，耗时 2.690 秒。events/accounts/summary 三份 JSON 的重跑前后 SHA-256 一致，见 replay_verification.json。截至本次计时运行合计 4,185.314 秒（含中断等待）；另有初始准备运行未记录耗时。
 
 ## 汇总与前 20 名
 
@@ -116,17 +125,17 @@ Phase 1 样本交易 0x53e09adb…f3e4、logIndex 59 恰好出现一次：解码
 
 ## 与公开报道比较
 
-[Decrypt 报道](https://decrypt.co/49657/oracle-exploit-sees-100-million-liquidated-on-compound) 正文确认过去 24 小时约 8,900 万美元。DAI 约 5,200 万沿用本任务和 docs/plan.md 提供的比较基准；本地网页快照正文未找到该数字，未独立验证配图数据。下表差额为本次估值减报道近似值，正值表示本次较高。
+[Decrypt 报道](https://decrypt.co/49657/oracle-exploit-sees-100-million-liquidated-on-compound) 正文确认过去 24 小时约 8,900 万美元。原 5,200 万基准无可核实出处，已移除；DAI 两项差额为 null。下表差额为本次估值减报道近似值，正值表示本次较高。
 
 | 口径 | 本次估值 | 报道基准 | 差额 |
 | --- | ---: | ---: | ---: |
 | 全部 | 99,064,675.42 | 89,000,000 | 10,064,675.42 |
-| DAI 相关（偿还或抵押） | 96,870,598.16 | 52,000,000 | 44,870,598.16 |
-| 仅 DAI 被偿还（补充口径） | 96,769,063.37 | 52,000,000 | 44,769,063.37 |
+| DAI 相关（偿还或抵押） | 96,870,598.16 | 无可核实基准 | — |
+| 仅 DAI 被偿还（补充口径） | 96,769,063.37 | 无可核实基准 | — |
 
 可能原因：报道的滚动 24 小时与固定 UTC 自然日不一致；报道可能使用当时币价、交易内部价或被扣押抵押品价值，本次固定采用 N−1 预言机对偿还本金估值；DAI 相关的分类口径可能不同。本次仅统计 Compound v2 起始市场列表，不能外推到其他协议。该 Decrypt 报道本身也明确指向 Compound，因此“排除其他协议”只是跨报道比较时的范围限制，不能未经核实就断言它解释了本表差额。报道数字是近似值，缺少可复算的原始事件清单与精确估值时点；差额不能唯一归因。窗口和数据未为贴近报道而调整。
 
-进一步检查：全天实际偿还 DAI 数量合计 86257791.813640208472326336，对应 N−1 价格范围 $1.001083–$1.238179。按本任务的 N−1 价格估值，比仅将每个 DAI 机械记作 $1 多 $10,511,271.56。即使只比较 DAI 数量，仍显著高于 5,200 万，因此价格差异本身不足以解释整个差额；还需要报道的精确窗口、资产分类和原始清单才能归因。该补充只是单位量对账，没有改变排序估值或进行反事实实验。
+进一步检查：全天实际偿还 DAI 数量合计 86257791.813640208472326336，对应 N−1 价格范围 $1.001083–$1.238179。按本任务的 N−1 价格估值，比仅将每个 DAI 机械记作 $1 多 $10,511,271.56。DAI 数量与美元估值单位不同；还需要报道的精确窗口、资产分类和原始清单才能归因。该补充只是单位量对账，没有改变排序估值或进行反事实实验。
 
 ## 估值和局限
 
@@ -193,6 +202,7 @@ Phase 1 样本交易 0x53e09adb…f3e4、logIndex 59 恰好出现一次：解码
 | valuation_note | string | — | N−1 预言机价格估值，仅用于排序，不等于清算实际价格 |
 | display | object | — | 仅派生展示字段，原始字段不变 |
 | display.borrower_short | string | — | borrower 前 6 字符…后 4 字符 |
+| display.market_label | string | — | 前端一律显示此字段，旧市场为 cSAI，其余为链上 cToken symbol |
 | display.market_symbol | string | — | repaid_market_symbol 的副本，如 cDAI |
 | display.repay_amount | string（十进制小数） | 标的单位 | repayAmount / 10^underlying_decimals；整数分拆生成，保留全部小数位（含末尾零），不四舍五入 |
 | display.block | string（整数） | 区块 | blockNumber 的副本 |
@@ -275,6 +285,7 @@ Market（用于 markets[] 与 market_totals[]）：
 | 字段 | 类型 | 单位 | 含义 |
 | --- | --- | --- | --- |
 | ctoken | string | 地址 | 市场唯一键 |
+| market_label | string | — | 前端市场展示名；不用原始 symbol 展示 |
 | ctoken_symbol | string | — | 链上原始 cToken symbol |
 | ctoken_decimals | string（整数） | 小数位数 | cToken 精度 |
 | underlying | string / null | 地址 | ERC20 标的；原生 ETH 为 null |
@@ -314,10 +325,11 @@ CrossChecks 及其嵌套字段：
 | receipt_sample.events[].verified | boolean | — | 收据核对是否通过 |
 | report_comparison | object | — | 与公开报道基准的差额 |
 | report_comparison.public_report_total_usd | string（十进制数） | USD | 报道全部清算近似基准 |
-| report_comparison.public_report_dai_related_usd | string（十进制数） | USD | 任务给定的 DAI 比较基准，来源限制见正文 |
+| report_comparison.public_report_dai_related_usd | null | — | 无可核实 DAI 报道基准，已移除 |
 | report_comparison.total_difference_usd | string（十进制小数） | USD | 本次全部估值减基准，可为负 |
-| report_comparison.dai_related_difference_usd | string（十进制小数） | USD | 任一侧涉及 DAI 的估值减基准 |
-| report_comparison.dai_repaid_difference_usd | string（十进制小数） | USD | 仅偿还 DAI 的估值减基准 |
+| report_comparison.dai_related_difference_usd | null | — | 无可核实 DAI 报道基准，已移除 |
+| report_comparison.dai_repaid_difference_usd | null | — | 无可核实 DAI 报道基准，已移除 |
+| report_comparison.dai_benchmark_note | string | — | 移除无出处基准的说明 |
 | report_comparison.source | string | HTTPS URL | 媒体公开来源，不是 RPC URL |
 
 离线重新生成及验收命令：`python scripts/phase2_events.py --cache-only`。此选项在缓存缺失时直接报错，禁止访问 RPC 或网页；不改变任何请求参数、抓取顺序或限速方式。重复执行后 rpc_requests_this_run 应为 "0"，provenance.mode 为 FROZEN，capturedAt 不变。

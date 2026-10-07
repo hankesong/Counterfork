@@ -1,0 +1,94 @@
+{
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+    "capturedAt": "2026-10-07T03:28:30Z"
+  },
+  "matches": [
+    {
+      "file": "data/phase1/search_logs.json",
+      "matches": [
+        [
+          "190",
+          "      \"data\": \"0x00000000000000000000000088886841cfccbf54adbbc0b6c9cbaceabec42b8b000000000000000000000000e2bb94210b41ce4c01b9b97f3ac62e728e4"
+        ],
+        [
+          "442",
+          "      \"data\": \"0x000000000000000000000000a1e6a1fcad35cf225301fde2f37113fef7ca8052000000000000000000000000767d222a509d107522e50161ca17ffcf0e5"
+        ],
+        [
+          "1604",
+          "      \"data\": \"0x0000000000000000000000006780846518290724038e86c98a1e9038883388750000000000000000000000000be0ecc301a1c0175f07a66243cff628c24"
+        ]
+      ],
+      "classification": "raw evidence or unrelated numeric substring; preserved"
+    },
+    {
+      "file": "data/phase2/events.json",
+      "matches": [
+        [
+          "867",
+          "        \"data\": \"0x000000000000000000000000e8468f05550563aa5bfc5fbcb344bf87aa2f6b840000000000000000000000000be0ecc301a1c0175f07a66243cff628c"
+        ],
+        [
+          "1945",
+          "        \"data\": \"0x00000000000000000000000088886841cfccbf54adbbc0b6c9cbaceabec42b8b000000000000000000000000e2bb94210b41ce4c01b9b97f3ac62e728"
+        ],
+        [
+          "2876",
+          "        \"data\": \"0x000000000000000000000000a1e6a1fcad35cf225301fde2f37113fef7ca8052000000000000000000000000767d222a509d107522e50161ca17ffcf0"
+        ],
+        [
+          "3477",
+          "      \"repay_usd_estimate\": \"25417.454885681728745200052977\","
+        ],
+        [
+          "7090",
+          "        \"data\": \"0x0000000000000000000000006780846518290724038e86c98a1e9038883388750000000000000000000000000be0ecc301a1c0175f07a66243cff628c"
+        ]
+      ],
+      "classification": "raw evidence or unrelated numeric substring; preserved"
+    },
+    {
+      "file": "data/phase2/summary.json",
+      "matches": [
+        [
+          "365",
+          "      \"dai_benchmark_note\": \"原 5,200 万基准无可核实出处，已移除\","
+        ]
+      ],
+      "classification": "withdrawal note"
+    },
+    {
+      "file": "docs/phase2.md",
+      "matches": [
+        [
+          "128",
+          "[Decrypt 报道](https://decrypt.co/49657/oracle-exploit-sees-100-million-liquidated-on-compound) 正文确认过去 24 小时约 8,900 万美元。原 5,200 万基准无可核实出处，已移除；"
+        ]
+      ],
+      "classification": "withdrawal note"
+    },
+    {
+      "file": "scripts/phase2_events.py",
+      "matches": [
+        [
+          "465",
+          "    comparison = {'dai_benchmark_note': '原 5,200 万基准无可核实出处，已移除', 'public_report_total_usd': '89000000', 'public_report_dai_related_usd': Non"
+        ]
+      ],
+      "classification": "withdrawal note"
+    },
+    {
+      "file": "scripts/phase2_report.py",
+      "matches": [
+        [
+          "100",
+          "        '原 5,200 万基准无可核实出处，已移除；DAI 两项差额为 null。'"
+        ]
+      ],
+      "classification": "withdrawal note"
+    }
+  ],
+  "raw_evidence_files_with_unrelated_numeric_substrings": "1273"
+}

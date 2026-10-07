@@ -18,7 +18,7 @@ from phase1_single import address, calldata, cast, load, words
 from locate_phase0_sample import CDAI, COMPTROLLER, TOPIC, block
 from rpc_cache import rpc
 from rpc_transport import STATS, redact, rate_limit
-from phase2_contract import analyzed_borrowers, display, provenance, require_evidence
+from phase2_contract import analyzed_borrowers, display, provenance, require_evidence, market_label
 
 DIR = ROOT / 'data/phase2'
 NOTE = 'N−1 预言机价格估值，仅用于排序，不等于清算实际价格'
@@ -274,7 +274,15 @@ def mapped(items, function, label):
                 progress = {'stage': label, 'completed': str(len(result)), 'total': str(len(items)),
                             'rpc_requests_this_run': str(STATS['network_requests']),
                             'elapsed_seconds': format(time.monotonic() - STEP_START, '.3f')}
-                save(DIR / 'scan_progress.json', progress)
+                # Windows indexers may briefly hold the destination during rapid offline replay.
+                for attempt in range(20):
+                    try:
+                        save(DIR / 'scan_progress.json', progress)
+                        break
+                    except PermissionError:
+                        if attempt == 19:
+                            raise
+                        time.sleep(0.05)
                 print(json.dumps(progress), flush=True)
     return result
 
@@ -421,6 +429,8 @@ def totals(events):
 
 
 def outputs(setup, events, checks, run=None):
+    for market in setup['markets']:
+        market['market_label'] = market_label(market['ctoken'], market['ctoken_symbol'])
     proof = provenance(DIR, STATS['network_requests'], run)
     analyzed = analyzed_borrowers()
     groups = {}
@@ -452,10 +462,10 @@ def outputs(setup, events, checks, run=None):
     dai_repaid = [row for row in events if row['repaid_market'] == CDAI.lower()]
     maximum = max(dai_repaid, key=lambda row: int(row['repayAmount']))
     total, related, repaid = totals(events), totals([r for r in events if r['dai_related']]), totals(dai_repaid)
-    comparison = {'public_report_total_usd': '89000000', 'public_report_dai_related_usd': '52000000',
+    comparison = {'dai_benchmark_note': '原 5,200 万基准无可核实出处，已移除', 'public_report_total_usd': '89000000', 'public_report_dai_related_usd': None,
         'total_difference_usd': format(Decimal(total['repay_usd_estimate']) - Decimal(89000000), 'f'),
-        'dai_related_difference_usd': format(Decimal(related['repay_usd_estimate']) - Decimal(52000000), 'f'),
-        'dai_repaid_difference_usd': format(Decimal(repaid['repay_usd_estimate']) - Decimal(52000000), 'f'),
+        'dai_related_difference_usd': None,
+        'dai_repaid_difference_usd': None,
         'source': 'https://decrypt.co/49657/oracle-exploit-sees-100-million-liquidated-on-compound'}
     cross = {'phase1_sample_fields_match': True, 'phase1_raw_log_exact_match': True,
              'phase1_is_largest_dai_repayment': maximum['tx_hash'] == e['tx_hash'] and maximum['logIndex'] == e['logIndex'],

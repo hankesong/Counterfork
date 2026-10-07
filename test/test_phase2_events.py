@@ -21,6 +21,23 @@ class EventIntegrity(unittest.TestCase):
     def log(self):
         return copy.deepcopy(self.sample['log'])
 
+    def test_market_labels(self):
+        from phase2_contract import market_label
+        summary = p.load(p.DIR / 'summary.json')
+        for key in ('markets', 'market_totals'):
+            for m in summary[key]:
+                expected = 'cSAI' if m['underlying'] == '0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359' else m['ctoken_symbol']
+                self.assertEqual(m['market_label'], expected)
+        for e in p.load(p.DIR / 'events.json')['events']:
+            self.assertEqual(e['display']['market_label'], market_label(e['repaid_market'], e['repaid_market_symbol']))
+
+    def test_unsourced_benchmark_removed(self):
+        c = p.load(p.DIR / 'summary.json')['cross_checks']['report_comparison']
+        for key in ('public_report_dai_related_usd', 'dai_related_difference_usd', 'dai_repaid_difference_usd'):
+            self.assertIsNone(c[key])
+        self.assertEqual(c['public_report_total_usd'], '89000000')
+        self.assertIn('已移除', c['dai_benchmark_note'])
+
     def test_real_sample_decodes_exactly(self):
         e = p.decode([self.log()], self.setup, self.headers)[0]
         for key in ('liquidator', 'borrower', 'repayAmount', 'cTokenCollateral', 'seizeTokens'):
@@ -171,7 +188,9 @@ class EventIntegrity(unittest.TestCase):
         current_accounts = p.load(p.DIR / 'accounts.json')['accounts']
         self.assertEqual([{k: v for k, v in e.items() if k != 'display'} for e in current_events], old['events'])
         self.assertEqual([{k: v for k, v in a.items() if k != 'status'} for a in current_accounts], old['accounts'])
-        self.assertEqual({k: v for k, v in p.load(p.DIR / 'summary.json').items() if k != 'provenance'}, old['summary'])
+        current = p.load(p.DIR / 'summary.json')
+        self.assertEqual(current['total'], old['summary']['total'])
+        self.assertEqual(current['dai_related'], old['summary']['dai_related'])
 
 
 if __name__ == '__main__':

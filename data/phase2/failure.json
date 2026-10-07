@@ -1,4 +1,4 @@
 {
-  "error": "NETWORK_ERROR: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>",
-  "rpc_requests_this_run": "8813"
+  "error": "[WinError 5] 拒绝访问。: 'F:\\\\hankesong\\\\hanworkspace\\\\data\\\\phase2\\\\scan_progress.tmp' -> 'F:\\\\hankesong\\\\hanworkspace\\\\data\\\\phase2\\\\scan_progress.json'",
+  "rpc_requests_this_run": "0"
 }

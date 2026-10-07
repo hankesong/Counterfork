@@ -39,14 +39,15 @@ def main():
         '## 市场核实与分布', '',
         f"Comptroller `{s['comptroller']}` 的历史实现由 comptrollerImplementation() 动态读取：`{s['comptroller_implementation']}`。"
         'Etherscan Exact Match 源码及 ABI 确认 `getAllMarkets() public view returns (CToken[] memory)`；读取窗口首块状态得到以下市场。', '',
-        '| 链上 cToken symbol | cToken 地址 | 标的 symbol | decimals | 事件数 | 偿还美元估值 |',
+        '| 市场展示名 | cToken 地址 | 标的 symbol | decimals | 事件数 | 偿还美元估值 |',
         '| --- | --- | --- | ---: | ---: | ---: |']
     for m in s['market_totals']:
-        lines.append(f"| {m['ctoken_symbol']} | `{m['ctoken']}` | {m['symbol']} | {m['decimals']} | {m['event_count']} | {money(m['repay_usd_estimate'])} |")
+        lines.append(f"| {m['market_label']} | `{m['ctoken']}` | {m['symbol']} | {m['decimals']} | {m['event_count']} | {money(m['repay_usd_estimate'])} |")
     lines += ['', '标的地址、原始 symbol 和 decimals 全部保存在 summary.json，ERC20 标的元数据逐个在窗口首块读取。'
         '两个历史市场的链上 symbol 都是 cDAI/DAI，不能按 symbol 合并；'
         'DAI 相关标记仅使用 Phase 0/1 已验证的 cDAI `0x5d3a536e4d6dbd6114cc1ead35777bab948e3643`。'
         '另一个同名市场 `0xf5dce57282a584d2746faf1593d3121fcac444dc` 的标的为 `0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359`。', '',
+        '旧市场已核实为 cSAI：Etherscan 标的页面标题为 Sai Stablecoin v1.0 (SAI)，并注明 rebranded to SAI。证据见 data/phase2/market_label_verification.json，快照 data/private/sai_etherscan.html。原始 symbol 保留不变。', '',
         'cETH 单独处理依据：Etherscan 已验证 CEther 源码继承 CToken，mint() 为 payable，接收 msg.value，'
         'ABI 没有 underlying()。原生 ETH 的金额单位为 wei（18 位）；输出 underlying=null。', '',
         f"事件签名 `{s['event_signature']}` 从历史 cDAI 实现的已验证 ABI 取得，五个字段均为非 indexed。"
@@ -96,12 +97,12 @@ def main():
         lines.append(f"| `{e['tx_hash']}` | {e['logIndex']} | {e['blockNumber']} | 通过 |")
     lines += ['', '## 与公开报道比较', '',
         '[Decrypt 报道](https://decrypt.co/49657/oracle-exploit-sees-100-million-liquidated-on-compound) 正文确认过去 24 小时约 8,900 万美元。'
-        'DAI 约 5,200 万沿用本任务和 docs/plan.md 提供的比较基准；本地网页快照正文未找到该数字，未独立验证配图数据。'
+        '原 5,200 万基准无可核实出处，已移除；DAI 两项差额为 null。'
         '下表差额为本次估值减报道近似值，正值表示本次较高。', '',
         '| 口径 | 本次估值 | 报道基准 | 差额 |', '| --- | ---: | ---: | ---: |',
         f"| 全部 | {money(s['total']['repay_usd_estimate'])} | 89,000,000 | {money(comparison['total_difference_usd'])} |",
-        f"| DAI 相关（偿还或抵押） | {money(s['dai_related']['repay_usd_estimate'])} | 52,000,000 | {money(comparison['dai_related_difference_usd'])} |",
-        f"| 仅 DAI 被偿还（补充口径） | {money(s['dai_repaid']['repay_usd_estimate'])} | 52,000,000 | {money(comparison['dai_repaid_difference_usd'])} |", '',
+        f"| DAI 相关（偿还或抵押） | {money(s['dai_related']['repay_usd_estimate'])} | 无可核实基准 | — |",
+        f"| 仅 DAI 被偿还（补充口径） | {money(s['dai_repaid']['repay_usd_estimate'])} | 无可核实基准 | — |", '',
         '可能原因：报道的滚动 24 小时与固定 UTC 自然日不一致；报道可能使用当时币价、交易内部价或被扣押抵押品价值，'
         '本次固定采用 N−1 预言机对偿还本金估值；DAI 相关的分类口径可能不同。'
         '本次仅统计 Compound v2 起始市场列表，不能外推到其他协议。该 Decrypt 报道本身也明确指向 Compound，'
@@ -110,7 +111,7 @@ def main():
         f"进一步检查：全天实际偿还 DAI 数量合计 {format(dai_units, 'f')}，对应 N−1 价格范围 "
         f"${min(Decimal(e['oracle_price_usd']) for e in dai_events)}–${max(Decimal(e['oracle_price_usd']) for e in dai_events)}。"
         f"按本任务的 N−1 价格估值，比仅将每个 DAI 机械记作 $1 多 ${money(Decimal(s['dai_repaid']['repay_usd_estimate']) - dai_units)}。"
-        '即使只比较 DAI 数量，仍显著高于 5,200 万，因此价格差异本身不足以解释整个差额；'
+        'DAI 数量与美元估值单位不同；'
         '还需要报道的精确窗口、资产分类和原始清单才能归因。该补充只是单位量对账，没有改变排序估值或进行反事实实验。', '',
         '## 估值和局限', '',
         '- 每个发生事件的 N−1 块动态读取 comptroller.oracle()，对唯一 (N−1, 偿还市场) 组合读取 getUnderlyingPrice。'

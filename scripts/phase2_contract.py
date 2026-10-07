@@ -65,5 +65,13 @@ def display(event):
     whole, fraction = divmod(int(event['repayAmount']), 10**decimals)
     amount = str(whole) + ('.' + str(fraction).zfill(decimals) if decimals else '')
     return {'borrower_short': event['borrower'][:6] + '…' + event['borrower'][-4:],
-            'market_symbol': event['repaid_market_symbol'], 'repay_amount': amount,
+            'market_symbol': event['repaid_market_symbol'],
+            'market_label': market_label(event.get('repaid_market', ''), event['repaid_market_symbol']), 'repay_amount': amount,
             'block': event['blockNumber']}
+
+
+def market_label(market, symbol):
+    proof = load(ROOT / 'data/phase2/market_label_verification.json')
+    if market.lower() == proof['market']:
+        return proof['market_label']
+    return symbol

@@ -161,6 +161,7 @@
         "display": {
           "borrower_short": "0x6221…d254",
           "market_symbol": "cETH",
+          "market_label": "cETH",
           "repay_amount": "0.905220275870596868",
           "block": "11330710"
         }
@@ -209,6 +210,7 @@
         "display": {
           "borrower_short": "0xc8ab…c881",
           "market_symbol": "cUSDT",
+          "market_label": "cUSDT",
           "repay_amount": "967.991244",
           "block": "11331058"
         }

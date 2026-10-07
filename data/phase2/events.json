@@ -49,6 +49,7 @@
       "display": {
         "borrower_short": "0x6221…d254",
         "market_symbol": "cETH",
+        "market_label": "cETH",
         "repay_amount": "0.905220275870596868",
         "block": "11330710"
       }
@@ -97,6 +98,7 @@
       "display": {
         "borrower_short": "0xc8ab…c881",
         "market_symbol": "cUSDT",
+        "market_label": "cUSDT",
         "repay_amount": "967.991244",
         "block": "11331058"
       }
@@ -145,6 +147,7 @@
       "display": {
         "borrower_short": "0x3dc4…d5ab",
         "market_symbol": "cBAT",
+        "market_label": "cBAT",
         "repay_amount": "8286.053292629289534055",
         "block": "11331400"
       }
@@ -193,6 +196,7 @@
       "display": {
         "borrower_short": "0x3918…87fa",
         "market_symbol": "cUSDC",
+        "market_label": "cUSDC",
         "repay_amount": "476.660359",
         "block": "11331460"
       }
@@ -241,6 +245,7 @@
       "display": {
         "borrower_short": "0x2c4e…3fd8",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "39514.869253217218551196",
         "block": "11331534"
       }
@@ -289,6 +294,7 @@
       "display": {
         "borrower_short": "0x0080…c1fb",
         "market_symbol": "cUSDC",
+        "market_label": "cUSDC",
         "repay_amount": "7301.733815",
         "block": "11331536"
       }
@@ -337,6 +343,7 @@
       "display": {
         "borrower_short": "0xdac0…c1f8",
         "market_symbol": "cUSDT",
+        "market_label": "cUSDT",
         "repay_amount": "315077.673480",
         "block": "11331593"
       }
@@ -385,6 +392,7 @@
       "display": {
         "borrower_short": "0x57ad…d489",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "94777.912195048246097796",
         "block": "11331593"
       }
@@ -433,6 +441,7 @@
       "display": {
         "borrower_short": "0xa274…4e5f",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "17839.294794037752735985",
         "block": "11331593"
       }
@@ -481,6 +490,7 @@
       "display": {
         "borrower_short": "0x5473…55f4",
         "market_symbol": "cUSDC",
+        "market_label": "cUSDC",
         "repay_amount": "3115.077803",
         "block": "11331596"
       }
@@ -529,6 +539,7 @@
       "display": {
         "borrower_short": "0x2682…08ab",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "8734.881982742909388908",
         "block": "11331600"
       }
@@ -577,6 +588,7 @@
       "display": {
         "borrower_short": "0x4086…2e32",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "7700.453195807301042076",
         "block": "11331607"
       }
@@ -625,6 +637,7 @@
       "display": {
         "borrower_short": "0x60a7…5f4d",
         "market_symbol": "cUSDT",
+        "market_label": "cUSDT",
         "repay_amount": "98419.706730",
         "block": "11331613"
       }
@@ -673,6 +686,7 @@
       "display": {
         "borrower_short": "0xb7f9…5d2c",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "598.201265341939154214",
         "block": "11331906"
       }
@@ -721,6 +735,7 @@
       "display": {
         "borrower_short": "0x79fa…03a6",
         "market_symbol": "cWBTC",
+        "market_label": "cWBTC",
         "repay_amount": "0.02493982",
         "block": "11332022"
       }
@@ -769,6 +784,7 @@
       "display": {
         "borrower_short": "0xced4…3d5e",
         "market_symbol": "cCOMP",
+        "market_label": "cCOMP",
         "repay_amount": "9.699902999999999433",
         "block": "11332119"
       }
@@ -817,6 +833,7 @@
       "display": {
         "borrower_short": "0x2e85…4a98",
         "market_symbol": "cUSDC",
+        "market_label": "cUSDC",
         "repay_amount": "572.361248",
         "block": "11332715"
       }
@@ -865,6 +882,7 @@
       "display": {
         "borrower_short": "0x0be0…b852",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "7189.913208430025000000",
         "block": "11332733"
       }
@@ -913,6 +931,7 @@
       "display": {
         "borrower_short": "0xf12e…d0c2",
         "market_symbol": "cUSDT",
+        "market_label": "cUSDT",
         "repay_amount": "723.062763",
         "block": "11332841"
       }
@@ -961,6 +980,7 @@
       "display": {
         "borrower_short": "0x135b…7d42",
         "market_symbol": "cUSDC",
+        "market_label": "cUSDC",
         "repay_amount": "1083.732172",
         "block": "11332846"
       }
@@ -1009,6 +1029,7 @@
       "display": {
         "borrower_short": "0xbf5c…2564",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1268.386758697673818012",
         "block": "11332893"
       }
@@ -1057,6 +1078,7 @@
       "display": {
         "borrower_short": "0x8052…07bc",
         "market_symbol": "cUSDC",
+        "market_label": "cUSDC",
         "repay_amount": "3761.126893",
         "block": "11332922"
       }
@@ -1105,6 +1127,7 @@
       "display": {
         "borrower_short": "0x0080…c1fb",
         "market_symbol": "cUSDT",
+        "market_label": "cUSDT",
         "repay_amount": "5816.817294",
         "block": "11332945"
       }
@@ -1153,6 +1176,7 @@
       "display": {
         "borrower_short": "0xf2df…ccbc",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "756026.532006669600000000",
         "block": "11332948"
       }
@@ -1201,6 +1225,7 @@
       "display": {
         "borrower_short": "0x8313…b37d",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "42520.196205403326084314",
         "block": "11332948"
       }
@@ -1249,6 +1274,7 @@
       "display": {
         "borrower_short": "0x846a…fe00",
         "market_symbol": "cUSDT",
+        "market_label": "cUSDT",
         "repay_amount": "1043.375369",
         "block": "11332949"
       }
@@ -1297,6 +1323,7 @@
       "display": {
         "borrower_short": "0xf2b5…19fb",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "25238.446856200288993180",
         "block": "11332953"
       }
@@ -1345,6 +1372,7 @@
       "display": {
         "borrower_short": "0x1d22…41d8",
         "market_symbol": "cUSDC",
+        "market_label": "cUSDC",
         "repay_amount": "1229.917867",
         "block": "11332955"
       }
@@ -1393,6 +1421,7 @@
       "display": {
         "borrower_short": "0x11f0…3a86",
         "market_symbol": "cUSDC",
+        "market_label": "cUSDC",
         "repay_amount": "3396.193747",
         "block": "11332955"
       }
@@ -1441,6 +1470,7 @@
       "display": {
         "borrower_short": "0x5050…16ab",
         "market_symbol": "cUSDC",
+        "market_label": "cUSDC",
         "repay_amount": "14862.494447",
         "block": "11332959"
       }
@@ -1489,6 +1519,7 @@
       "display": {
         "borrower_short": "0x9901…b94a",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1782.445150292123582364",
         "block": "11332963"
       }
@@ -1537,6 +1568,7 @@
       "display": {
         "borrower_short": "0x641d…20f4",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "69482.770598158779023260",
         "block": "11332980"
       }
@@ -1585,6 +1617,7 @@
       "display": {
         "borrower_short": "0x916e…c239",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "6640.125796192760062502",
         "block": "11332981"
       }
@@ -1633,6 +1666,7 @@
       "display": {
         "borrower_short": "0xe4c3…35d1",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1451.525373171679525249",
         "block": "11332982"
       }
@@ -1681,6 +1715,7 @@
       "display": {
         "borrower_short": "0xdf99…dd5d",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "85235.532889530760000000",
         "block": "11332984"
       }
@@ -1729,6 +1764,7 @@
       "display": {
         "borrower_short": "0x1821…dd06",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "149800.666926664946548636",
         "block": "11332984"
       }
@@ -1777,6 +1813,7 @@
       "display": {
         "borrower_short": "0xbbad…faa7",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "17011.414788666935652515",
         "block": "11332985"
       }
@@ -1825,6 +1862,7 @@
       "display": {
         "borrower_short": "0x0332…b162",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "889780.022182070500000000",
         "block": "11333019"
       }
@@ -1873,6 +1911,7 @@
       "display": {
         "borrower_short": "0xed3c…ef42",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "538229.375693352685535132",
         "block": "11333019"
       }
@@ -1921,6 +1960,7 @@
       "display": {
         "borrower_short": "0xe2bb…2f9c",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "75094.691714622431076690",
         "block": "11333019"
       }
@@ -1969,6 +2009,7 @@
       "display": {
         "borrower_short": "0x3ebc…e6fb",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "17505.668838459592800617",
         "block": "11333019"
       }
@@ -2017,6 +2058,7 @@
       "display": {
         "borrower_short": "0x93b2…4ec3",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "10175.814186513341190754",
         "block": "11333019"
       }
@@ -2065,6 +2107,7 @@
       "display": {
         "borrower_short": "0x5443…51ff",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "7577.833833625569816435",
         "block": "11333019"
       }
@@ -2113,6 +2156,7 @@
       "display": {
         "borrower_short": "0x05c0…f36b",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "7691.062339027498776745",
         "block": "11333019"
       }
@@ -2161,6 +2205,7 @@
       "display": {
         "borrower_short": "0xa5c0…fd4d",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "5744.392684312979364345",
         "block": "11333020"
       }
@@ -2209,6 +2254,7 @@
       "display": {
         "borrower_short": "0x339d…ff1a",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "188200.906464331621158454",
         "block": "11333025"
       }
@@ -2257,6 +2303,7 @@
       "display": {
         "borrower_short": "0x815a…e52e",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "92499.561122764804849564",
         "block": "11333027"
       }
@@ -2305,6 +2352,7 @@
       "display": {
         "borrower_short": "0xc945…9a7e",
         "market_symbol": "cUSDT",
+        "market_label": "cUSDT",
         "repay_amount": "11587.727727",
         "block": "11333027"
       }
@@ -2353,6 +2401,7 @@
       "display": {
         "borrower_short": "0x889a…bcd5",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1233698.911111652900000000",
         "block": "11333029"
       }
@@ -2401,6 +2450,7 @@
       "display": {
         "borrower_short": "0xed3c…ef42",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "624566.443664409549316734",
         "block": "11333029"
       }
@@ -2449,6 +2499,7 @@
       "display": {
         "borrower_short": "0x2608…ca30",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "9404.823855894089503369",
         "block": "11333029"
       }
@@ -2497,6 +2548,7 @@
       "display": {
         "borrower_short": "0x01ad…2565",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "154973.226011208303112740",
         "block": "11333029"
       }
@@ -2545,6 +2597,7 @@
       "display": {
         "borrower_short": "0x674b…a3aa",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "31713.143615765270318524",
         "block": "11333029"
       }
@@ -2593,6 +2646,7 @@
       "display": {
         "borrower_short": "0x2c4e…3fd8",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "19758.455681398240815513",
         "block": "11333029"
       }
@@ -2641,6 +2695,7 @@
       "display": {
         "borrower_short": "0x3af0…3e29",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "69781.836107171669786821",
         "block": "11333029"
       }
@@ -2689,6 +2744,7 @@
       "display": {
         "borrower_short": "0x5436…d057",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "140188.800552673435762724",
         "block": "11333029"
       }
@@ -2737,6 +2793,7 @@
       "display": {
         "borrower_short": "0x6621…4bce",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "9102.270842988737160888",
         "block": "11333031"
       }
@@ -2785,6 +2842,7 @@
       "display": {
         "borrower_short": "0x4458…5a23",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "3893.549648338335302240",
         "block": "11333032"
       }
@@ -2833,6 +2891,7 @@
       "display": {
         "borrower_short": "0x767d…a3de",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "5838.229878945987166108",
         "block": "11333033"
       }
@@ -2881,6 +2940,7 @@
       "display": {
         "borrower_short": "0x8a5d…4097",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1323.169591328980554741",
         "block": "11333033"
       }
@@ -2929,6 +2989,7 @@
       "display": {
         "borrower_short": "0xda62…a05a",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1296.731170101488254876",
         "block": "11333036"
       }
@@ -2977,6 +3038,7 @@
       "display": {
         "borrower_short": "0xf5f0…da46",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "7356.343073615753725618",
         "block": "11333037"
       }
@@ -3025,6 +3087,7 @@
       "display": {
         "borrower_short": "0x909b…af6f",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "46142428.595048940000000000",
         "block": "11333037"
       }
@@ -3073,6 +3136,7 @@
       "display": {
         "borrower_short": "0xed3c…ef42",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "729059.368074874584039324",
         "block": "11333037"
       }
@@ -3121,6 +3185,7 @@
       "display": {
         "borrower_short": "0x26a6…f367",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "6251.610176723785613212",
         "block": "11333038"
       }
@@ -3169,6 +3234,7 @@
       "display": {
         "borrower_short": "0x4086…2e32",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "4600.427171196336165196",
         "block": "11333038"
       }
@@ -3217,6 +3283,7 @@
       "display": {
         "borrower_short": "0x3d23…f588",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "4396.072046018384136405",
         "block": "11333038"
       }
@@ -3265,6 +3332,7 @@
       "display": {
         "borrower_short": "0x9c84…dd94",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "3151.243276382818445016",
         "block": "11333039"
       }
@@ -3313,6 +3381,7 @@
       "display": {
         "borrower_short": "0xdda8…7933",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "903.410403089880382252",
         "block": "11333039"
       }
@@ -3361,6 +3430,7 @@
       "display": {
         "borrower_short": "0xed3c…ef42",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "859732.336842523847688092",
         "block": "11333040"
       }
@@ -3409,6 +3479,7 @@
       "display": {
         "borrower_short": "0x57ad…d489",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "23205.950964697063308923",
         "block": "11333040"
       }
@@ -3457,6 +3528,7 @@
       "display": {
         "borrower_short": "0xb6c0…c0ba",
         "market_symbol": "cWBTC",
+        "market_label": "cWBTC",
         "repay_amount": "2.00038035",
         "block": "11333040"
       }
@@ -3505,6 +3577,7 @@
       "display": {
         "borrower_short": "0xb1ad…9484",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "859732.336842523847688092",
         "block": "11333040"
       }
@@ -3553,6 +3626,7 @@
       "display": {
         "borrower_short": "0xb1ad…9484",
         "market_symbol": "cUSDT",
+        "market_label": "cUSDT",
         "repay_amount": "1750703.992478",
         "block": "11333040"
       }
@@ -3601,6 +3675,7 @@
       "display": {
         "borrower_short": "0x161f…a724",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "860292.457462928330859127",
         "block": "11333040"
       }
@@ -3649,6 +3724,7 @@
       "display": {
         "borrower_short": "0x967c…cbc4",
         "market_symbol": "cUSDC",
+        "market_label": "cUSDC",
         "repay_amount": "4852.907998",
         "block": "11333040"
       }
@@ -3697,6 +3773,7 @@
       "display": {
         "borrower_short": "0x77e2…86ba",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "875.460724121752202462",
         "block": "11333040"
       }
@@ -3745,6 +3822,7 @@
       "display": {
         "borrower_short": "0x8a6f…1a5f",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "30785.852988352120000000",
         "block": "11333042"
       }
@@ -3793,6 +3871,7 @@
       "display": {
         "borrower_short": "0x6655…e784",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "34540.581079268513021852",
         "block": "11333043"
       }
@@ -3841,6 +3920,7 @@
       "display": {
         "borrower_short": "0xf337…ee0c",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "28623.878026716576342475",
         "block": "11333044"
       }
@@ -3889,6 +3969,7 @@
       "display": {
         "borrower_short": "0xe216…ba91",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "133797.767294143583747996",
         "block": "11333045"
       }
@@ -3937,6 +4018,7 @@
       "display": {
         "borrower_short": "0xb6c0…c0ba",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "135169.726984629937766300",
         "block": "11333045"
       }
@@ -3985,6 +4067,7 @@
       "display": {
         "borrower_short": "0xc3b9…db55",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "6399.289388725343092636",
         "block": "11333045"
       }
@@ -4033,6 +4116,7 @@
       "display": {
         "borrower_short": "0x189c…a44c",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "5941753.116851938000000000",
         "block": "11333047"
       }
@@ -4081,6 +4165,7 @@
       "display": {
         "borrower_short": "0xb1ad…9484",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1209337.640341657727532956",
         "block": "11333048"
       }
@@ -4129,6 +4214,7 @@
       "display": {
         "borrower_short": "0xed3c…ef42",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1209337.640341657727532956",
         "block": "11333048"
       }
@@ -4177,6 +4263,7 @@
       "display": {
         "borrower_short": "0x02b6…9967",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "15894.559378038539752788",
         "block": "11333048"
       }
@@ -4225,6 +4312,7 @@
       "display": {
         "borrower_short": "0x2e4a…26b1",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "107621.215304597834773546",
         "block": "11333049"
       }
@@ -4273,6 +4361,7 @@
       "display": {
         "borrower_short": "0x39c0…2a60",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1409540.897633104256969449",
         "block": "11333050"
       }
@@ -4321,6 +4410,7 @@
       "display": {
         "borrower_short": "0xed3c…ef42",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1960604.924660620103516060",
         "block": "11333050"
       }
@@ -4369,6 +4459,7 @@
       "display": {
         "borrower_short": "0xe79e…f240",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "4587.843624224076333605",
         "block": "11333051"
       }
@@ -4417,6 +4508,7 @@
       "display": {
         "borrower_short": "0xb1ad…9484",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "298394.484794957827329411",
         "block": "11333051"
       }
@@ -4465,6 +4557,7 @@
       "display": {
         "borrower_short": "0x42d0…8fae",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "15256.022113792470937884",
         "block": "11333052"
       }
@@ -4513,6 +4606,7 @@
       "display": {
         "borrower_short": "0x72d4…cc71",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "34980.592041872358695314",
         "block": "11333053"
       }
@@ -4561,6 +4655,7 @@
       "display": {
         "borrower_short": "0xe242…4cba",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "293904.789966250128669064",
         "block": "11333053"
       }
@@ -4609,6 +4704,7 @@
       "display": {
         "borrower_short": "0x8313…b37d",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "21260.144346118356176445",
         "block": "11333054"
       }
@@ -4657,6 +4753,7 @@
       "display": {
         "borrower_short": "0xa4f2…ea3c",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "60050.245379763033780717",
         "block": "11333056"
       }
@@ -4705,6 +4802,7 @@
       "display": {
         "borrower_short": "0xa97c…5b6b",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "13511.175642883170936592",
         "block": "11333057"
       }
@@ -4753,6 +4851,7 @@
       "display": {
         "borrower_short": "0xd4c5…0b42",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "45054.523940184558508084",
         "block": "11333058"
       }
@@ -4801,6 +4900,7 @@
       "display": {
         "borrower_short": "0xdb16…f476",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "131447.226984948415935727",
         "block": "11333059"
       }
@@ -4849,6 +4949,7 @@
       "display": {
         "borrower_short": "0x2af9…ec5d",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "6376.889742343717000000",
         "block": "11333059"
       }
@@ -4897,6 +4998,7 @@
       "display": {
         "borrower_short": "0xbd17…a490",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "10561.272796735018849546",
         "block": "11333059"
       }
@@ -4945,6 +5047,7 @@
       "display": {
         "borrower_short": "0x2682…08ab",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "555.856462986053623661",
         "block": "11333059"
       }
@@ -4993,6 +5096,7 @@
       "display": {
         "borrower_short": "0xc949…3225",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "843222.307323626798448540",
         "block": "11333060"
       }
@@ -5041,6 +5145,7 @@
       "display": {
         "borrower_short": "0xe630…f453",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "10467.529906496054791969",
         "block": "11333060"
       }
@@ -5089,6 +5194,7 @@
       "display": {
         "borrower_short": "0xe865…7623",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "15008.393823696651146403",
         "block": "11333062"
       }
@@ -5137,6 +5243,7 @@
       "display": {
         "borrower_short": "0x5f6b…49c8",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "3286.211072808682834606",
         "block": "11333063"
       }
@@ -5185,6 +5292,7 @@
       "display": {
         "borrower_short": "0xfa6e…b08f",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "24016.177119620643463297",
         "block": "11333063"
       }
@@ -5233,6 +5341,7 @@
       "display": {
         "borrower_short": "0x0f18…169a",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "40330.263616998905000000",
         "block": "11333064"
       }
@@ -5281,6 +5390,7 @@
       "display": {
         "borrower_short": "0x141f…f9b3",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "513992.051163196158779754",
         "block": "11333065"
       }
@@ -5329,6 +5439,7 @@
       "display": {
         "borrower_short": "0x9fd9…903a",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "89500.952600340976866023",
         "block": "11333067"
       }
@@ -5377,6 +5488,7 @@
       "display": {
         "borrower_short": "0x57ad…d489",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "35787.430542694351242635",
         "block": "11333067"
       }
@@ -5425,6 +5537,7 @@
       "display": {
         "borrower_short": "0x5c7c…e31c",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "139202.615065156435637082",
         "block": "11333067"
       }
@@ -5473,6 +5586,7 @@
       "display": {
         "borrower_short": "0xdedd…0ed5",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "3981.416563729897483611",
         "block": "11333068"
       }
@@ -5521,6 +5635,7 @@
       "display": {
         "borrower_short": "0x87e3…22ed",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1706.022897555070465607",
         "block": "11333068"
       }
@@ -5569,6 +5684,7 @@
       "display": {
         "borrower_short": "0x2682…08ab",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "4089.734410988514173098",
         "block": "11333068"
       }
@@ -5617,6 +5733,7 @@
       "display": {
         "borrower_short": "0xb1ad…9484",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "2887398.551839489960968092",
         "block": "11333069"
       }
@@ -5665,6 +5782,7 @@
       "display": {
         "borrower_short": "0x3fbe…bf90",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "2204.282913713977645951",
         "block": "11333074"
       }
@@ -5713,6 +5831,7 @@
       "display": {
         "borrower_short": "0x71be…ba29",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "12032.994123382300341004",
         "block": "11333074"
       }
@@ -5761,6 +5880,7 @@
       "display": {
         "borrower_short": "0x8e94…b6a4",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "21780.221731787854198687",
         "block": "11333074"
       }
@@ -5809,6 +5929,7 @@
       "display": {
         "borrower_short": "0x99ed…b62c",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "61519.271266429739990940",
         "block": "11333075"
       }
@@ -5857,6 +5978,7 @@
       "display": {
         "borrower_short": "0xc940…672a",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "4912.126409168238319141",
         "block": "11333079"
       }
@@ -5905,6 +6027,7 @@
       "display": {
         "borrower_short": "0xb1ad…9484",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "3558941.348072808000738024",
         "block": "11333083"
       }
@@ -5953,6 +6076,7 @@
       "display": {
         "borrower_short": "0x4c3a…b850",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "2082.700119309554672090",
         "block": "11333108"
       }
@@ -6001,6 +6125,7 @@
       "display": {
         "borrower_short": "0x87e3…22ed",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "853.012086703624661617",
         "block": "11333109"
       }
@@ -6049,6 +6174,7 @@
       "display": {
         "borrower_short": "0xac8e…9dca",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "55074.637823393911069995",
         "block": "11333115"
       }
@@ -6097,6 +6223,7 @@
       "display": {
         "borrower_short": "0xddc3…2460",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "52561.063663768124839551",
         "block": "11333123"
       }
@@ -6145,6 +6272,7 @@
       "display": {
         "borrower_short": "0xb1ad…9484",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "4332453.659961317707639485",
         "block": "11333123"
       }
@@ -6193,6 +6321,7 @@
       "display": {
         "borrower_short": "0x83a4…abb1",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "17553.934520172723306396",
         "block": "11333123"
       }
@@ -6241,6 +6370,7 @@
       "display": {
         "borrower_short": "0xdeb0…827d",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "16513.995662750419220829",
         "block": "11333124"
       }
@@ -6289,6 +6419,7 @@
       "display": {
         "borrower_short": "0xb1ad…9484",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "4374528.242722100979171228",
         "block": "11333125"
       }
@@ -6337,6 +6468,7 @@
       "display": {
         "borrower_short": "0x2fb1…4e31",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "13477.824157665281965980",
         "block": "11333126"
       }
@@ -6385,6 +6517,7 @@
       "display": {
         "borrower_short": "0x9ccc…e761",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "5312.309649206641497872",
         "block": "11333128"
       }
@@ -6433,6 +6566,7 @@
       "display": {
         "borrower_short": "0xfd97…5136",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "5193.191384131853577147",
         "block": "11333128"
       }
@@ -6481,6 +6615,7 @@
       "display": {
         "borrower_short": "0x47fe…8586",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "5002.140005194142699595",
         "block": "11333128"
       }
@@ -6529,6 +6664,7 @@
       "display": {
         "borrower_short": "0x8b05…a214",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "3762.553898735357605553",
         "block": "11333128"
       }
@@ -6577,6 +6713,7 @@
       "display": {
         "borrower_short": "0x5a92…4bbd",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "2869.026975187701928326",
         "block": "11333128"
       }
@@ -6625,6 +6762,7 @@
       "display": {
         "borrower_short": "0x6671…d519",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "6068.713583373264218369",
         "block": "11333131"
       }
@@ -6673,6 +6811,7 @@
       "display": {
         "borrower_short": "0xe9ed…358e",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "4691.473638210439955856",
         "block": "11333131"
       }
@@ -6721,6 +6860,7 @@
       "display": {
         "borrower_short": "0x9c67…09b5",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "9791.242447921185261542",
         "block": "11333132"
       }
@@ -6769,6 +6909,7 @@
       "display": {
         "borrower_short": "0xbb0d…1690",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "3805.352067438632852415",
         "block": "11333132"
       }
@@ -6817,6 +6958,7 @@
       "display": {
         "borrower_short": "0x4ac7…e0ae",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "3278.309272269994645223",
         "block": "11333132"
       }
@@ -6865,6 +7007,7 @@
       "display": {
         "borrower_short": "0xdd10…813e",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "3677.906602142216486812",
         "block": "11333132"
       }
@@ -6913,6 +7056,7 @@
       "display": {
         "borrower_short": "0x6d16…27e6",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "4509.219211985741152156",
         "block": "11333132"
       }
@@ -6961,6 +7105,7 @@
       "display": {
         "borrower_short": "0x0be0…b852",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "3667.749559053426098076",
         "block": "11333133"
       }
@@ -7009,6 +7154,7 @@
       "display": {
         "borrower_short": "0x3a7a…c2f5",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "2695.256026233658325768",
         "block": "11333134"
       }
@@ -7057,6 +7203,7 @@
       "display": {
         "borrower_short": "0x1b75…26eb",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "2351.527381361745886614",
         "block": "11333134"
       }
@@ -7105,6 +7252,7 @@
       "display": {
         "borrower_short": "0x008b…f4eb",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "5003.879621233964220316",
         "block": "11333135"
       }
@@ -7153,6 +7301,7 @@
       "display": {
         "borrower_short": "0x0b3a…e37a",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "2503.230639400586051484",
         "block": "11333135"
       }
@@ -7201,6 +7350,7 @@
       "display": {
         "borrower_short": "0x23b6…03bb",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "2542.342174854531776412",
         "block": "11333135"
       }
@@ -7249,6 +7399,7 @@
       "display": {
         "borrower_short": "0x0060…8e3d",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1910.380306677690531740",
         "block": "11333136"
       }
@@ -7297,6 +7448,7 @@
       "display": {
         "borrower_short": "0x11f0…9b1b",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "2402.614564327269741005",
         "block": "11333136"
       }
@@ -7345,6 +7497,7 @@
       "display": {
         "borrower_short": "0x078f…2c03",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1999.991379586065053232",
         "block": "11333136"
       }
@@ -7393,6 +7546,7 @@
       "display": {
         "borrower_short": "0x88d6…a07f",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1648.811488327400909319",
         "block": "11333137"
       }
@@ -7441,6 +7595,7 @@
       "display": {
         "borrower_short": "0x9efc…626e",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1449.359597063292721055",
         "block": "11333137"
       }
@@ -7489,6 +7644,7 @@
       "display": {
         "borrower_short": "0x320a…56de",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1899.879086414367031196",
         "block": "11333137"
       }
@@ -7537,6 +7693,7 @@
       "display": {
         "borrower_short": "0x196d…28d8",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1481.763854245772129421",
         "block": "11333138"
       }
@@ -7585,6 +7742,7 @@
       "display": {
         "borrower_short": "0x036a…123e",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1418.192472774771474332",
         "block": "11333138"
       }
@@ -7633,6 +7791,7 @@
       "display": {
         "borrower_short": "0x6b55…3e53",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1735.266099442648350620",
         "block": "11333138"
       }
@@ -7681,6 +7840,7 @@
       "display": {
         "borrower_short": "0xcaa3…c939",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1350.051180477541725903",
         "block": "11333140"
       }
@@ -7729,6 +7889,7 @@
       "display": {
         "borrower_short": "0xf43d…ca80",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1344.748279385736289481",
         "block": "11333141"
       }
@@ -7777,6 +7938,7 @@
       "display": {
         "borrower_short": "0xe10f…bf4b",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1490.986920101781095241",
         "block": "11333141"
       }
@@ -7825,6 +7987,7 @@
       "display": {
         "borrower_short": "0xc968…ab93",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "838.295467944026046364",
         "block": "11333160"
       }
@@ -7873,6 +8036,7 @@
       "display": {
         "borrower_short": "0x2836…c2ae",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "891.365960903839536213",
         "block": "11333160"
       }
@@ -7921,6 +8085,7 @@
       "display": {
         "borrower_short": "0xd138…b474",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "906.639661141451443015",
         "block": "11333161"
       }
@@ -7969,6 +8134,7 @@
       "display": {
         "borrower_short": "0xadd0…a206",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "727.246401166106379616",
         "block": "11333177"
       }
@@ -8017,6 +8183,7 @@
       "display": {
         "borrower_short": "0xcdbf…ea84",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "652.036666461073571740",
         "block": "11333177"
       }
@@ -8065,6 +8232,7 @@
       "display": {
         "borrower_short": "0xb00d…2d10",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "605.974981730811483035",
         "block": "11333180"
       }
@@ -8113,6 +8281,7 @@
       "display": {
         "borrower_short": "0xc44f…dbc4",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "616.131391332951523228",
         "block": "11333180"
       }
@@ -8161,6 +8330,7 @@
       "display": {
         "borrower_short": "0x2aef…b977",
         "market_symbol": "cUSDC",
+        "market_label": "cUSDC",
         "repay_amount": "892.019372",
         "block": "11333260"
       }
@@ -8209,6 +8379,7 @@
       "display": {
         "borrower_short": "0xced4…3d5e",
         "market_symbol": "cCOMP",
+        "market_label": "cCOMP",
         "repay_amount": "6.420797073374941971",
         "block": "11333962"
       }
@@ -8257,6 +8428,7 @@
       "display": {
         "borrower_short": "0x652c…2d29",
         "market_symbol": "cUSDC",
+        "market_label": "cUSDC",
         "repay_amount": "373.285620",
         "block": "11335056"
       }
@@ -8305,6 +8477,7 @@
       "display": {
         "borrower_short": "0x737d…1fc8",
         "market_symbol": "cUSDT",
+        "market_label": "cUSDT",
         "repay_amount": "29724.594539",
         "block": "11335286"
       }
@@ -8353,6 +8526,7 @@
       "display": {
         "borrower_short": "0x2c4e…3fd8",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "18879.732624832845578140",
         "block": "11335286"
       }
@@ -8401,6 +8575,7 @@
       "display": {
         "borrower_short": "0x3918…87fa",
         "market_symbol": "cUSDT",
+        "market_label": "cUSDT",
         "repay_amount": "264.986790",
         "block": "11335746"
       }
@@ -8449,6 +8624,7 @@
       "display": {
         "borrower_short": "0xda87…6726",
         "market_symbol": "cUSDT",
+        "market_label": "cUSDT",
         "repay_amount": "66.586544",
         "block": "11335746"
       }
@@ -8497,6 +8673,7 @@
       "display": {
         "borrower_short": "0xdf63…0913",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "864518.020911268800000000",
         "block": "11335996"
       }
@@ -8545,6 +8722,7 @@
       "display": {
         "borrower_short": "0x68cb…ea8e",
         "market_symbol": "cETH",
+        "market_label": "cETH",
         "repay_amount": "0.793603675409113779",
         "block": "11336094"
       }
@@ -8593,6 +8771,7 @@
       "display": {
         "borrower_short": "0x6221…d254",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "528.264864128258998172",
         "block": "11336110"
       }
@@ -8641,6 +8820,7 @@
       "display": {
         "borrower_short": "0xa006…1891",
         "market_symbol": "cETH",
+        "market_label": "cETH",
         "repay_amount": "2.394006412754307000",
         "block": "11336336"
       }
@@ -8689,6 +8869,7 @@
       "display": {
         "borrower_short": "0x8352…d67a",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "1054.401908289235430093",
         "block": "11336442"
       }
@@ -8737,6 +8918,7 @@
       "display": {
         "borrower_short": "0xda87…6726",
         "market_symbol": "cDAI",
+        "market_label": "cDAI",
         "repay_amount": "51.000000000000000000",
         "block": "11336663"
       }
