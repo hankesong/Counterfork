@@ -1,0 +1,92 @@
+{
+  "audit_attempts": [
+    {
+      "attempt": "1",
+      "cache_key": "c3382f520bdb9102dd92e3d695617364243884d587d583b319f8e98a1175a6ac",
+      "error": "bare digit outside reference"
+    },
+    {
+      "attempt": "2",
+      "cache_key": "5ac365785807054712a3ab0f3689f77471ee8e93b0d966e7ba064df42b251429",
+      "error": "invalid report schema"
+    },
+    {
+      "attempt": "3",
+      "cache_key": "dbd368558798a9937eb593860debc189aa6e205d39a1c4ce35d1be6fe720c18f",
+      "error": "invalid report schema"
+    }
+  ],
+  "audit_result": "initial plus two retries rejected; no further network calls",
+  "cast_vectors": [
+    {
+      "bytes": "0",
+      "cast": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+      "keccak256": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+      "match": true,
+      "name": "empty"
+    },
+    {
+      "bytes": "3",
+      "cast": "0x4e03657aea45a94fc7d47ba826c8d667c0d1e6e33a64a036ec44f58fa12d6c45",
+      "keccak256": "0x4e03657aea45a94fc7d47ba826c8d667c0d1e6e33a64a036ec44f58fa12d6c45",
+      "match": true,
+      "name": "abc"
+    },
+    {
+      "bytes": "48",
+      "cast": "0x9640a6d83372f46da9c0385a943a467b95015b54712566c635d07a5231cb6355",
+      "keccak256": "0x9640a6d83372f46da9c0385a943a467b95015b54712566c635d07a5231cb6355",
+      "match": true,
+      "name": "chinese_json"
+    },
+    {
+      "bytes": "276252",
+      "cast": "0x648b16990df0fdde322d8edf3b474d38848da65f2fdd23575e0a8476834685b2",
+      "keccak256": "0x648b16990df0fdde322d8edf3b474d38848da65f2fdd23575e0a8476834685b2",
+      "match": true,
+      "name": "large_experiments_json"
+    },
+    {
+      "bytes": "23",
+      "cast": "0x51aec3f6bc0c3ac98b0c63e7e15252ce548cfeeb15f780e4c744b6fefcbba2ef",
+      "keccak256": "0x51aec3f6bc0c3ac98b0c63e7e15252ce548cfeeb15f780e4c744b6fefcbba2ef",
+      "match": true,
+      "name": "caseId"
+    }
+  ],
+  "hypothesis_result": "accepted",
+  "implementation_commit": "ba031ad87b1478659a2704c4dd3c2ea1fc8512d7",
+  "llm_completed_requests": "5",
+  "manifestHash": null,
+  "manifest_script_commit": null,
+  "missing_outputs": [
+    "data/phase4/report.json",
+    "data/phase4/report.md",
+    "data/phase4/manifest.json"
+  ],
+  "model": "deepseek-v4.1-flash",
+  "offline_tests_passed": "29",
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "Phase 4 actual failed run and local offline checks"
+  },
+  "resultsHash": "0xb40a7ca6f32cf9d8491fd864826f010649dbfe6b78ee16310ef8f2666000f139",
+  "sandbox_network_failures": "2",
+  "schemaVersion": "1",
+  "second_run": {
+    "performed": false,
+    "reason": "No accepted report or manifest; three-output byte stability cannot be claimed."
+  },
+  "status": "STOPPED_VALIDATION_RETRY_LIMIT",
+  "validator_rejections": {
+    "audit": "3",
+    "hypothesis": "1",
+    "reasons": [
+      "reference does not exist: {{ref:data/phase2/summary.json#/unavailable_features/0}}",
+      "bare digit outside reference",
+      "invalid report schema"
+    ],
+    "total": "4"
+  },
+  "worktree_obstacle": "untracked out-botchain/ from concurrent Phase 5a, outside authorized modification paths"
+}

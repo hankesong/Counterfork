@@ -1,0 +1,248 @@
+{
+  "evidence_summary": {
+    "critical": {
+      "bins": [
+        {
+          "count": "0",
+          "lower": "0",
+          "upper": "1.00"
+        },
+        {
+          "count": "3",
+          "lower": "1.00",
+          "upper": "1.05"
+        },
+        {
+          "count": "7",
+          "lower": "1.05",
+          "upper": "1.10"
+        },
+        {
+          "count": "7",
+          "lower": "1.10",
+          "upper": "1.20"
+        },
+        {
+          "count": "2",
+          "lower": "1.20",
+          "upper": "1.30"
+        },
+        {
+          "count": "0",
+          "lower": "1.30",
+          "upper": "Infinity"
+        }
+      ],
+      "count": "19",
+      "evidence_refs": [
+        "{{ref:data/phase3/experiments.json#/experiments/0/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/1/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/2/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/3/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/4/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/5/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/6/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/7/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/8/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/9/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/10/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/11/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/12/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/14/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/15/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/16/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/17/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/18/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/19/critical_price}}"
+      ],
+      "maximum": "1.221144645869215437",
+      "median": "1.098409283136292805",
+      "minimum": "1.016588294166032915"
+    },
+    "diagnostic_reproduced": {
+      "count": "4",
+      "evidence_refs": [
+        "{{ref:data/phase3/experiments.json#/experiments/8}}",
+        "{{ref:data/phase3/experiments.json#/experiments/9}}",
+        "{{ref:data/phase3/experiments.json#/experiments/14}}",
+        "{{ref:data/phase3/experiments.json#/experiments/17}}"
+      ],
+      "indices": [
+        "8",
+        "9",
+        "14",
+        "17"
+      ]
+    },
+    "not_applicable": {
+      "count": "1",
+      "evidence_refs": [
+        "{{ref:data/phase3/experiments.json#/experiments/13}}"
+      ],
+      "indices": [
+        "13"
+      ]
+    },
+    "not_reproduced": {
+      "count": "5",
+      "evidence_refs": [
+        "{{ref:data/phase3/experiments.json#/experiments/8}}",
+        "{{ref:data/phase3/experiments.json#/experiments/9}}",
+        "{{ref:data/phase3/experiments.json#/experiments/10}}",
+        "{{ref:data/phase3/experiments.json#/experiments/14}}",
+        "{{ref:data/phase3/experiments.json#/experiments/17}}"
+      ],
+      "indices": [
+        "8",
+        "9",
+        "10",
+        "14",
+        "17"
+      ]
+    },
+    "passed": {
+      "count": "14",
+      "evidence_refs": [
+        "{{ref:data/phase3/experiments.json#/experiments/0}}",
+        "{{ref:data/phase3/experiments.json#/experiments/1}}",
+        "{{ref:data/phase3/experiments.json#/experiments/2}}",
+        "{{ref:data/phase3/experiments.json#/experiments/3}}",
+        "{{ref:data/phase3/experiments.json#/experiments/4}}",
+        "{{ref:data/phase3/experiments.json#/experiments/5}}",
+        "{{ref:data/phase3/experiments.json#/experiments/6}}",
+        "{{ref:data/phase3/experiments.json#/experiments/7}}",
+        "{{ref:data/phase3/experiments.json#/experiments/11}}",
+        "{{ref:data/phase3/experiments.json#/experiments/12}}",
+        "{{ref:data/phase3/experiments.json#/experiments/15}}",
+        "{{ref:data/phase3/experiments.json#/experiments/16}}",
+        "{{ref:data/phase3/experiments.json#/experiments/18}}",
+        "{{ref:data/phase3/experiments.json#/experiments/19}}"
+      ],
+      "indices": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "11",
+        "12",
+        "15",
+        "16",
+        "18",
+        "19"
+      ]
+    },
+    "preexisting": {
+      "count": "6",
+      "evidence_refs": [
+        "{{ref:data/phase3/experiments.json#/experiments/4}}",
+        "{{ref:data/phase3/experiments.json#/experiments/6}}",
+        "{{ref:data/phase3/experiments.json#/experiments/11}}",
+        "{{ref:data/phase3/experiments.json#/experiments/12}}",
+        "{{ref:data/phase3/experiments.json#/experiments/16}}",
+        "{{ref:data/phase3/experiments.json#/experiments/19}}"
+      ],
+      "indices": [
+        "4",
+        "6",
+        "11",
+        "12",
+        "16",
+        "19"
+      ]
+    },
+    "unexplained": {
+      "count": "1",
+      "evidence_refs": [
+        "{{ref:data/phase3/experiments.json#/experiments/10}}"
+      ],
+      "indices": [
+        "10"
+      ]
+    }
+  },
+  "feature_limitations": [
+    "summary.json 不含日内时间直方图或前二十账户明细；未向假设模型提供这些数据。"
+  ],
+  "hypotheses": [
+    {
+      "evidence_refs": [
+        "{{ref:data/phase2/summary.json#/dai_related/borrower_count}}",
+        "{{ref:data/phase2/summary.json#/dai_related/event_count}}",
+        "{{ref:data/phase2/summary.json#/dai_related/repay_usd_estimate}}",
+        "{{ref:data/phase2/summary.json#/total/repay_usd_estimate}}",
+        "{{ref:data/phase2/summary.json#/market_totals/1/market_label}}",
+        "{{ref:data/phase2/summary.json#/market_totals/1/borrower_count}}",
+        "{{ref:data/phase2/summary.json#/market_totals/1/event_count}}",
+        "{{ref:data/phase2/summary.json#/market_totals/1/repay_usd_estimate}}",
+        "{{ref:data/phase2/summary.json#/valuation_note}}"
+      ],
+      "id": "H1",
+      "parameters": {
+        "prices": [
+          "{{ref:data/phase3/sensitivity.json#/rows/0/price_usd}}",
+          "{{ref:data/phase3/sensitivity.json#/rows/1/price_usd}}",
+          "{{ref:data/phase3/sensitivity.json#/rows/2/price_usd}}",
+          "{{ref:data/phase3/sensitivity.json#/rows/3/price_usd}}",
+          "{{ref:data/phase3/sensitivity.json#/rows/4/price_usd}}"
+        ]
+      },
+      "reason": "DAI 相关借款人和事件在汇总中占主导，cDAI 市场汇总规模最大，且存在唯一模板 dai_price_override 可用于价格覆盖敏感性实验，因此值得实验；实验覆盖不等于原因已验证。",
+      "run_experiment": true,
+      "status": "EXPERIMENT_COVERED",
+      "template": "dai_price_override"
+    },
+    {
+      "evidence_refs": [
+        "{{ref:data/phase2/summary.json#/valuation_note}}",
+        "{{ref:data/phase2/summary.json#/scope}}",
+        "{{ref:data/phase2/summary.json#/market_totals/1/basis}}",
+        "{{ref:data/phase2/summary.json#/window/start_utc}}",
+        "{{ref:data/phase2/summary.json#/window/end_utc}}"
+      ],
+      "id": "H2",
+      "parameters": {},
+      "reason": "summary 仅以 N−1 预言机价格估值用于排序，并说明不等于清算实际价格；未提供抵押品真实下跌的直接特征，且无对应实验模板，因此不值得实验。",
+      "run_experiment": false,
+      "status": "UNVERIFIED",
+      "template": null
+    },
+    {
+      "evidence_refs": [
+        "{{ref:data/phase2/summary.json#/scope}}",
+        "{{ref:data/phase2/summary.json#/window/block_count}}",
+        "{{ref:data/phase2/summary.json#/valuation_note}}",
+        "{{ref:data/phase2/summary.json#/market_totals/0/basis}}"
+      ],
+      "id": "H3",
+      "parameters": {},
+      "reason": "summary 结构化字段未包含协议参数变更的证据或比较维度，且无对应实验模板，因此无法从现有特征判断，不值得实验。",
+      "run_experiment": false,
+      "status": "UNVERIFIED",
+      "template": null
+    },
+    {
+      "evidence_refs": [
+        "{{ref:data/phase2/summary.json#/dai_related/borrower_count}}",
+        "{{ref:data/phase2/summary.json#/dai_related/event_count}}",
+        "{{ref:data/phase2/summary.json#/scope}}",
+        "{{ref:data/phase2/summary.json#/valuation_note}}"
+      ],
+      "id": "H4",
+      "parameters": {},
+      "reason": "summary 未提供前排账户信息或日内分布；仅有借款人及事件汇总计数，无法归因于借款人自身操作，且无对应模板，因此不值得实验。",
+      "run_experiment": false,
+      "status": "UNVERIFIED",
+      "template": null
+    }
+  ],
+  "model": "deepseek-v4.1-flash",
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "LLM selection of frozen structured Phase 2 summary"
+  },
+  "schemaVersion": "1"
+}
