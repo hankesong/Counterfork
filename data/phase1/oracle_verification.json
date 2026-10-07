@@ -1,0 +1,23 @@
+{
+  "source_url": "https://etherscan.io/address/0x922018674c12a7f0d394ebeef9b58f186cde13c1#code",
+  "contract": "UniswapAnchoredView",
+  "source_sha256": "526ede0f7b0dd8c9e46795a61fa4f0257dedf80bbebe67ec8fef5cd2a801edf3",
+  "feed_signature": "postPrices(bytes[],bytes[],string[])",
+  "feed_selector": "0xecc1e984",
+  "event_topics": {
+    "AnchorPriceUpdated": "0xf63d078e0de851897107641e96093a59e5ddc3c25e7b85a2585e3eba9e774a7b",
+    "PriceGuarded": "0x90756d4c8646a4591078abac0e4e32dfa8437921729e36d51b88b659d265bfde",
+    "PriceUpdated": "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4",
+    "ReporterInvalidated": "0x98a13f7b181a3a1f99c871e7a3507d4a037d386d157279f978e0d555ae9fe74d",
+    "UniswapWindowUpdated": "0xe37d39315e3419c0937360f1ac88f2c52ecf67e3b22b367f82047ddb4591904a"
+  },
+  "accepted_event": "PriceUpdated(string,uint256)",
+  "price_event_decimals": "6",
+  "conversion": "event price * 10^30 / tokenConfig.baseUnit; DAI baseUnit=10^18",
+  "not_accepted_updates": [
+    "PriceGuarded",
+    "AnchorPriceUpdated",
+    "UniswapWindowUpdated",
+    "OpenOraclePriceData.Write"
+  ]
+}

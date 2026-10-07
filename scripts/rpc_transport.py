@@ -103,7 +103,7 @@ def exchange(url, payload):
 
 
 @contextlib.contextmanager
-def rpc_proxy(upstream, observations=None):
+def rpc_proxy(upstream, observations=None, *, cached=False):
     """Route cast/forge requests through the same limiter; discard HTML bodies."""
     class Handler(BaseHTTPRequestHandler):
         def log_message(self, *_args):
@@ -112,7 +112,14 @@ def rpc_proxy(upstream, observations=None):
         def do_POST(self):
             try:
                 payload = json.loads(self.rfile.read(int(self.headers["Content-Length"])))
-                metadata, data = exchange(upstream, payload)
+                if cached:
+                    # Import here to avoid the transport/cache module cycle.
+                    from rpc_cache import rpc
+                    result = rpc(payload['method'], payload.get('params', []), url=upstream)
+                    metadata = {'cache_enabled': True}
+                    data = {'jsonrpc': '2.0', 'id': payload.get('id'), 'result': result}
+                else:
+                    metadata, data = exchange(upstream, payload)
                 if observations is not None:
                     observations.append({"request": payload, **metadata})
                 if data is None:

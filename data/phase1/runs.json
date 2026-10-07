@@ -1,0 +1,26 @@
+[
+  {
+    "result_cache_hit": false,
+    "rpc_requests_this_run": 0,
+    "status": "passed"
+  },
+  {
+    "result_cache_hit": false,
+    "rpc_requests_this_run": 0,
+    "status": "passed",
+    "implementation_sha256": "8255222534479c26724dbe3a5ee28b602b2cda3ffba5706207c3aa1436495a19",
+    "fork_result_sha256": "e7b537eb06910dcf682aefd35b92bac7eca612a367a794d48490e95f4cbf2638"
+  },
+  {
+    "result_cache_hit": true,
+    "rpc_requests_this_run": 0,
+    "status": "passed"
+  },
+  {
+    "result_cache_hit": false,
+    "rpc_requests_this_run": 0,
+    "status": "passed",
+    "implementation_sha256": "bf157643921611ff88db0dc7f49a55a61db419710db37f6ba5be74f5afabc5d4",
+    "fork_result_sha256": "e7b537eb06910dcf682aefd35b92bac7eca612a367a794d48490e95f4cbf2638"
+  }
+]

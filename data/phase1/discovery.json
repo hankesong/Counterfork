@@ -1,0 +1,102 @@
+{
+  "probes": [
+    {
+      "endpoint": "ETH_RPC_URL",
+      "span": 1,
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 27: Unknown state. First available state is 1"
+    },
+    {
+      "endpoint": "ETH_RPC_URL",
+      "span": 50,
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 27: Unknown state. First available state is 1"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_1",
+      "span": 1,
+      "ok": false,
+      "error": "eth_getLogs: RPC error code -32602: Archive requests require a personal token. Get one at: [redacted URL]"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_1",
+      "span": 50,
+      "ok": false,
+      "error": "eth_getLogs: RPC error code -32602: Archive requests require a personal token. Get one at: [redacted URL]"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_2",
+      "span": 1,
+      "ok": true,
+      "logs": [
+        {
+          "address": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+          "topics": [
+            "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52"
+          ],
+          "data": "0x000000000000000000000000e280db8782e17e810fa71cbcabffe4eb24c65125000000000000000000000000d4c5226e2108c722bb86ff8327727410dc120b4200000000000000000000000000000000000000000000098a691f7e7fd961983400000000000000000000000039aa39c021dfbae8fac545936693ac917d5e756300000000000000000000000000000000000000000000000000010179cb4cf47d",
+          "blockNumber": "0xacedc2",
+          "transactionHash": "0xb4ff3f106761e83691d12305fdb8b53da46c26928af50637a44fa43765c053ce",
+          "transactionIndex": "0x24",
+          "blockHash": "0x22de7c1f703626fca663423085ca9bf50b6a6019ad2402ebdcd8712ae4f725c6",
+          "logIndex": "0x5c",
+          "removed": false,
+          "blockTimestamp": "0x5fbf6e9f"
+        }
+      ]
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_2",
+      "span": 50,
+      "ok": false,
+      "error": "eth_getLogs: RPC error code 27: Unknown state. First available state is 1"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_3",
+      "span": 1,
+      "ok": false,
+      "error": "eth_getLogs: invalid or null response"
+    },
+    {
+      "endpoint": "CANDIDATE_RPC_3",
+      "span": 50,
+      "ok": false,
+      "error": "eth_getLogs: invalid or null response"
+    }
+  ],
+  "web": [
+    {
+      "label": "invezz",
+      "source": "https://invezz.com/news/2020/11/27/increased-dai-price-allowed-compound-comp-liquidator-to-earn-4-million/",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "label": "decrypt",
+      "source": "https://decrypt.co/49657/oracle-exploit-sees-100-million-liquidated-on-compound",
+      "ok": true
+    },
+    {
+      "label": "search",
+      "source": "https://www.google.com/search?q=Compound+November+26+2020+46+million+liquidation+etherscan",
+      "ok": true
+    },
+    {
+      "label": "etherscan_cdai",
+      "source": "https://etherscan.io/txs?a=0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643&startblock=11330639&endblock=11337150&ps=100",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "label": "bing",
+      "source": "https://www.bing.com/search?q=compound+2020+%2246%22+%22etherscan%22",
+      "ok": true
+    },
+    {
+      "label": "theblock",
+      "source": "https://www.theblock.co/post/85850/dai-compound-dydx-liquidations-defi",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}

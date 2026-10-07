@@ -1,0 +1,26 @@
+{
+  "block": "11333036",
+  "timestamp": "1606380900",
+  "oracle": "0x922018674c12a7F0D394ebEEf9B58F186CdE13c1",
+  "underlying": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+  "underlying_decimals": "18",
+  "reference": {
+    "dai_price_raw": "1080000000000000000",
+    "err": "0",
+    "liquidity": "119323202441326601289267",
+    "shortfall": "0"
+  },
+  "real": {
+    "dai_price_raw": "1095299000000000000",
+    "err": "0",
+    "liquidity": "0",
+    "shortfall": "61726547573096117664531"
+  },
+  "counterfactual": {
+    "dai_price_raw": "1000000000000000000",
+    "err": "0",
+    "liquidity": "1066050439591063023036037",
+    "shortfall": "0"
+  },
+  "diagnostic": null
+}
