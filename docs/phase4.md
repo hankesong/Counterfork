@@ -55,6 +55,15 @@ Phase 5g 独立复现应隔离并清空自身 RPC/Foundry 缓存；勿清空本�
 
 v1 `data/phase4/manifest.json` 原样保留。其缺陷是仅记录 `script_commit=15344718`：它是 Phase 4 报告代码的提交，并不是产生 Phase 3 结果的代码。v2 增加 `producerCommits`，每阶段包含 commit、按文件顺序拼接 Git blob 的 SHA-256 和逐文件 SHA-256；`script_commit` 改为生成 v2 清单的脚本提交。v2 的 resultsHash 与 v1 完全相同。
 
+- v2 manifestHash：`0xcfe7939cb83e66db00afe9194a9ccdc2d9226df66cb7b748bd1e4e2e8d8b4616`
+- v2 resultsHash：`0xb40a7ca6f32cf9d8491fd864826f010649dbfe6b78ee16310ef8f2666000f139`
+- v2 script_commit：`e3da500941ed1e0bf7ad90fe1cf6552dfa6ccec5`
+- Phase 2 Git 源码指纹：`5180c1d2ede0aa533b86a93c889f69df40671371a262c7bebba73885f190dced`
+- Phase 3 Git 源码指纹：`3bb5fdb92ba118470826ed9d4ec4b623ccc979b0e6080e6c6239d06f1bd87f1b`
+- Phase 4 Git 源码指纹：`00b9fc2d1c358ac1e1fae18c24c14b01d18a889eb1747653a1de72d2a08226e7`
+
+`cast keccak` 对 v2 完整规范化 JSON 的独立交叉核验一致；v1 文件未改变，v1/v2/当前冻结 Phase 3 投影三方 resultsHash 相同。验证记录见 `data/phase4/verification-v2.json`。这项冻结证据核对不是正式 quick 复现结果。
+
 | 阶段 | producer commit | 依据 |
 | --- | --- | --- |
 | Phase 2 | `0faa08c447396a5c592b3f1842abd0ac2a181cb4` | 当前 events/summary 的原始结果提交；此后 accounts 的变化仅为 Phase 3 分析状态，样本、排名、偿还估值权重逐项一致 |

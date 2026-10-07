@@ -1,0 +1,1506 @@
+{
+  "accounts": [
+    {
+      "borrower": "0x909b443761bbd7fbb876ecde71a37e1433f6af6f",
+      "forkBlock": "11333036",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "logIndex": "36",
+          "tx_hash": "0x53e09adb77d1e3ea593c933a85bd4472371e03da12e3fec853b5bc7fac50f3e4"
+        },
+        "reference": {
+          "block": "11333036",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11333037",
+      "status": "passed"
+    },
+    {
+      "borrower": "0xb1adceddb2941033a090dd166a462fe1c2029484",
+      "forkBlock": "11333039",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "logIndex": "74",
+          "tx_hash": "0xc92130654bb8ef0f339cc95205a0fccb46873555e6d4abb260bcfb50600d2754"
+        },
+        "reference": {
+          "block": "11333039",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11333040",
+      "status": "passed"
+    },
+    {
+      "borrower": "0xed3c4c5d7a9abfd74f33c1042793dfd6a6daef42",
+      "forkBlock": "11333018",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "logIndex": "9",
+          "tx_hash": "0x083a94b934ba5355cc2575d58e4f74a94c39fc8f57f0a47b240bf683fdeab5f1"
+        },
+        "reference": {
+          "block": "11333018",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11333019",
+      "status": "passed"
+    },
+    {
+      "borrower": "0x189c2c1834b1414a6aee9eba5dc4b4d547c9a44c",
+      "forkBlock": "11333046",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "logIndex": "234",
+          "tx_hash": "0x7cd6f851520447abc4258e5a7b0dd3bd6be3907a7ea7b7bf3c7d34eca51c56c6"
+        },
+        "reference": {
+          "block": "11333046",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11333047",
+      "status": "passed"
+    },
+    {
+      "borrower": "0x39c09fdc4e5c5ab72f6319ddbc2cae40e67b2a60",
+      "forkBlock": "11333049",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "block": "11333049",
+          "note": "区块内无喂价",
+          "state": "N-1 oracle state"
+        },
+        "reference": {
+          "block": "11333049",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11333050",
+      "status": "passed"
+    },
+    {
+      "borrower": "0x889abdd2bc0f3a884e607279ba132501698fbcd5",
+      "forkBlock": "11333028",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "logIndex": "25",
+          "tx_hash": "0x730ff4726ed7fcc85d16b13cc631a3b102600c89c655eb298858a5330522a0e8"
+        },
+        "reference": {
+          "block": "11333028",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11333029",
+      "status": "passed"
+    },
+    {
+      "borrower": "0xc9493738f07ddc43f1a004d4bb461fa42de23225",
+      "forkBlock": "11333059",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "block": "11333059",
+          "note": "区块内无喂价",
+          "state": "N-1 oracle state"
+        },
+        "reference": {
+          "block": "11333059",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11333060",
+      "status": "passed"
+    },
+    {
+      "borrower": "0x161fac24d54698755dab0fcd65e2c883928ca724",
+      "forkBlock": "11333039",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "logIndex": "137",
+          "tx_hash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147"
+        },
+        "reference": {
+          "block": "11333039",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11333040",
+      "status": "passed"
+    },
+    {
+      "borrower": "0x03324cfffabc10193de63186a374d7cfe932b162",
+      "forkBlock": "11333018",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "logIndex": "9",
+          "tx_hash": "0x083a94b934ba5355cc2575d58e4f74a94c39fc8f57f0a47b240bf683fdeab5f1"
+        },
+        "reference": {
+          "block": "11333018",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11333019",
+      "status": "real_not_reproduced"
+    },
+    {
+      "borrower": "0xdf63be2e473ba04c26b1609e51d08cf0d78e0913",
+      "forkBlock": "11335995",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "block": "11335995",
+          "note": "区块内无喂价",
+          "state": "N-1 oracle state"
+        },
+        "reference": {
+          "block": "11335995",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11335996",
+      "status": "real_not_reproduced"
+    },
+    {
+      "borrower": "0xf2df969f59b2c86e4b230da88918cdebcfc4ccbc",
+      "forkBlock": "11332947",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "block": "11332947",
+          "note": "区块内无喂价",
+          "state": "N-1 oracle state"
+        },
+        "reference": {
+          "block": "11332947",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11332948",
+      "status": "real_not_reproduced"
+    },
+    {
+      "borrower": "0x141f59a0283303a6b882b4d6973e418f8d75f9b3",
+      "forkBlock": "11333064",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "block": "11333064",
+          "note": "区块内无喂价",
+          "state": "N-1 oracle state"
+        },
+        "reference": {
+          "block": "11333064",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11333065",
+      "status": "passed"
+    },
+    {
+      "borrower": "0xe24286adfc053f76888aa51d9a94f6c1519b4cba",
+      "forkBlock": "11333052",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "block": "11333052",
+          "note": "区块内无喂价",
+          "state": "N-1 oracle state"
+        },
+        "reference": {
+          "block": "11333052",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11333053",
+      "status": "passed"
+    },
+    {
+      "borrower": "0xdac0db00fd0953d8731f86c6908366388bfcc1f8",
+      "forkBlock": "11331592",
+      "priceSources": {},
+      "sampleBlock": "11331593",
+      "status": "not_applicable"
+    },
+    {
+      "borrower": "0x339dab47bdd20b4c05950c4306821896cfb1ff1a",
+      "forkBlock": "11333024",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "block": "11333024",
+          "note": "区块内无喂价",
+          "state": "N-1 oracle state"
+        },
+        "reference": {
+          "block": "11333024",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11333025",
+      "status": "real_not_reproduced"
+    },
+    {
+      "borrower": "0xb6c0276ad1d87c6cf6dfa323d0c3f6840121c0ba",
+      "forkBlock": "11333039",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "logIndex": "74",
+          "tx_hash": "0xc92130654bb8ef0f339cc95205a0fccb46873555e6d4abb260bcfb50600d2754"
+        },
+        "reference": {
+          "block": "11333039",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11333040",
+      "status": "passed"
+    },
+    {
+      "borrower": "0x5c7c6d069ba232718f37c27a9549b547c359e31c",
+      "forkBlock": "11333066",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "logIndex": "112",
+          "tx_hash": "0x2bccb478781e1f50ead5381cb6ed5fcc97814d1b524f8a4ba2d1c0b041408b3c"
+        },
+        "reference": {
+          "block": "11333066",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11333067",
+      "status": "passed"
+    },
+    {
+      "borrower": "0x57adad5729e839acd4019fc9e79c2685a42ed489",
+      "forkBlock": "11331592",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "logIndex": "69",
+          "tx_hash": "0x1758182cf0daa53515e490981fbf373041ccdc5dd204e22d2a26cbe69f0abe99"
+        },
+        "reference": {
+          "block": "11331592",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11331593",
+      "status": "real_not_reproduced"
+    },
+    {
+      "borrower": "0x01adb5a14196d302004e3a1970a8bb3183dd2565",
+      "forkBlock": "11333028",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "logIndex": "121",
+          "tx_hash": "0x9da5001112f30b2190dec730ff0458c58e541d71b7e9a6905076a60892658e9f"
+        },
+        "reference": {
+          "block": "11333028",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11333029",
+      "status": "passed"
+    },
+    {
+      "borrower": "0xdb16bb1e9208c46fa0cd1d64fd290d017958f476",
+      "forkBlock": "11333058",
+      "priceSources": {
+        "1.00": {
+          "assumption": "DAI = $1.00; vm.mockCall"
+        },
+        "1.05": {
+          "assumption": "DAI = $1.05; vm.mockCall"
+        },
+        "1.10": {
+          "assumption": "DAI = $1.10; vm.mockCall"
+        },
+        "1.20": {
+          "assumption": "DAI = $1.20; vm.mockCall"
+        },
+        "1.30": {
+          "assumption": "DAI = $1.30; vm.mockCall"
+        },
+        "real": {
+          "block": "11333058",
+          "note": "区块内无喂价",
+          "state": "N-1 oracle state"
+        },
+        "reference": {
+          "block": "11333058",
+          "state": "N-1 oracle state"
+        }
+      },
+      "sampleBlock": "11333059",
+      "status": "passed"
+    }
+  ],
+  "caseId": {
+    "hash": "0x51aec3f6bc0c3ac98b0c63e7e15252ce548cfeeb15f780e4c744b6fefcbba2ef",
+    "text": "compound-2020-11-26-dai"
+  },
+  "experimentTemplates": [
+    {
+      "hypothesis": "H1",
+      "parameters": {
+        "prices": [
+          "1.00",
+          "1.05",
+          "1.10",
+          "1.20",
+          "1.30"
+        ]
+      },
+      "template": "dai_price_override"
+    }
+  ],
+  "files": [
+    {
+      "hash": "0x525310f6185c78adf1f807b9a64a9eb11bc0e630da71578b53aed75690fd2e6a",
+      "path": "data/phase2/summary.json"
+    },
+    {
+      "hash": "0x648b16990df0fdde322d8edf3b474d38848da65f2fdd23575e0a8476834685b2",
+      "path": "data/phase3/experiments.json"
+    },
+    {
+      "hash": "0xc5262d00dab71e0ad46322c64a47a2ba9ca20c027988d5000f8f34cdfccce1a9",
+      "path": "data/phase3/sensitivity.json"
+    },
+    {
+      "hash": "0xb869110066c9406302ab2331a9ba8db203c5e6ffd38f2af1ac5d61bcf7cbc49e",
+      "path": "data/phase4/features.json"
+    },
+    {
+      "hash": "0x24ed0182740636c9dd06393f62758360a681e05ba06d11fcb145fc7c85962515",
+      "path": "data/phase4/constants.json"
+    },
+    {
+      "hash": "0xa50c74881ca790dd72bf03434884539278ae68bbe6b9407db19c3117f00a8e25",
+      "path": "data/phase4/hypotheses.json"
+    },
+    {
+      "hash": "0xe44320cd966ecd3df1995b61ca1fada568e10547251a6be6f6cd9ed6adeba10b",
+      "path": "data/phase4/report.json"
+    }
+  ],
+  "fromBlock": "11330639",
+  "hashAlgorithm": "keccak256-jcs",
+  "provenance": {
+    "experimentProvenance": {
+      "capturedAt": "2026-10-07T05:16:29.680161+00:00",
+      "mode": "FROZEN",
+      "source": "Ethereum mainnet via cached eth_getLogs/eth_call"
+    },
+    "mode": "FROZEN",
+    "model": "deepseek-v4.1-flash",
+    "phase3ImplementationSha256": "68cd1b188c3411beed89c07d4548b87cf1cc29dd9b554c966931371362c71401",
+    "rpcContext": "Ethereum mainnet archive responses cached by Phase 2/3; endpoint credentials intentionally omitted",
+    "source": "Frozen Ethereum mainnet evidence; no chain submission",
+    "summaryProvenance": {
+      "capturedAt": "2026-10-07T03:28:30Z",
+      "mode": "FROZEN",
+      "source": "Ethereum mainnet via cached eth_getLogs/eth_call"
+    },
+    "tools": {
+      "cast": "cast Version: 1.8.5\nCommit SHA: 51a52c59cffd940f76eddd0b4bb1791aa4b5ac7f\nBuild Timestamp: 2026-10-05T17:01:32.131957300Z (1791219692)\nBuild Profile: dist",
+      "forge": "forge Version: 1.8.5\nCommit SHA: 51a52c59cffd940f76eddd0b4bb1791aa4b5ac7f\nBuild Timestamp: 2026-10-05T17:01:32.131957300Z (1791219692)\nBuild Profile: dist",
+      "python": "3.14.6"
+    }
+  },
+  "reportHash": "0xe44320cd966ecd3df1995b61ca1fada568e10547251a6be6f6cd9ed6adeba10b",
+  "repository": "https://github.com/hankesong/Counterfork",
+  "reproduceCommand": "python scripts/reproduce.py --network testnet --case compound-2020-11-26-dai --version 2 --level quick --eth-rpc-env ETH_RPC_URL_INFURA --attest",
+  "reproductionNotes": "Execute stage code at producerCommits. script_commit identifies the v2 generator. Quick reruns Phase 3 using hashed frozen Phase 2 seeds; full reruns Phase 2 then Phase 3. Phase 4 LLM prose is excluded from resultsHash.",
+  "resultsHash": "0xb40a7ca6f32cf9d8491fd864826f010649dbfe6b78ee16310ef8f2666000f139",
+  "resultsHashDefinition": {
+    "accountFields": [
+      "borrower",
+      "sample_event",
+      "groups",
+      "critical_price",
+      "status"
+    ],
+    "algorithm": "keccak256-jcs",
+    "object": "{\"experiments\": account projections, \"sensitivity\": sensitivity.rows}",
+    "order": "Preserve experiments and sensitivity.rows array order from source files.",
+    "recursiveExcludedKeys": [
+      "provenance",
+      "capturedAt",
+      "generatedAt",
+      "timestamp",
+      "elapsed_seconds",
+      "runtime",
+      "run_time",
+      "running_time",
+      "request_count",
+      "rpc_requests_this_run",
+      "cache_hits",
+      "account_result_cache_hits",
+      "started_at",
+      "finished_at"
+    ],
+    "scope": "Only deterministic Phase 3 results; excludes diagnostic, price_evidence, LLM outputs and all nonselected account/top-level fields."
+  },
+  "schemaVersion": "2",
+  "scriptSha256": {
+    "scripts/manifest_v2.py": "afac0ff2b5a0140bd91b32be2259aaea795a546694077526e21d49f6a9346fc0",
+    "scripts/reproduce.py": "ba8301dbaaee5306812b94d1b57cae8463dab1c0cf5a3d2ecaa50cb93cc51e85",
+    "scripts/replay_rpc.py": "d4214c5f851fbde9ce5ab11384129330cf9a3b059797a48cabd0f0b890755c1e",
+    "scripts/replay_session.py": "e6f299f50a95ba6edd247869856cbf5c5f89d562443314d9dfddd9ad87ad92fd"
+  },
+  "script_commit": "e3da500941ed1e0bf7ad90fe1cf6552dfa6ccec5",
+  "targetChainId": "1",
+  "toBlock": "11337171",
+  "producerCommits": {
+    "phase2": {
+      "commit": "0faa08c447396a5c592b3f1842abd0ac2a181cb4",
+      "codeFingerprint": {
+        "algorithm": "sha256-concatenated-git-blobs",
+        "filesInOrder": [
+          "scripts/phase2_events.py",
+          "scripts/phase2_report.py",
+          "scripts/phase2_contract.py",
+          "scripts/locate_phase0_sample.py",
+          "scripts/phase1_single.py",
+          "scripts/phase0_check.py",
+          "scripts/rpc_cache.py",
+          "scripts/rpc_transport.py",
+          "foundry.toml"
+        ],
+        "sha256": "5180c1d2ede0aa533b86a93c889f69df40671371a262c7bebba73885f190dced",
+        "fileSha256": {
+          "scripts/phase2_events.py": "a63043e88d45d2dad1271f04c58d6a3b4cfb11aba6f79ceec5f521f6ae6af175",
+          "scripts/phase2_report.py": "329c6c7b8650c21e0f272703f5a487ace8ada4255d1da673a07fdd8592054e17",
+          "scripts/phase2_contract.py": "341f29bd6955dad30bbd796d4eefd7f60e3883b46d1ffb607898c8f19bc1f1a9",
+          "scripts/locate_phase0_sample.py": "a9db8db488061380a50097c0eb7a0f098681fe4ed5c14aa266a74265bbb2bb97",
+          "scripts/phase1_single.py": "e79415851b8f69aa632fea6d3f3b8cd1031113b369f1446da59903313ffb6941",
+          "scripts/phase0_check.py": "19d5bfd9d8e2ce7e8460458caada51383670b0735b40d60619e12081592e9f25",
+          "scripts/rpc_cache.py": "1cd860563335a87c94cc046c8a3b17ff92bc9a68240a1d960a9cbdb7f6db3d0f",
+          "scripts/rpc_transport.py": "4e2f0507ed4ae1d5796024cc9b80f0d1a982cdf881c1a3f54f22421c53877df4",
+          "foundry.toml": "70aff5ac94f030f5f4a66bf06705f7d8daa430908cfba40427315cabc0e6a301"
+        }
+      }
+    },
+    "phase3": {
+      "commit": "655dba3665e6e213eea920c32f4aa185eb34a0c3",
+      "codeFingerprint": {
+        "algorithm": "sha256-concatenated-git-blobs",
+        "filesInOrder": [
+          "scripts/phase3_batch.py",
+          "test/Phase3.t.sol",
+          "test/Phase1.t.sol",
+          "scripts/rpc_cache.py",
+          "scripts/rpc_transport.py",
+          "scripts/phase1_single.py",
+          "scripts/phase0_check.py",
+          "scripts/phase2_contract.py",
+          "foundry.toml"
+        ],
+        "sha256": "3bb5fdb92ba118470826ed9d4ec4b623ccc979b0e6080e6c6239d06f1bd87f1b",
+        "fileSha256": {
+          "scripts/phase3_batch.py": "dfb5d78b172373dbc62b1f81013b40c73cef477df5d17b5f731ef7650a8bfc48",
+          "test/Phase3.t.sol": "3976cf6ca746a44af86afef747c1d7a8263bb0df1c5a9e96d2018932ca1cacc9",
+          "test/Phase1.t.sol": "dfba0f50a7bf84750124d28c4921e0aa4b8510721742caf42d34a65581d181df",
+          "scripts/rpc_cache.py": "1cd860563335a87c94cc046c8a3b17ff92bc9a68240a1d960a9cbdb7f6db3d0f",
+          "scripts/rpc_transport.py": "f940978c223e51ee8939591306bb6d18c1092f987297a7224c75f4a25f65c2f3",
+          "scripts/phase1_single.py": "e79415851b8f69aa632fea6d3f3b8cd1031113b369f1446da59903313ffb6941",
+          "scripts/phase0_check.py": "19d5bfd9d8e2ce7e8460458caada51383670b0735b40d60619e12081592e9f25",
+          "scripts/phase2_contract.py": "cfa145525fef93465dfa3c8656b56f4fd74285c4dd8254bc223271e67f5772ff",
+          "foundry.toml": "9a33b154ebe2b8776d1b694d0ae3961b4f0cad0df09d6703f8d8f30f9dcb2472"
+        }
+      },
+      "recordedWorkingTreeFingerprint": {
+        "sha256": "68cd1b188c3411beed89c07d4548b87cf1cc29dd9b554c966931371362c71401",
+        "byteLayout": {
+          "file": "scripts/phase2_contract.py",
+          "lfLines": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            73,
+            83
+          ],
+          "allOtherLines": "CRLF",
+          "allOtherFiles": "LF"
+        },
+        "note": "Historical byte layout only; replay executes unchanged Git blobs, without newline rewriting."
+      }
+    },
+    "phase4": {
+      "commit": "1534471884aab536a8efaeabd088f8e6806e640c",
+      "codeFingerprint": {
+        "algorithm": "sha256-concatenated-git-blobs",
+        "filesInOrder": [
+          "scripts/canonical.py",
+          "scripts/phase4_audit.py",
+          "scripts/phase4_common.py",
+          "scripts/phase4_features.py",
+          "scripts/phase4_hypothesis.py",
+          "scripts/phase4_manifest.py",
+          "scripts/phase4_run.py"
+        ],
+        "sha256": "00b9fc2d1c358ac1e1fae18c24c14b01d18a889eb1747653a1de72d2a08226e7",
+        "fileSha256": {
+          "scripts/canonical.py": "64c5d8f1f34dbf513251efd42491b19579c8f49ca65c07bd0077b981982a5983",
+          "scripts/phase4_audit.py": "bbe3df1165ec0bc12bb5d89ac27cf6bfbc655190398ae08e2fce72de92647d80",
+          "scripts/phase4_common.py": "f1a1e908f4c276b488b9393142fe7cf0e33f9d8f309203fac67c838e5617eaf8",
+          "scripts/phase4_features.py": "88bff1dc50871485bb28970e0292f816cf4344b32c9afce6abcfd95d1c9673a6",
+          "scripts/phase4_hypothesis.py": "c38b4511cff38a738a242158b1ad242a539c6551f2462bc494dd2b7d64f08bc2",
+          "scripts/phase4_manifest.py": "76fb51b389e5d250a26f0cd4c059dd79b4e34b79572663773ba339468d47bd94",
+          "scripts/phase4_run.py": "51f5842d5f6e33a7dde57ff8de603eb1783fdc240984d930e30b007d00a02d86"
+        }
+      }
+    }
+  },
+  "context": {
+    "tools": {
+      "cast": "cast Version: 1.8.5\nCommit SHA: 51a52c59cffd940f76eddd0b4bb1791aa4b5ac7f\nBuild Timestamp: 2026-10-05T17:01:32.131957300Z (1791219692)\nBuild Profile: dist",
+      "forge": "forge Version: 1.8.5\nCommit SHA: 51a52c59cffd940f76eddd0b4bb1791aa4b5ac7f\nBuild Timestamp: 2026-10-05T17:01:32.131957300Z (1791219692)\nBuild Profile: dist",
+      "python": "3.14.6",
+      "solc": "0.8.30+commit.73712a01"
+    },
+    "parameters": {
+      "targetChainId": "1",
+      "fromBlock": "11330639",
+      "toBlock": "11337171",
+      "accounts": [
+        {
+          "borrower": "0x909b443761bbd7fbb876ecde71a37e1433f6af6f",
+          "forkBlock": "11333036",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "logIndex": "36",
+              "tx_hash": "0x53e09adb77d1e3ea593c933a85bd4472371e03da12e3fec853b5bc7fac50f3e4"
+            },
+            "reference": {
+              "block": "11333036",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11333037",
+          "status": "passed"
+        },
+        {
+          "borrower": "0xb1adceddb2941033a090dd166a462fe1c2029484",
+          "forkBlock": "11333039",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "logIndex": "74",
+              "tx_hash": "0xc92130654bb8ef0f339cc95205a0fccb46873555e6d4abb260bcfb50600d2754"
+            },
+            "reference": {
+              "block": "11333039",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11333040",
+          "status": "passed"
+        },
+        {
+          "borrower": "0xed3c4c5d7a9abfd74f33c1042793dfd6a6daef42",
+          "forkBlock": "11333018",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "logIndex": "9",
+              "tx_hash": "0x083a94b934ba5355cc2575d58e4f74a94c39fc8f57f0a47b240bf683fdeab5f1"
+            },
+            "reference": {
+              "block": "11333018",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11333019",
+          "status": "passed"
+        },
+        {
+          "borrower": "0x189c2c1834b1414a6aee9eba5dc4b4d547c9a44c",
+          "forkBlock": "11333046",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "logIndex": "234",
+              "tx_hash": "0x7cd6f851520447abc4258e5a7b0dd3bd6be3907a7ea7b7bf3c7d34eca51c56c6"
+            },
+            "reference": {
+              "block": "11333046",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11333047",
+          "status": "passed"
+        },
+        {
+          "borrower": "0x39c09fdc4e5c5ab72f6319ddbc2cae40e67b2a60",
+          "forkBlock": "11333049",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "block": "11333049",
+              "note": "区块内无喂价",
+              "state": "N-1 oracle state"
+            },
+            "reference": {
+              "block": "11333049",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11333050",
+          "status": "passed"
+        },
+        {
+          "borrower": "0x889abdd2bc0f3a884e607279ba132501698fbcd5",
+          "forkBlock": "11333028",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "logIndex": "25",
+              "tx_hash": "0x730ff4726ed7fcc85d16b13cc631a3b102600c89c655eb298858a5330522a0e8"
+            },
+            "reference": {
+              "block": "11333028",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11333029",
+          "status": "passed"
+        },
+        {
+          "borrower": "0xc9493738f07ddc43f1a004d4bb461fa42de23225",
+          "forkBlock": "11333059",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "block": "11333059",
+              "note": "区块内无喂价",
+              "state": "N-1 oracle state"
+            },
+            "reference": {
+              "block": "11333059",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11333060",
+          "status": "passed"
+        },
+        {
+          "borrower": "0x161fac24d54698755dab0fcd65e2c883928ca724",
+          "forkBlock": "11333039",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "logIndex": "137",
+              "tx_hash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147"
+            },
+            "reference": {
+              "block": "11333039",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11333040",
+          "status": "passed"
+        },
+        {
+          "borrower": "0x03324cfffabc10193de63186a374d7cfe932b162",
+          "forkBlock": "11333018",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "logIndex": "9",
+              "tx_hash": "0x083a94b934ba5355cc2575d58e4f74a94c39fc8f57f0a47b240bf683fdeab5f1"
+            },
+            "reference": {
+              "block": "11333018",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11333019",
+          "status": "real_not_reproduced"
+        },
+        {
+          "borrower": "0xdf63be2e473ba04c26b1609e51d08cf0d78e0913",
+          "forkBlock": "11335995",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "block": "11335995",
+              "note": "区块内无喂价",
+              "state": "N-1 oracle state"
+            },
+            "reference": {
+              "block": "11335995",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11335996",
+          "status": "real_not_reproduced"
+        },
+        {
+          "borrower": "0xf2df969f59b2c86e4b230da88918cdebcfc4ccbc",
+          "forkBlock": "11332947",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "block": "11332947",
+              "note": "区块内无喂价",
+              "state": "N-1 oracle state"
+            },
+            "reference": {
+              "block": "11332947",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11332948",
+          "status": "real_not_reproduced"
+        },
+        {
+          "borrower": "0x141f59a0283303a6b882b4d6973e418f8d75f9b3",
+          "forkBlock": "11333064",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "block": "11333064",
+              "note": "区块内无喂价",
+              "state": "N-1 oracle state"
+            },
+            "reference": {
+              "block": "11333064",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11333065",
+          "status": "passed"
+        },
+        {
+          "borrower": "0xe24286adfc053f76888aa51d9a94f6c1519b4cba",
+          "forkBlock": "11333052",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "block": "11333052",
+              "note": "区块内无喂价",
+              "state": "N-1 oracle state"
+            },
+            "reference": {
+              "block": "11333052",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11333053",
+          "status": "passed"
+        },
+        {
+          "borrower": "0xdac0db00fd0953d8731f86c6908366388bfcc1f8",
+          "forkBlock": "11331592",
+          "priceSources": {},
+          "sampleBlock": "11331593",
+          "status": "not_applicable"
+        },
+        {
+          "borrower": "0x339dab47bdd20b4c05950c4306821896cfb1ff1a",
+          "forkBlock": "11333024",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "block": "11333024",
+              "note": "区块内无喂价",
+              "state": "N-1 oracle state"
+            },
+            "reference": {
+              "block": "11333024",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11333025",
+          "status": "real_not_reproduced"
+        },
+        {
+          "borrower": "0xb6c0276ad1d87c6cf6dfa323d0c3f6840121c0ba",
+          "forkBlock": "11333039",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "logIndex": "74",
+              "tx_hash": "0xc92130654bb8ef0f339cc95205a0fccb46873555e6d4abb260bcfb50600d2754"
+            },
+            "reference": {
+              "block": "11333039",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11333040",
+          "status": "passed"
+        },
+        {
+          "borrower": "0x5c7c6d069ba232718f37c27a9549b547c359e31c",
+          "forkBlock": "11333066",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "logIndex": "112",
+              "tx_hash": "0x2bccb478781e1f50ead5381cb6ed5fcc97814d1b524f8a4ba2d1c0b041408b3c"
+            },
+            "reference": {
+              "block": "11333066",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11333067",
+          "status": "passed"
+        },
+        {
+          "borrower": "0x57adad5729e839acd4019fc9e79c2685a42ed489",
+          "forkBlock": "11331592",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "logIndex": "69",
+              "tx_hash": "0x1758182cf0daa53515e490981fbf373041ccdc5dd204e22d2a26cbe69f0abe99"
+            },
+            "reference": {
+              "block": "11331592",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11331593",
+          "status": "real_not_reproduced"
+        },
+        {
+          "borrower": "0x01adb5a14196d302004e3a1970a8bb3183dd2565",
+          "forkBlock": "11333028",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "logIndex": "121",
+              "tx_hash": "0x9da5001112f30b2190dec730ff0458c58e541d71b7e9a6905076a60892658e9f"
+            },
+            "reference": {
+              "block": "11333028",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11333029",
+          "status": "passed"
+        },
+        {
+          "borrower": "0xdb16bb1e9208c46fa0cd1d64fd290d017958f476",
+          "forkBlock": "11333058",
+          "priceSources": {
+            "1.00": {
+              "assumption": "DAI = $1.00; vm.mockCall"
+            },
+            "1.05": {
+              "assumption": "DAI = $1.05; vm.mockCall"
+            },
+            "1.10": {
+              "assumption": "DAI = $1.10; vm.mockCall"
+            },
+            "1.20": {
+              "assumption": "DAI = $1.20; vm.mockCall"
+            },
+            "1.30": {
+              "assumption": "DAI = $1.30; vm.mockCall"
+            },
+            "real": {
+              "block": "11333058",
+              "note": "区块内无喂价",
+              "state": "N-1 oracle state"
+            },
+            "reference": {
+              "block": "11333058",
+              "state": "N-1 oracle state"
+            }
+          },
+          "sampleBlock": "11333059",
+          "status": "passed"
+        }
+      ],
+      "experimentTemplates": [
+        {
+          "hypothesis": "H1",
+          "parameters": {
+            "prices": [
+              "1.00",
+              "1.05",
+              "1.10",
+              "1.20",
+              "1.30"
+            ]
+          },
+          "template": "dai_price_override"
+        }
+      ],
+      "prices": [
+        "1.00",
+        "1.05",
+        "1.10",
+        "1.20",
+        "1.30"
+      ],
+      "evmVersion": "istanbul",
+      "sample": "first liquidation per top20 borrower",
+      "state": "N-1"
+    }
+  },
+  "rpcPolicy": "Endpoint is not context. Record URL SHA-256 only; each reproducer supplies its own Ethereum node.",
+  "quickInputs": [
+    {
+      "path": "data/phase2/accounts.json",
+      "commit": "0faa08c447396a5c592b3f1842abd0ac2a181cb4",
+      "hash": "0xb477fc7e464bace2e1544fccf03797b6a16ef579e88e64750b801da8be137e0c"
+    },
+    {
+      "path": "data/phase2/events.json",
+      "commit": "0faa08c447396a5c592b3f1842abd0ac2a181cb4",
+      "hash": "0xdd4a10dcb9e944cda561befec976b7dd3112fc180512a2720fe757fdd7f936df"
+    }
+  ],
+  "supersedesManifestHash": "0xabd8759d0775d5954ee0c1ab9a5584f79d81e70f69f88ccd110db6779da1ada5"
+}

@@ -1,0 +1,137 @@
+{
+  "manifestHash": "0xcfe7939cb83e66db00afe9194a9ccdc2d9226df66cb7b748bd1e4e2e8d8b4616",
+  "script_commit": "e3da500941ed1e0bf7ad90fe1cf6552dfa6ccec5",
+  "v1_resultsHash": "0xb40a7ca6f32cf9d8491fd864826f010649dbfe6b78ee16310ef8f2666000f139",
+  "v2_resultsHash": "0xb40a7ca6f32cf9d8491fd864826f010649dbfe6b78ee16310ef8f2666000f139",
+  "unchanged_resultsHash": true,
+  "cast_crosscheck": true,
+  "producerCommits": {
+    "phase2": {
+      "commit": "0faa08c447396a5c592b3f1842abd0ac2a181cb4",
+      "codeFingerprint": {
+        "algorithm": "sha256-concatenated-git-blobs",
+        "filesInOrder": [
+          "scripts/phase2_events.py",
+          "scripts/phase2_report.py",
+          "scripts/phase2_contract.py",
+          "scripts/locate_phase0_sample.py",
+          "scripts/phase1_single.py",
+          "scripts/phase0_check.py",
+          "scripts/rpc_cache.py",
+          "scripts/rpc_transport.py",
+          "foundry.toml"
+        ],
+        "sha256": "5180c1d2ede0aa533b86a93c889f69df40671371a262c7bebba73885f190dced",
+        "fileSha256": {
+          "scripts/phase2_events.py": "a63043e88d45d2dad1271f04c58d6a3b4cfb11aba6f79ceec5f521f6ae6af175",
+          "scripts/phase2_report.py": "329c6c7b8650c21e0f272703f5a487ace8ada4255d1da673a07fdd8592054e17",
+          "scripts/phase2_contract.py": "341f29bd6955dad30bbd796d4eefd7f60e3883b46d1ffb607898c8f19bc1f1a9",
+          "scripts/locate_phase0_sample.py": "a9db8db488061380a50097c0eb7a0f098681fe4ed5c14aa266a74265bbb2bb97",
+          "scripts/phase1_single.py": "e79415851b8f69aa632fea6d3f3b8cd1031113b369f1446da59903313ffb6941",
+          "scripts/phase0_check.py": "19d5bfd9d8e2ce7e8460458caada51383670b0735b40d60619e12081592e9f25",
+          "scripts/rpc_cache.py": "1cd860563335a87c94cc046c8a3b17ff92bc9a68240a1d960a9cbdb7f6db3d0f",
+          "scripts/rpc_transport.py": "4e2f0507ed4ae1d5796024cc9b80f0d1a982cdf881c1a3f54f22421c53877df4",
+          "foundry.toml": "70aff5ac94f030f5f4a66bf06705f7d8daa430908cfba40427315cabc0e6a301"
+        }
+      }
+    },
+    "phase3": {
+      "commit": "655dba3665e6e213eea920c32f4aa185eb34a0c3",
+      "codeFingerprint": {
+        "algorithm": "sha256-concatenated-git-blobs",
+        "filesInOrder": [
+          "scripts/phase3_batch.py",
+          "test/Phase3.t.sol",
+          "test/Phase1.t.sol",
+          "scripts/rpc_cache.py",
+          "scripts/rpc_transport.py",
+          "scripts/phase1_single.py",
+          "scripts/phase0_check.py",
+          "scripts/phase2_contract.py",
+          "foundry.toml"
+        ],
+        "sha256": "3bb5fdb92ba118470826ed9d4ec4b623ccc979b0e6080e6c6239d06f1bd87f1b",
+        "fileSha256": {
+          "scripts/phase3_batch.py": "dfb5d78b172373dbc62b1f81013b40c73cef477df5d17b5f731ef7650a8bfc48",
+          "test/Phase3.t.sol": "3976cf6ca746a44af86afef747c1d7a8263bb0df1c5a9e96d2018932ca1cacc9",
+          "test/Phase1.t.sol": "dfba0f50a7bf84750124d28c4921e0aa4b8510721742caf42d34a65581d181df",
+          "scripts/rpc_cache.py": "1cd860563335a87c94cc046c8a3b17ff92bc9a68240a1d960a9cbdb7f6db3d0f",
+          "scripts/rpc_transport.py": "f940978c223e51ee8939591306bb6d18c1092f987297a7224c75f4a25f65c2f3",
+          "scripts/phase1_single.py": "e79415851b8f69aa632fea6d3f3b8cd1031113b369f1446da59903313ffb6941",
+          "scripts/phase0_check.py": "19d5bfd9d8e2ce7e8460458caada51383670b0735b40d60619e12081592e9f25",
+          "scripts/phase2_contract.py": "cfa145525fef93465dfa3c8656b56f4fd74285c4dd8254bc223271e67f5772ff",
+          "foundry.toml": "9a33b154ebe2b8776d1b694d0ae3961b4f0cad0df09d6703f8d8f30f9dcb2472"
+        }
+      },
+      "recordedWorkingTreeFingerprint": {
+        "sha256": "68cd1b188c3411beed89c07d4548b87cf1cc29dd9b554c966931371362c71401",
+        "byteLayout": {
+          "file": "scripts/phase2_contract.py",
+          "lfLines": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            73,
+            83
+          ],
+          "allOtherLines": "CRLF",
+          "allOtherFiles": "LF"
+        },
+        "note": "Historical byte layout only; replay executes unchanged Git blobs, without newline rewriting."
+      }
+    },
+    "phase4": {
+      "commit": "1534471884aab536a8efaeabd088f8e6806e640c",
+      "codeFingerprint": {
+        "algorithm": "sha256-concatenated-git-blobs",
+        "filesInOrder": [
+          "scripts/canonical.py",
+          "scripts/phase4_audit.py",
+          "scripts/phase4_common.py",
+          "scripts/phase4_features.py",
+          "scripts/phase4_hypothesis.py",
+          "scripts/phase4_manifest.py",
+          "scripts/phase4_run.py"
+        ],
+        "sha256": "00b9fc2d1c358ac1e1fae18c24c14b01d18a889eb1747653a1de72d2a08226e7",
+        "fileSha256": {
+          "scripts/canonical.py": "64c5d8f1f34dbf513251efd42491b19579c8f49ca65c07bd0077b981982a5983",
+          "scripts/phase4_audit.py": "bbe3df1165ec0bc12bb5d89ac27cf6bfbc655190398ae08e2fce72de92647d80",
+          "scripts/phase4_common.py": "f1a1e908f4c276b488b9393142fe7cf0e33f9d8f309203fac67c838e5617eaf8",
+          "scripts/phase4_features.py": "88bff1dc50871485bb28970e0292f816cf4344b32c9afce6abcfd95d1c9673a6",
+          "scripts/phase4_hypothesis.py": "c38b4511cff38a738a242158b1ad242a539c6551f2462bc494dd2b7d64f08bc2",
+          "scripts/phase4_manifest.py": "76fb51b389e5d250a26f0cd4c059dd79b4e34b79572663773ba339468d47bd94",
+          "scripts/phase4_run.py": "51f5842d5f6e33a7dde57ff8de603eb1783fdc240984d930e30b007d00a02d86"
+        }
+      }
+    }
+  },
+  "tools_match": true,
+  "tests_passed": 36,
+  "isolated_producer_build": "passed; no RPC; source bytes unchanged",
+  "registration": "PENDING_USER_PUSH",
+  "quick_reproduction": "NOT_STARTED",
+  "attestation_transaction": null
+}
