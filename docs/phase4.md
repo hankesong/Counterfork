@@ -42,14 +42,60 @@ resultsHash 只投影每个账户的 borrower、sample_event、groups、critical
 
 | 状态 | 判定 | 上链行为 |
 | --- | --- | --- |
-| MATCH | 清单哈希通过、上下文相同、resultsHash 一致 | matched=true |
-| MISMATCH | 清单哈希通过、上下文相同、resultsHash 不一致 | matched=false |
-| CONTEXT_DIFFERENT | RPC、工具版本或 commit 不同 | 不上链，只写本地报告 |
+| MATCH | 清单哈希/schema 通过，在各阶段 producer commit 上使用指定工具及参数重跑，resultsHash 一致 | matched=true |
+| MISMATCH | 同上，resultsHash 不一致 | matched=false，提交本次实际 resultsHash |
+| CONTEXT_DIFFERENT | Foundry/cast、solc 或 Python 版本与清单不同 | 不上链，只写本地报告 |
 | NOT_COMPARABLE | 清单哈希不符或 schema 不支持 | 不上链 |
 
-先从可信发布渠道取得 expected manifestHash，校验原始清单和冻结文件，再在独立目录的 script_commit 上重跑实验。
+先从链上取得 expected manifestHash，下载不可变 URI 的清单，校验 schema、冻结文件、producerCommits 的 Git 源码指纹，再在隔离临时目录中执行各阶段指定 commit。清单内部指纹与 commit 不符也属于清单校验失败。执行未完成时 status=null、execution_status=FAILED，不冒充 MATCH/MISMATCH。
 Phase 5g 独立复现应隔离并清空自身 RPC/Foundry 缓存；勿清空本仓库证据。Phase 4 的 --cache-only 只复现报告和哈希，不能冒充独立链上实验复现。
-复现上下文应显式包含 RPC 标识、工具版本和 commit；凭据不得写入本地报告。本阶段不访问 BOT Chain，不提交交易。
+上下文仅包括清单指定的各阶段 producer commit、Foundry/cast、solc、Python 版本和实验参数。RPC 不属于上下文，复现者使用自己的 Ethereum 节点正是独立性的体现；只记录 URL 的 SHA-256，不比较节点供应商或 URL，不在日志和报告中记录凭据。节点仍须通过 chainId=1 与历史 eth_call 预检，样本收据必须对应冻结事件。
+
+## v2：来源追溯与追加发布
+
+v1 `data/phase4/manifest.json` 原样保留。其缺陷是仅记录 `script_commit=15344718`：它是 Phase 4 报告代码的提交，并不是产生 Phase 3 结果的代码。v2 增加 `producerCommits`，每阶段包含 commit、按文件顺序拼接 Git blob 的 SHA-256 和逐文件 SHA-256；`script_commit` 改为生成 v2 清单的脚本提交。v2 的 resultsHash 与 v1 完全相同。
+
+| 阶段 | producer commit | 依据 |
+| --- | --- | --- |
+| Phase 2 | `0faa08c447396a5c592b3f1842abd0ac2a181cb4` | 当前 events/summary 的原始结果提交；此后 accounts 的变化仅为 Phase 3 分析状态，样本、排名、偿还估值权重逐项一致 |
+| Phase 3 | `655dba3665e6e213eea920c32f4aa185eb34a0c3` | Phase 3 结果首次入库；源码在确认历史换行形式后与已记录指纹精确一致 |
+| Phase 4 | `1534471884aab536a8efaeabd088f8e6806e640c` | v1 七个 scriptSha256 与此提交 Git blob 逐项完全相同 |
+
+Phase 3 综合指纹依次包含：`scripts/phase3_batch.py`、`test/Phase3.t.sol`、`test/Phase1.t.sol`、`scripts/rpc_cache.py`、`scripts/rpc_transport.py`、`scripts/phase1_single.py`、`scripts/phase0_check.py`、`scripts/phase2_contract.py`、`foundry.toml`。
+
+`git log` 和 `git diff 655dba36 15344718 -- <上述九文件>` 确认：只有 `foundry.toml` 被 `7c1d0889` 修改，新增 `[profile.botchain]`，包括 out/cache/broadcast 路径、Paris EVM、optimizer=true、runs=200；default profile 仍为 Istanbul。`rpc_transport.py` 在这个区间没有修改，其他七个源码文件也未修改。
+
+另外，原始指纹按工作区字节计算，而 Git 使用了换行符规范化。原工作区 `scripts/phase2_contract.py` 的第 10–20、57–70、73、83 行为 LF，其余行为 CRLF；其余八文件为 LF。这个混合格式在当前工作区仍可核验。Git blob 为纯 LF。**不存在 Git 原始 blob 指纹直接等于旧记录值的提交**，不能伪称找到了这样的提交。
+
+| 提交 | Git blob 拼接 SHA-256 | 恢复已确认历史字节布局后的 SHA-256 |
+| --- | --- | --- |
+| `655dba36`、`ba031ad8` | `3bb5fdb92ba118470826ed9d4ec4b623ccc979b0e6080e6c6239d06f1bd87f1b` | `68cd1b188c3411beed89c07d4548b87cf1cc29dd9b554c966931371362c71401`（精确命中） |
+| `7c1d0889`、`aec5b5bd`、`23bd94f8`、`15344718` | `da1476c7811c4e02766b1c739586b719ebd2656956430167ac4cfdf1465b8e86` | `f49bb67aa3aeef59937efc45c7a1d2ef671f5ea59a955d1d48bb9e71df500a6c` |
+
+更早四个提交缺少 Phase 3 源文件，无法计算此综合指纹。逐提交明细、文件顺序和完整 diff 见 `data/phase4/fingerprint-audit-v2.json`，可用 `python scripts/manifest_v2.py --audit` 复核。v2 的可执行代码指纹明确以 Git blob 为准，另保留 `recordedWorkingTreeFingerprint` 解释旧记录；复现时不重写旧源码或换行符。Git archive 显式设置 core.autocrlf=false，并在执行前后逐文件验算。
+
+生成步骤：先提交 v2 生成器、复现脚本及测试，再运行 `python scripts/manifest_v2.py`。脚本要求生成器与当前 HEAD 一致、核对全部 v1 冻结文件与 resultsHash，仅写 `data/phase4/manifest-v2.json`；已有不同内容时拒绝覆盖。之后将 v2 清单及本节哈希另行提交。这样清单指向已存在的生成代码提交，URI 指向后一个包含清单的提交，避免自引用循环。
+
+### 网络、隔离和恢复
+
+`reproduce.py --eth-rpc-env ETH_RPC_URL_INFURA` 从 .env 或环境选择节点。外部 `replay_rpc.py` 本地代理负责只读上游请求，producer 仍使用其原始 transport/cache/Foundry 代码。对超时、SSL、HTTP 429/502/503/504、Infura `-32603: precondition failure` 以 2、4、8、16、32 秒退避，总计最多六次尝试；明确参数错误、unsupported method、其他 RPC 错误不重试。恢复成功的重试只计入 retries，不算终止失败。代理响应的 JSON 空白心跳使旧 transport 的 25 秒 socket 超时与 32 秒退避兼容，不改变 RPC 数据或实验顺序。
+
+新运行使用系统临时目录，RPC/代理缓存、Foundry cache/out/home 均隔离且初始为空，开启 no_storage_caching 并核验 forge config。真实上游请求数由代理逐请求累计并原子落盘，不能以缓存命中冒充请求，也不能仅凭预检请求认定实验有效。每个账户完成后原子写 checkpoint，绑定清单、账户、样本事件和结果哈希。中断保留目录，使用报告中的 session_dir 续跑；只补跑缺失账户，检查输入、源码、工具与 harness 不变。累计请求、重试及各次运行耗时写入报告。
+
+```powershell
+python scripts/reproduce.py --network testnet --eth-rpc-env ETH_RPC_URL_INFURA --probe-rpc
+# 用户 push 包含 v2 的提交后执行：下载清单并核对哈希，然后追加版本 2
+python scripts/register.py check --network testnet --version 2
+python scripts/register.py submit --network testnet --version 2
+python scripts/reproduce.py --network testnet --case compound-2020-11-26-dai --version 2 --level quick --eth-rpc-env ETH_RPC_URL_INFURA --attest
+# 中断后在同一命令追加 --resume <报告中的 session_dir>
+```
+
+quick 重跑 Phase 3，Phase 2 选择和权重来自其 producer commit 的已哈希输入，不声称重新扫描全天或重跑 Phase 4 的 LLM。full 分别执行 Phase 2 和 Phase 3 producer；LLM 文本不在 resultsHash 内。版本 2 登记要求链上 latestVersion 恰为 1；登记后校验完整记录、事件和版本 1 的 ABI 读回保持不变。只有 MATCH/MISMATCH 才对 `(caseId, 2)` attest。测试网 chainId=968 限制保持有效。
+
+本次 Infura 最小预检通过：区块 11333000 的 cDAI decimals() 返回 8；2 次真实请求、0 次重试、2.430 秒。RPC URL SHA-256 为 `f93d98711c2b246efbdf03a2ea15843eda35ce3cfe54a9cdc0896313b86538b5`。证据在 `deployments/reproduction-rpc-preflight-v2.json`。当前尚未登记 v2 或运行其正式 quick；须先由用户 push v2 清单提交。
+
+v2 验证：36 项相关离线测试通过（复现 17、v2 重试/来源/恢复 10、登记保护 9）。原始 `655dba36` 在独立临时目录以 solc 0.8.30 成功离线编译；RPC 缓存不存在，Foundry 隔离配置通过，编译前后源码指纹一致。原始构建产物的 compiler version 与当前 solc 0.8.30+commit.73712a01 一致；Python 3.14.6、Foundry/cast 1.8.5 完整版本字符串与 v1 一致。
 
 ## 验收记录
 

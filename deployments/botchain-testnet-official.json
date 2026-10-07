@@ -1,0 +1,37 @@
+{
+  "notice": "测试网正式演示，不计入比赛有效部署（比赛只认主网）",
+  "chain_id": 968,
+  "contract": "0x00c51bb88ffd088501bf11177592528a6e8d43e4",
+  "deployer": "0xea68b4bFdEd757281911520b03374B9E7D70043a",
+  "deployment": {
+    "purpose": "deploy-official",
+    "transactionHash": "0xc4ed2a3094124839a2cada730f9660a2c2eb218ebb96ee5f2e0904938c0f90c3",
+    "explorer": "https://scan.bohr.life/tx/0xc4ed2a3094124839a2cada730f9660a2c2eb218ebb96ee5f2e0904938c0f90c3",
+    "blockNumber": 26007929,
+    "receipt": {
+      "status": "0x1",
+      "cumulativeGasUsed": "0xb110b",
+      "logs": [],
+      "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "type": "0x0",
+      "transactionHash": "0xc4ed2a3094124839a2cada730f9660a2c2eb218ebb96ee5f2e0904938c0f90c3",
+      "transactionIndex": "0x0",
+      "blockHash": "0x1d0fe0ffcde0fd95bff8f168cb9157e96e9cc7b5ff4ac03a9134ee1130823ce4",
+      "blockNumber": "0x18cd979",
+      "gasUsed": "0xb110b",
+      "effectiveGasPrice": "0x4a817c800",
+      "from": "0xea68b4bfded757281911520b03374b9e7d70043a",
+      "to": null,
+      "contractAddress": "0x00c51bb88ffd088501bf11177592528a6e8d43e4"
+    }
+  },
+  "compiler": {
+    "solc_version": "0.8.30+commit.73712a01",
+    "evm_version": "paris",
+    "optimizer": true,
+    "optimizer_runs": 200,
+    "forge_version": "forge Version: 1.8.5\nCommit SHA: 51a52c59cffd940f76eddd0b4bb1791aa4b5ac7f\nBuild Timestamp: 2026-10-05T17:01:32.131957300Z (1791219692)\nBuild Profile: dist"
+  },
+  "source_sha256": "4e81070285b116efa706ff9566d52af5b6a0c916d465c1dc2f93233c436aa509",
+  "bytecode_verified": true
+}

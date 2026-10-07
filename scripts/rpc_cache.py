@@ -1,7 +1,9 @@
 """Read-only RPC, successful segment caches and adaptive getLogs splitting."""
 import hashlib
 import json
+import os
 import re
+from pathlib import Path
 from phase0_check import ROOT, read_config, save
 from rpc_transport import READ_ONLY, STATS, exchange, redact
 
@@ -14,7 +16,7 @@ def rpc(method, params, *, url=None, use_cache=True):
     if method not in READ_ONLY:
         raise ValueError("Method outside the read-only allowlist")
     key = hashlib.sha256(json.dumps([method, params], sort_keys=True).encode()).hexdigest()
-    path = ROOT / "data" / "rpc" / (key + ".json")
+    path = Path(os.environ.get("RPC_CACHE_DIR") or ROOT / "data/rpc") / (key + ".json")
     if use_cache and path.exists():
         STATS["cache_hits"] += 1
         return json.loads(path.read_text(encoding="utf-8"))["result"]
@@ -67,7 +69,7 @@ def iter_log_segments(start, end, filters, *, max_span=None, url=None, mode=None
     if max_span < 1:
         raise ValueError("max_span must be positive")
     identity = hashlib.sha256(json.dumps([start, end, filters, max_span], sort_keys=True).encode()).hexdigest()
-    manifest_path = ROOT / "data/rpc" / ("segments_" + identity + ".json")
+    manifest_path = Path(os.environ.get("RPC_CACHE_DIR") or ROOT / "data/rpc") / ("segments_" + identity + ".json")
     manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {"segments": [], "next": start, "span": max_span}
     for segment in manifest["segments"]:
         yield segment[0], segment[1], rpc("eth_getLogs", [{**filters, "fromBlock": hex(segment[0]), "toBlock": hex(segment[1])}], url=url)

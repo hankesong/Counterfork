@@ -1,0 +1,10 @@
+{
+  "rpc_url_sha256": "f93d98711c2b246efbdf03a2ea15843eda35ce3cfe54a9cdc0896313b86538b5",
+  "block": 11333000,
+  "method": "eth_call",
+  "result": "0x0000000000000000000000000000000000000000000000000000000000000008",
+  "elapsed_seconds": 2.43,
+  "network_requests": 2,
+  "retries": 0,
+  "terminal_failures": 0
+}

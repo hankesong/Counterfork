@@ -1,0 +1,102 @@
+{
+  "filesInOrder": [
+    "scripts/phase3_batch.py",
+    "test/Phase3.t.sol",
+    "test/Phase1.t.sol",
+    "scripts/rpc_cache.py",
+    "scripts/rpc_transport.py",
+    "scripts/phase1_single.py",
+    "scripts/phase0_check.py",
+    "scripts/phase2_contract.py",
+    "foundry.toml"
+  ],
+  "recordedSha256": "68cd1b188c3411beed89c07d4548b87cf1cc29dd9b554c966931371362c71401",
+  "commits": [
+    {
+      "commit": "e9230c8a88be57113955d58e8ddb84d11667b6d7",
+      "gitBlobSha256": null,
+      "historicalWorkingTreeSha256": null
+    },
+    {
+      "commit": "668a3178bfbf9611d5d30d965d1351388703be43",
+      "gitBlobSha256": null,
+      "historicalWorkingTreeSha256": null
+    },
+    {
+      "commit": "b75b09d319b3fc196892f8f7867e9d5e1357d659",
+      "gitBlobSha256": null,
+      "historicalWorkingTreeSha256": null
+    },
+    {
+      "commit": "0faa08c447396a5c592b3f1842abd0ac2a181cb4",
+      "gitBlobSha256": null,
+      "historicalWorkingTreeSha256": null
+    },
+    {
+      "commit": "655dba3665e6e213eea920c32f4aa185eb34a0c3",
+      "gitBlobSha256": "3bb5fdb92ba118470826ed9d4ec4b623ccc979b0e6080e6c6239d06f1bd87f1b",
+      "historicalWorkingTreeSha256": "68cd1b188c3411beed89c07d4548b87cf1cc29dd9b554c966931371362c71401"
+    },
+    {
+      "commit": "ba031ad87b1478659a2704c4dd3c2ea1fc8512d7",
+      "gitBlobSha256": "3bb5fdb92ba118470826ed9d4ec4b623ccc979b0e6080e6c6239d06f1bd87f1b",
+      "historicalWorkingTreeSha256": "68cd1b188c3411beed89c07d4548b87cf1cc29dd9b554c966931371362c71401"
+    },
+    {
+      "commit": "7c1d088992809cb39df5e4223967e96e5af1565f",
+      "gitBlobSha256": "da1476c7811c4e02766b1c739586b719ebd2656956430167ac4cfdf1465b8e86",
+      "historicalWorkingTreeSha256": "f49bb67aa3aeef59937efc45c7a1d2ef671f5ea59a955d1d48bb9e71df500a6c"
+    },
+    {
+      "commit": "aec5b5bd7c02b5a969d15106d97aa7f1049dfcd3",
+      "gitBlobSha256": "da1476c7811c4e02766b1c739586b719ebd2656956430167ac4cfdf1465b8e86",
+      "historicalWorkingTreeSha256": "f49bb67aa3aeef59937efc45c7a1d2ef671f5ea59a955d1d48bb9e71df500a6c"
+    },
+    {
+      "commit": "23bd94f8c1bd230590bb83b012fb71fbb983bee8",
+      "gitBlobSha256": "da1476c7811c4e02766b1c739586b719ebd2656956430167ac4cfdf1465b8e86",
+      "historicalWorkingTreeSha256": "f49bb67aa3aeef59937efc45c7a1d2ef671f5ea59a955d1d48bb9e71df500a6c"
+    },
+    {
+      "commit": "1534471884aab536a8efaeabd088f8e6806e640c",
+      "gitBlobSha256": "da1476c7811c4e02766b1c739586b719ebd2656956430167ac4cfdf1465b8e86",
+      "historicalWorkingTreeSha256": "f49bb67aa3aeef59937efc45c7a1d2ef671f5ea59a955d1d48bb9e71df500a6c"
+    }
+  ],
+  "historicalByteLayout": {
+    "file": "scripts/phase2_contract.py",
+    "lfLines": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      73,
+      83
+    ],
+    "allOtherLines": "CRLF",
+    "allOtherFiles": "LF"
+  },
+  "diff": "diff --git a/foundry.toml b/foundry.toml\nindex 4f83a0bd..b83985a9 100644\n--- a/foundry.toml\n+++ b/foundry.toml\n@@ -6,3 +6,14 @@ cache_path = \"cache\"\n solc = \".tools/solc.exe\"\n evm_version = \"istanbul\"\n fs_permissions = [{ access = \"write\", path = \"./data/phase0\" }, { access = \"write\", path = \"./data/phase1\" }, { access = \"write\", path = \"./data/phase3\" }]\n+\n+[profile.botchain]\n+src = \"src\"\n+test = \"test\"\n+out = \"out-botchain\"\n+cache_path = \"out-botchain/cache\"\n+broadcast = \"out-botchain/broadcast\"\n+solc = \".tools/solc.exe\"\n+evm_version = \"paris\"\n+optimizer = true\n+optimizer_runs = 200\n",
+  "conclusion": "No raw Git-blob match. 655dba36 and ba031ad8 match with the surviving mixed newline layout. Only foundry.toml changed in this interval, in 7c1d0889; rpc_transport.py did not change."
+}
