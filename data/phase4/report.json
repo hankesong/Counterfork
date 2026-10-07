@@ -1,0 +1,686 @@
+{
+  "assumptions_and_limitations": [
+    "{{ref:data/phase3/experiments.json#/limitations/0}}",
+    "{{ref:data/phase3/experiments.json#/limitations/1}}",
+    "{{ref:data/phase3/experiments.json#/limitations/2}}",
+    "{{ref:data/phase3/experiments.json#/limitations/3}}",
+    "{{ref:data/phase3/experiments.json#/limitations/4}}",
+    "{{ref:data/phase3/experiments.json#/limitations/5}}",
+    "{{ref:data/phase3/experiments.json#/limitations/6}}",
+    "补实验回路未实现",
+    "小时分布和排名账户信息由冻结事件和账户摘要确定性生成；估值仍沿用排序口径，诊断组其他资产改价仅作事实输入。",
+    "模型解释仅作辅助阅读；状态、引用和必需事实由确定性校验约束，仍需人工审核语义。"
+  ],
+  "conclusions": [
+    {
+      "accounts": [
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/0/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/0/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/1/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/1/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/2/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/2/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/3/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/3/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/4/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/4/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/5/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/5/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/6/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/6/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/7/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/7/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/11/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/11/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/12/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/12/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/15/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/15/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/16/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/16/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/18/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/18/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/19/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/19/sample_event/blockNumber}}"
+        }
+      ],
+      "claim": "通过组共 {{ref:data/phase4/hypotheses.json#/evidence_summary/passed/count}} 个账户；DAI 价格为 {{ref:data/phase3/sensitivity.json#/rows/0/price_usd}} 和 {{ref:data/phase3/sensitivity.json#/rows/1/price_usd}} 美元时，仍可清算账户分别为 {{ref:data/phase3/sensitivity.json#/rows/0/liquidatable_accounts}} 和 {{ref:data/phase3/sensitivity.json#/rows/1/liquidatable_accounts}}。这支持固定状态下的价格敏感性，不证明预言机是整个事件的原因。",
+      "evidence_refs": [
+        "{{ref:data/phase4/hypotheses.json#/evidence_summary/passed/count}}",
+        "{{ref:data/phase3/sensitivity.json#/rows/0/price_usd}}",
+        "{{ref:data/phase3/sensitivity.json#/rows/1/price_usd}}",
+        "{{ref:data/phase3/sensitivity.json#/rows/0/liquidatable_accounts}}",
+        "{{ref:data/phase3/sensitivity.json#/rows/1/liquidatable_accounts}}",
+        "{{ref:data/phase3/experiments.json#/experiments/0/groups}}",
+        "{{ref:data/phase3/experiments.json#/experiments/1/groups}}",
+        "{{ref:data/phase3/experiments.json#/experiments/2/groups}}",
+        "{{ref:data/phase3/experiments.json#/experiments/3/groups}}",
+        "{{ref:data/phase3/experiments.json#/experiments/4/groups}}",
+        "{{ref:data/phase3/experiments.json#/experiments/5/groups}}",
+        "{{ref:data/phase3/experiments.json#/experiments/6/groups}}",
+        "{{ref:data/phase3/experiments.json#/experiments/7/groups}}",
+        "{{ref:data/phase3/experiments.json#/experiments/11/groups}}",
+        "{{ref:data/phase3/experiments.json#/experiments/12/groups}}",
+        "{{ref:data/phase3/experiments.json#/experiments/15/groups}}",
+        "{{ref:data/phase3/experiments.json#/experiments/16/groups}}",
+        "{{ref:data/phase3/experiments.json#/experiments/18/groups}}",
+        "{{ref:data/phase3/experiments.json#/experiments/19/groups}}",
+        "{{ref:data/phase3/experiments.json#/experiments/0/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/0/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/1/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/1/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/2/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/2/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/3/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/3/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/4/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/4/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/5/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/5/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/6/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/6/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/7/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/7/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/11/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/11/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/12/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/12/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/15/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/15/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/16/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/16/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/18/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/18/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/19/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/19/sample_event/blockNumber}}"
+      ],
+      "explanation": "通过组账户在 DAI 锚定价与低档位价格下均无清算，说明固定 N−1 状态下的清算条件对 DAI 价格档位敏感；仅为价格敏感性事实，不归因预言机为事件成因。",
+      "status": "SUPPORTED",
+      "topic": "low_prices"
+    },
+    {
+      "accounts": [
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/0/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/0/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/1/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/1/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/2/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/2/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/3/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/3/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/4/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/4/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/5/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/5/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/6/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/6/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/7/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/7/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/8/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/8/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/9/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/9/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/10/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/10/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/11/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/11/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/12/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/12/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/14/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/14/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/15/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/15/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/16/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/16/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/17/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/17/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/18/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/18/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/19/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/19/sample_event/blockNumber}}"
+        }
+      ],
+      "claim": "已验证临界价格共 {{ref:data/phase4/hypotheses.json#/evidence_summary/critical/count}} 个，最小 {{ref:data/phase4/hypotheses.json#/evidence_summary/critical/minimum}}、中位数 {{ref:data/phase4/hypotheses.json#/evidence_summary/critical/median}}、最大 {{ref:data/phase4/hypotheses.json#/evidence_summary/critical/maximum}} 美元；此分布包含真实组未复现账户，不能与仅纳入通过账户的敏感性表混为一谈。",
+      "evidence_refs": [
+        "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/count}}",
+        "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/minimum}}",
+        "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/median}}",
+        "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/maximum}}",
+        "{{ref:data/phase3/experiments.json#/experiments/0/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/1/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/2/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/3/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/4/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/5/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/6/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/7/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/8/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/9/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/10/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/11/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/12/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/14/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/15/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/16/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/17/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/18/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/19/critical_price}}",
+        "{{ref:data/phase3/experiments.json#/experiments/0/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/0/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/1/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/1/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/2/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/2/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/3/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/3/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/4/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/4/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/5/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/5/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/6/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/6/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/7/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/7/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/8/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/8/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/9/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/9/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/10/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/10/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/11/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/11/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/12/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/12/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/14/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/14/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/15/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/15/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/16/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/16/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/17/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/17/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/18/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/18/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/19/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/19/sample_event/blockNumber}}"
+      ],
+      "explanation": "已验证临界价格样本跨越多档，最小与中位数、最大均在合理区间；该分布口径含未复现账户，与仅含通过账户的敏感性表口径不同，不可直接等同。",
+      "status": "SUPPORTED",
+      "topic": "critical_prices"
+    },
+    {
+      "accounts": [
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/4/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/4/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/6/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/6/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/11/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/11/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/12/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/12/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/16/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/16/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/19/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/19/sample_event/blockNumber}}"
+        }
+      ],
+      "claim": "{{ref:data/phase4/hypotheses.json#/evidence_summary/preexisting/count}} 个账户在 N−1 已有缺口；把这些账户说成本区块 DAI 喂价首次触发清算，证据不支持。",
+      "evidence_refs": [
+        "{{ref:data/phase4/hypotheses.json#/evidence_summary/preexisting/count}}",
+        "{{ref:data/phase3/experiments.json#/experiments/4/groups/reference}}",
+        "{{ref:data/phase3/experiments.json#/experiments/6/groups/reference}}",
+        "{{ref:data/phase3/experiments.json#/experiments/11/groups/reference}}",
+        "{{ref:data/phase3/experiments.json#/experiments/12/groups/reference}}",
+        "{{ref:data/phase3/experiments.json#/experiments/16/groups/reference}}",
+        "{{ref:data/phase3/experiments.json#/experiments/19/groups/reference}}",
+        "{{ref:data/phase3/experiments.json#/experiments/4/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/4/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/6/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/6/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/11/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/11/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/12/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/12/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/16/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/16/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/19/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/19/sample_event/blockNumber}}"
+      ],
+      "explanation": "这些账户在参考组已呈现缺口，说明其可清算性并非由本区块 DAI 喂价首次触发；因此把全部归因于本区块首次触发的说法不被证据支持。",
+      "status": "NOT_SUPPORTED",
+      "topic": "preexisting_shortfalls"
+    },
+    {
+      "accounts": [
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/8/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/8/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/9/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/9/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/10/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/10/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/14/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/14/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/17/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/17/sample_event/blockNumber}}"
+        }
+      ],
+      "claim": "真实组未复现 {{ref:data/phase4/hypotheses.json#/evidence_summary/not_reproduced/count}} 个账户。这只说明固定 N−1 状态的单变量实验未重现清算条件，不能认定链上清算无效。",
+      "evidence_refs": [
+        "{{ref:data/phase4/hypotheses.json#/evidence_summary/not_reproduced/count}}",
+        "{{ref:data/phase3/experiments.json#/experiments/8/groups/real}}",
+        "{{ref:data/phase3/experiments.json#/experiments/9/groups/real}}",
+        "{{ref:data/phase3/experiments.json#/experiments/10/groups/real}}",
+        "{{ref:data/phase3/experiments.json#/experiments/14/groups/real}}",
+        "{{ref:data/phase3/experiments.json#/experiments/17/groups/real}}",
+        "{{ref:data/phase3/experiments.json#/experiments/8/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/8/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/9/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/9/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/10/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/10/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/14/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/14/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/17/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/17/sample_event/blockNumber}}"
+      ],
+      "explanation": "真实组在单变量实验中未达到清算条件，仅反映固定 N−1 近似状态未复现，不能据此断定链上清算本身无效；原因保持未验证。",
+      "status": "UNVERIFIED",
+      "topic": "real_not_reproduced"
+    },
+    {
+      "accounts": [
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/8/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/8/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/9/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/9/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/14/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/14/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/17/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/17/sample_event/blockNumber}}"
+        }
+      ],
+      "claim": "其中 {{ref:data/phase4/hypotheses.json#/evidence_summary/diagnostic_reproduced/count}} 个账户在同时修改其他资产价格的诊断组中复现。该组改变多个变量，仅作诊断；H2 抵押品真实下跌仍未验证。",
+      "evidence_refs": [
+        "{{ref:data/phase4/hypotheses.json#/evidence_summary/diagnostic_reproduced/count}}",
+        "{{ref:data/phase3/experiments.json#/experiments/8/diagnostic/result}}",
+        "{{ref:data/phase3/experiments.json#/experiments/9/diagnostic/result}}",
+        "{{ref:data/phase3/experiments.json#/experiments/14/diagnostic/result}}",
+        "{{ref:data/phase3/experiments.json#/experiments/17/diagnostic/result}}",
+        "{{ref:data/phase3/experiments.json#/experiments/8/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/8/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/9/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/9/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/14/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/14/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/17/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/17/sample_event/blockNumber}}"
+      ],
+      "explanation": "诊断组同时改变多个资产变量，其复现只能作诊断线索，不能当作 H2 抵押品真实下跌已验证的证据。",
+      "status": "DIAGNOSTIC_ONLY",
+      "topic": "other_asset_diagnostic"
+    },
+    {
+      "accounts": [
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/10/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/10/sample_event/blockNumber}}"
+        }
+      ],
+      "claim": "仍有 {{ref:data/phase4/hypotheses.json#/evidence_summary/unexplained/count}} 个账户未解释：{{ref:data/phase3/experiments.json#/experiments/10/borrower}}。诊断组也未重现清算条件，不能据此指定原因。",
+      "evidence_refs": [
+        "{{ref:data/phase4/hypotheses.json#/evidence_summary/unexplained/count}}",
+        "{{ref:data/phase3/experiments.json#/experiments/10/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/10/diagnostic/result}}",
+        "{{ref:data/phase3/experiments.json#/experiments/10/sample_event/blockNumber}}"
+      ],
+      "explanation": "该账户在真实组与诊断组均未复现清算条件，缺乏可指定的原因，保持未解释与未验证。",
+      "status": "UNVERIFIED",
+      "topic": "unexplained"
+    },
+    {
+      "accounts": [
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/13/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/13/sample_event/blockNumber}}"
+        }
+      ],
+      "claim": "排名 {{ref:data/phase3/experiments.json#/experiments/13/rank}} 的账户 {{ref:data/phase3/experiments.json#/experiments/13/borrower}}：{{ref:data/phase3/experiments.json#/experiments/13/reason}}，DAI 改价模板不适用。",
+      "evidence_refs": [
+        "{{ref:data/phase3/experiments.json#/experiments/13/rank}}",
+        "{{ref:data/phase3/experiments.json#/experiments/13/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/13/reason}}",
+        "{{ref:data/phase3/experiments.json#/experiments/13/status}}",
+        "{{ref:data/phase3/experiments.json#/experiments/13/sample_event/blockNumber}}"
+      ],
+      "explanation": "该账户与 DAI 无关，DAI 改价模板不适用，故不作 DAI 价格侧结论，保持未验证。",
+      "status": "UNVERIFIED",
+      "topic": "not_applicable"
+    },
+    {
+      "accounts": [
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/0/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/0/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/1/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/1/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/2/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/2/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/3/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/3/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/4/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/4/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/5/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/5/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/6/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/6/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/7/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/7/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/11/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/11/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/12/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/12/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/15/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/15/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/16/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/16/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/18/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/18/sample_event/blockNumber}}"
+        },
+        {
+          "address": "{{ref:data/phase3/experiments.json#/experiments/19/borrower}}",
+          "block": "{{ref:data/phase3/experiments.json#/experiments/19/sample_event/blockNumber}}"
+        }
+      ],
+      "claim": "敏感性表的估值合计是账户全天偿还额的 N−1 排序估值，不是在该价格下会被清算的金额，也不是损失。",
+      "evidence_refs": [
+        "{{ref:data/phase3/sensitivity.json#/valuation_note}}",
+        "{{ref:data/phase3/experiments.json#/valuation_note}}",
+        "{{ref:data/phase3/experiments.json#/experiments/0/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/0/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/1/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/1/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/2/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/2/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/3/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/3/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/4/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/4/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/5/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/5/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/6/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/6/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/7/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/7/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/11/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/11/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/12/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/12/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/15/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/15/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/16/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/16/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/18/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/18/sample_event/blockNumber}}",
+        "{{ref:data/phase3/experiments.json#/experiments/19/borrower}}",
+        "{{ref:data/phase3/experiments.json#/experiments/19/sample_event/blockNumber}}"
+      ],
+      "explanation": "敏感性表与实验文件的估值口径一致，均为账户全天偿还额的 N−1 排序估值，不应解读为该价格下的清算额或损失。",
+      "status": "SUPPORTED",
+      "topic": "valuation_scope"
+    },
+    {
+      "accounts": [],
+      "claim": "H2 未开展对应实验，保持未验证。",
+      "evidence_refs": [
+        "{{ref:data/phase4/hypotheses.json#/hypotheses/1}}"
+      ],
+      "explanation": "H2 在本阶段没有对应实验模板可运行，仅存在诊断线索，故保持未验证。",
+      "status": "UNVERIFIED",
+      "topic": "unverified_H2"
+    },
+    {
+      "accounts": [],
+      "claim": "H3 未开展对应实验，保持未验证。",
+      "evidence_refs": [
+        "{{ref:data/phase4/hypotheses.json#/hypotheses/2}}"
+      ],
+      "explanation": "H3 涉及协议参数变更方向，现有冻结特征中无相关字段，无法检验，保持未验证。",
+      "status": "UNVERIFIED",
+      "topic": "unverified_H3"
+    },
+    {
+      "accounts": [],
+      "claim": "H4 未开展对应实验，保持未验证。",
+      "evidence_refs": [
+        "{{ref:data/phase4/hypotheses.json#/hypotheses/3}}"
+      ],
+      "explanation": "H4 关于借款人自身操作，仅有排序用估值摘要，无法判定因果，保持未验证。",
+      "status": "UNVERIFIED",
+      "topic": "unverified_H4"
+    }
+  ],
+  "model": "deepseek-v4.1-flash",
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "LLM audit of allowlisted frozen results; deterministic references"
+  },
+  "schemaVersion": "1",
+  "sensitivity_summary": {
+    "critical_distribution": [
+      {
+        "count": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/0/count}}",
+        "lower": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/0/lower}}",
+        "upper": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/0/upper}}"
+      },
+      {
+        "count": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/1/count}}",
+        "lower": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/1/lower}}",
+        "upper": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/1/upper}}"
+      },
+      {
+        "count": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/2/count}}",
+        "lower": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/2/lower}}",
+        "upper": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/2/upper}}"
+      },
+      {
+        "count": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/3/count}}",
+        "lower": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/3/lower}}",
+        "upper": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/3/upper}}"
+      },
+      {
+        "count": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/4/count}}",
+        "lower": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/4/lower}}",
+        "upper": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/4/upper}}"
+      },
+      {
+        "count": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/5/count}}",
+        "lower": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/5/lower}}",
+        "upper": "{{ref:data/phase4/hypotheses.json#/evidence_summary/critical/bins/5/upper}}"
+      }
+    ],
+    "rows": [
+      {
+        "group": "{{ref:data/phase3/sensitivity.json#/rows/0/group}}",
+        "included_accounts": "{{ref:data/phase3/sensitivity.json#/rows/0/included_accounts}}",
+        "liquidatable_accounts": "{{ref:data/phase3/sensitivity.json#/rows/0/liquidatable_accounts}}",
+        "price_usd": "{{ref:data/phase3/sensitivity.json#/rows/0/price_usd}}",
+        "repay_usd_estimate_total": "{{ref:data/phase3/sensitivity.json#/rows/0/repay_usd_estimate_total}}",
+        "shortfall_total_raw": "{{ref:data/phase3/sensitivity.json#/rows/0/shortfall_total_raw}}",
+        "shortfall_total_usd": "{{ref:data/phase3/sensitivity.json#/rows/0/shortfall_total_usd}}"
+      },
+      {
+        "group": "{{ref:data/phase3/sensitivity.json#/rows/1/group}}",
+        "included_accounts": "{{ref:data/phase3/sensitivity.json#/rows/1/included_accounts}}",
+        "liquidatable_accounts": "{{ref:data/phase3/sensitivity.json#/rows/1/liquidatable_accounts}}",
+        "price_usd": "{{ref:data/phase3/sensitivity.json#/rows/1/price_usd}}",
+        "repay_usd_estimate_total": "{{ref:data/phase3/sensitivity.json#/rows/1/repay_usd_estimate_total}}",
+        "shortfall_total_raw": "{{ref:data/phase3/sensitivity.json#/rows/1/shortfall_total_raw}}",
+        "shortfall_total_usd": "{{ref:data/phase3/sensitivity.json#/rows/1/shortfall_total_usd}}"
+      },
+      {
+        "group": "{{ref:data/phase3/sensitivity.json#/rows/2/group}}",
+        "included_accounts": "{{ref:data/phase3/sensitivity.json#/rows/2/included_accounts}}",
+        "liquidatable_accounts": "{{ref:data/phase3/sensitivity.json#/rows/2/liquidatable_accounts}}",
+        "price_usd": "{{ref:data/phase3/sensitivity.json#/rows/2/price_usd}}",
+        "repay_usd_estimate_total": "{{ref:data/phase3/sensitivity.json#/rows/2/repay_usd_estimate_total}}",
+        "shortfall_total_raw": "{{ref:data/phase3/sensitivity.json#/rows/2/shortfall_total_raw}}",
+        "shortfall_total_usd": "{{ref:data/phase3/sensitivity.json#/rows/2/shortfall_total_usd}}"
+      },
+      {
+        "group": "{{ref:data/phase3/sensitivity.json#/rows/3/group}}",
+        "included_accounts": "{{ref:data/phase3/sensitivity.json#/rows/3/included_accounts}}",
+        "liquidatable_accounts": "{{ref:data/phase3/sensitivity.json#/rows/3/liquidatable_accounts}}",
+        "price_usd": "{{ref:data/phase3/sensitivity.json#/rows/3/price_usd}}",
+        "repay_usd_estimate_total": "{{ref:data/phase3/sensitivity.json#/rows/3/repay_usd_estimate_total}}",
+        "shortfall_total_raw": "{{ref:data/phase3/sensitivity.json#/rows/3/shortfall_total_raw}}",
+        "shortfall_total_usd": "{{ref:data/phase3/sensitivity.json#/rows/3/shortfall_total_usd}}"
+      },
+      {
+        "group": "{{ref:data/phase3/sensitivity.json#/rows/4/group}}",
+        "included_accounts": "{{ref:data/phase3/sensitivity.json#/rows/4/included_accounts}}",
+        "liquidatable_accounts": "{{ref:data/phase3/sensitivity.json#/rows/4/liquidatable_accounts}}",
+        "price_usd": "{{ref:data/phase3/sensitivity.json#/rows/4/price_usd}}",
+        "repay_usd_estimate_total": "{{ref:data/phase3/sensitivity.json#/rows/4/repay_usd_estimate_total}}",
+        "shortfall_total_raw": "{{ref:data/phase3/sensitivity.json#/rows/4/shortfall_total_raw}}",
+        "shortfall_total_usd": "{{ref:data/phase3/sensitivity.json#/rows/4/shortfall_total_usd}}"
+      },
+      {
+        "group": "{{ref:data/phase3/sensitivity.json#/rows/5/group}}",
+        "included_accounts": "{{ref:data/phase3/sensitivity.json#/rows/5/included_accounts}}",
+        "liquidatable_accounts": "{{ref:data/phase3/sensitivity.json#/rows/5/liquidatable_accounts}}",
+        "price_usd": "{{ref:data/phase3/sensitivity.json#/rows/5/price_usd}}",
+        "repay_usd_estimate_total": "{{ref:data/phase3/sensitivity.json#/rows/5/repay_usd_estimate_total}}",
+        "shortfall_total_raw": "{{ref:data/phase3/sensitivity.json#/rows/5/shortfall_total_raw}}",
+        "shortfall_total_usd": "{{ref:data/phase3/sensitivity.json#/rows/5/shortfall_total_usd}}"
+      }
+    ],
+    "valuation_note": "{{ref:data/phase3/sensitivity.json#/valuation_note}}"
+  },
+  "uncertainty": [
+    "N−1 为近似状态，未重放区块内早先交易与账户操作，交易内精确缺口仍有不确定性。",
+    "getAccountLiquidity 不计提利息，真实清算会计提借款与抵押市场利息，缺口不等于交易内精确缺口，未复现原因因而未确定。",
+    "临界价格为推导值，仅固定其他价格并按 ±{{ref:data/phase4/constants.json#/critical_price_epsilon_usd}} 美元验证符号翻转，线性误差容差见 {{ref:data/phase3/experiments.json#/experiments/0/critical_price/linear_tolerance_usd}}。",
+    "诊断组同时改变多个变量，仅作诊断，不能据此认定 H2 抵押品真实下跌已验证。",
+    "敏感性表估值沿用 N−1 排序口径，不代表该价格下的清算额或损失。"
+  ],
+  "unverified_hypotheses": [
+    "H2",
+    "H3",
+    "H4"
+  ]
+}

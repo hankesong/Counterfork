@@ -165,20 +165,17 @@
     }
   },
   "feature_limitations": [
-    "summary.json 不含日内时间直方图或前二十账户明细；未向假设模型提供这些数据。"
+    "小时统计和排名账户估值沿用 N−1 排序口径；诊断组其他资产价格变动仅作事实输入，不证明归因。"
   ],
   "hypotheses": [
     {
       "evidence_refs": [
-        "{{ref:data/phase2/summary.json#/dai_related/borrower_count}}",
-        "{{ref:data/phase2/summary.json#/dai_related/event_count}}",
-        "{{ref:data/phase2/summary.json#/dai_related/repay_usd_estimate}}",
-        "{{ref:data/phase2/summary.json#/total/repay_usd_estimate}}",
-        "{{ref:data/phase2/summary.json#/market_totals/1/market_label}}",
-        "{{ref:data/phase2/summary.json#/market_totals/1/borrower_count}}",
-        "{{ref:data/phase2/summary.json#/market_totals/1/event_count}}",
-        "{{ref:data/phase2/summary.json#/market_totals/1/repay_usd_estimate}}",
-        "{{ref:data/phase2/summary.json#/valuation_note}}"
+        "{{ref:data/phase4/features.json#/hourly_utc/8/event_count}}",
+        "{{ref:data/phase4/features.json#/hourly_utc/9/event_count}}",
+        "{{ref:data/phase4/features.json#/hourly_utc/8/repay_usd_estimate_total}}",
+        "{{ref:data/phase4/features.json#/top_accounts/0/borrower}}",
+        "{{ref:data/phase4/features.json#/top_accounts/0/dai_related}}",
+        "{{ref:data/phase4/features.json#/top_accounts/0/repay_usd_estimate_total}}"
       ],
       "id": "H1",
       "parameters": {
@@ -190,50 +187,52 @@
           "{{ref:data/phase3/sensitivity.json#/rows/4/price_usd}}"
         ]
       },
-      "reason": "DAI 相关借款人和事件在汇总中占主导，cDAI 市场汇总规模最大，且存在唯一模板 dai_price_override 可用于价格覆盖敏感性实验，因此值得实验；实验覆盖不等于原因已验证。",
+      "reason": "事件窗口的小时分布显示极端集中：{{ref:data/phase4/features.json#/hourly_utc/8/event_count}} 与 {{ref:data/phase4/features.json#/hourly_utc/9/event_count}} 两小时的事件数远高于其余小时，且 {{ref:data/phase4/features.json#/hourly_utc/8/repay_usd_estimate_total}} 为窗口内最大的小时估值；同时排名第一的账户 {{ref:data/phase4/features.json#/top_accounts/0/borrower}} 被标记为 dai_related={{ref:data/phase4/features.json#/top_accounts/0/dai_related}} 且估值 {{ref:data/phase4/features.json#/top_accounts/0/repay_usd_estimate_total}} 最大。这一集中形态与 DAI 价格侧假设一致，因此值得用唯一可用模板对 DAI 价格覆盖做实验。",
       "run_experiment": true,
       "status": "EXPERIMENT_COVERED",
       "template": "dai_price_override"
     },
     {
       "evidence_refs": [
-        "{{ref:data/phase2/summary.json#/valuation_note}}",
-        "{{ref:data/phase2/summary.json#/scope}}",
-        "{{ref:data/phase2/summary.json#/market_totals/1/basis}}",
-        "{{ref:data/phase2/summary.json#/window/start_utc}}",
-        "{{ref:data/phase2/summary.json#/window/end_utc}}"
+        "{{ref:data/phase4/features.json#/diagnostic_other_asset_price_changes/account_count}}",
+        "{{ref:data/phase4/features.json#/diagnostic_other_asset_price_changes/accounts/0/borrower}}",
+        "{{ref:data/phase4/features.json#/diagnostic_other_asset_price_changes/accounts/0/symbols}}",
+        "{{ref:data/phase4/features.json#/diagnostic_other_asset_price_changes/definition}}"
       ],
       "id": "H2",
       "parameters": {},
-      "reason": "summary 仅以 N−1 预言机价格估值用于排序，并说明不等于清算实际价格；未提供抵押品真实下跌的直接特征，且无对应实验模板，因此不值得实验。",
+      "reason": "诊断特征记录了 {{ref:data/phase4/features.json#/diagnostic_other_asset_price_changes/account_count}} 个账户在诊断组中存在非 DAI 资产价格变化，例如 {{ref:data/phase4/features.json#/diagnostic_other_asset_price_changes/accounts/0/borrower}} 与 {{ref:data/phase4/features.json#/diagnostic_other_asset_price_changes/accounts/0/symbols}}，这可以作为抵押品真实下跌方向的可查线索；但该特征定义仅计数、不作归因，且 {{ref:data/phase4/features.json#/diagnostic_other_asset_price_changes/definition}} 明确不作结论，因此目前不能据此声称该假设已验证。本阶段没有对应模板，故不运行实验。",
       "run_experiment": false,
       "status": "UNVERIFIED",
       "template": null
     },
     {
       "evidence_refs": [
-        "{{ref:data/phase2/summary.json#/scope}}",
-        "{{ref:data/phase2/summary.json#/window/block_count}}",
-        "{{ref:data/phase2/summary.json#/valuation_note}}",
-        "{{ref:data/phase2/summary.json#/market_totals/0/basis}}"
+        "{{ref:data/phase2/summary.json#/market_totals/1/market_label}}",
+        "{{ref:data/phase2/summary.json#/market_totals/1/event_count}}",
+        "{{ref:data/phase2/summary.json#/market_totals/1/repay_usd_estimate}}",
+        "{{ref:data/phase2/summary.json#/market_totals/0/market_label}}",
+        "{{ref:data/phase2/summary.json#/market_totals/0/event_count}}"
       ],
       "id": "H3",
       "parameters": {},
-      "reason": "summary 结构化字段未包含协议参数变更的证据或比较维度，且无对应实验模板，因此无法从现有特征判断，不值得实验。",
+      "reason": "窗口内事件与估值高度集中在 cDAI 市场：{{ref:data/phase2/summary.json#/market_totals/1/market_label}} 的 event_count={{ref:data/phase2/summary.json#/market_totals/1/event_count}}、repay_usd_estimate={{ref:data/phase2/summary.json#/market_totals/1/repay_usd_estimate}}，而 {{ref:data/phase2/summary.json#/market_totals/0/market_label}} 的 event_count={{ref:data/phase2/summary.json#/market_totals/0/event_count}}。这提示需要排查协议参数（如抵押因子、清算阈值）变更的可能，但现有特征文件没有参数变更相关字段，无法在本阶段检验。本阶段没有对应模板，故不运行实验。",
       "run_experiment": false,
       "status": "UNVERIFIED",
       "template": null
     },
     {
       "evidence_refs": [
-        "{{ref:data/phase2/summary.json#/dai_related/borrower_count}}",
-        "{{ref:data/phase2/summary.json#/dai_related/event_count}}",
-        "{{ref:data/phase2/summary.json#/scope}}",
-        "{{ref:data/phase2/summary.json#/valuation_note}}"
+        "{{ref:data/phase4/features.json#/top_accounts/1/borrower}}",
+        "{{ref:data/phase4/features.json#/top_accounts/1/liquidation_count}}",
+        "{{ref:data/phase4/features.json#/top_accounts/1/first_liquidation_block}}",
+        "{{ref:data/phase4/features.json#/top_accounts/1/repay_usd_estimate_total}}",
+        "{{ref:data/phase4/features.json#/top_accounts/15/borrower}}",
+        "{{ref:data/phase4/features.json#/top_accounts/15/liquidation_count}}"
       ],
       "id": "H4",
       "parameters": {},
-      "reason": "summary 未提供前排账户信息或日内分布；仅有借款人及事件汇总计数，无法归因于借款人自身操作，且无对应模板，因此不值得实验。",
+      "reason": "头部账户摘要显示部分账户有多次清算记录，例如 {{ref:data/phase4/features.json#/top_accounts/1/borrower}} 的 liquidation_count={{ref:data/phase4/features.json#/top_accounts/1/liquidation_count}}、首次清算区块 {{ref:data/phase4/features.json#/top_accounts/1/first_liquidation_block}}、估值 {{ref:data/phase4/features.json#/top_accounts/1/repay_usd_estimate_total}}，且 {{ref:data/phase4/features.json#/top_accounts/15/borrower}} 的 liquidation_count={{ref:data/phase4/features.json#/top_accounts/15/liquidation_count}}，说明借款人自身操作（如主动还款/仓位调整）是值得单独调查的方向；但摘要只给出排序用估值，无法据此判定因果。本阶段没有对应模板，故不运行实验。",
       "run_experiment": false,
       "status": "UNVERIFIED",
       "template": null
@@ -242,7 +241,7 @@
   "model": "deepseek-v4.1-flash",
   "provenance": {
     "mode": "FROZEN",
-    "source": "LLM selection of frozen structured Phase 2 summary"
+    "source": "LLM selection of frozen Phase 2 summary and deterministic Phase 4 features"
   },
   "schemaVersion": "1"
 }

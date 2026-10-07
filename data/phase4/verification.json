@@ -1,0 +1,112 @@
+{
+  "cast_vectors": [
+    {
+      "bytes": "0",
+      "cast": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+      "keccak256": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+      "match": true,
+      "name": "empty"
+    },
+    {
+      "bytes": "3",
+      "cast": "0x4e03657aea45a94fc7d47ba826c8d667c0d1e6e33a64a036ec44f58fa12d6c45",
+      "keccak256": "0x4e03657aea45a94fc7d47ba826c8d667c0d1e6e33a64a036ec44f58fa12d6c45",
+      "match": true,
+      "name": "abc"
+    },
+    {
+      "bytes": "48",
+      "cast": "0x9640a6d83372f46da9c0385a943a467b95015b54712566c635d07a5231cb6355",
+      "keccak256": "0x9640a6d83372f46da9c0385a943a467b95015b54712566c635d07a5231cb6355",
+      "match": true,
+      "name": "chinese_json"
+    },
+    {
+      "bytes": "276252",
+      "cast": "0x648b16990df0fdde322d8edf3b474d38848da65f2fdd23575e0a8476834685b2",
+      "keccak256": "0x648b16990df0fdde322d8edf3b474d38848da65f2fdd23575e0a8476834685b2",
+      "match": true,
+      "name": "large_experiments_json"
+    },
+    {
+      "bytes": "23",
+      "cast": "0x51aec3f6bc0c3ac98b0c63e7e15252ce548cfeeb15f780e4c744b6fefcbba2ef",
+      "keccak256": "0x51aec3f6bc0c3ac98b0c63e7e15252ce548cfeeb15f780e4c744b6fefcbba2ef",
+      "match": true,
+      "name": "caseId"
+    }
+  ],
+  "manifestHash": "0xabd8759d0775d5954ee0c1ab9a5584f79d81e70f69f88ccd110db6779da1ada5",
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "Phase 4 local verification"
+  },
+  "runs": [
+    {
+      "cache_hits": "0",
+      "cache_keys": [
+        "8d847584e1076d6294f8039bd9c627c73f4c5ac1d33f786c167a5570e7fc983c",
+        "e4e9be9faa71991ef7fd488bf189a0032b6d86e575058e23765b6c6d69e568cb"
+      ],
+      "llm_requests": "2",
+      "rounds": [
+        {
+          "agent": "hypothesis",
+          "cache_hits": "0",
+          "model": "deepseek-v4.1-flash",
+          "rejections": "0",
+          "requests": "1",
+          "status": "accepted"
+        },
+        {
+          "agent": "audit",
+          "cache_hits": "0",
+          "model": "deepseek-v4.1-flash",
+          "rejections": "0",
+          "requests": "1",
+          "status": "accepted"
+        }
+      ],
+      "validation_rejections": []
+    },
+    {
+      "cache_hits": "2",
+      "cache_keys": [
+        "8d847584e1076d6294f8039bd9c627c73f4c5ac1d33f786c167a5570e7fc983c",
+        "e4e9be9faa71991ef7fd488bf189a0032b6d86e575058e23765b6c6d69e568cb"
+      ],
+      "llm_requests": "0",
+      "rounds": [
+        {
+          "agent": "hypothesis",
+          "cache_hits": "1",
+          "model": "deepseek-v4.1-flash",
+          "rejections": "0",
+          "requests": "0",
+          "status": "accepted"
+        },
+        {
+          "agent": "audit",
+          "cache_hits": "1",
+          "model": "deepseek-v4.1-flash",
+          "rejections": "0",
+          "requests": "0",
+          "status": "accepted"
+        }
+      ],
+      "validation_rejections": []
+    }
+  ],
+  "schemaVersion": "1",
+  "secondRunSha256": {
+    "data/phase4/hypotheses.json": "945dea1d0519f8d39eed1fa7801a4db15e209168b0e866eebdf69915d8fd1d3f",
+    "data/phase4/manifest.json": "f1e83aa8ceee50372aea5cc18913024955b50c474bc82a0aa25fc6ae42896935",
+    "data/phase4/report.json": "b6d5bf562c5b22aab399fc125e76023e6fac9df1162f0840c8b886eaec2538a6"
+  },
+  "secondRunUnchanged": true,
+  "sha256": {
+    "data/phase4/hypotheses.json": "945dea1d0519f8d39eed1fa7801a4db15e209168b0e866eebdf69915d8fd1d3f",
+    "data/phase4/manifest.json": "f1e83aa8ceee50372aea5cc18913024955b50c474bc82a0aa25fc6ae42896935",
+    "data/phase4/report.json": "b6d5bf562c5b22aab399fc125e76023e6fac9df1162f0840c8b886eaec2538a6"
+  }
+}
