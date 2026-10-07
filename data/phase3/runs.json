@@ -1,0 +1,109 @@
+{
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+    "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+  },
+  "runs": [
+    {
+      "provenance": {
+        "mode": "LIVE",
+        "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+        "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+      },
+      "started_utc": "2026-10-07T05:16:29.692048+00:00",
+      "cache_only": false,
+      "status": "failed",
+      "error": "NETWORK_ERROR: <urlopen error [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。>",
+      "rpc_requests_this_run": "1",
+      "cache_hits": "6",
+      "account_result_cache_hits": "0",
+      "elapsed_seconds": "0.437"
+    },
+    {
+      "provenance": {
+        "mode": "LIVE",
+        "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+        "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+      },
+      "started_utc": "2026-10-07T05:16:44.409726+00:00",
+      "cache_only": false,
+      "status": "failed",
+      "error": "Foundry failed: F:\\hankesong\\hanworkspace\\data\\phase3\\accounts\\0x909b443761bbd7fbb876ecde71a37e1433f6af6f\\forge_run.json",
+      "rpc_requests_this_run": "1",
+      "cache_hits": "11",
+      "account_result_cache_hits": "0",
+      "elapsed_seconds": "2.847"
+    },
+    {
+      "provenance": {
+        "mode": "LIVE",
+        "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+        "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+      },
+      "started_utc": "2026-10-07T05:17:08.910372+00:00",
+      "cache_only": false,
+      "status": "passed",
+      "rpc_requests_this_run": "1929",
+      "cache_hits": "591",
+      "account_result_cache_hits": "0",
+      "elapsed_seconds": "1811.236"
+    },
+    {
+      "provenance": {
+        "mode": "FROZEN",
+        "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+        "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+      },
+      "started_utc": "2026-10-07T05:48:03.572583+00:00",
+      "cache_only": true,
+      "status": "passed",
+      "rpc_requests_this_run": "0",
+      "cache_hits": "2506",
+      "account_result_cache_hits": "0",
+      "elapsed_seconds": "34.118"
+    },
+    {
+      "provenance": {
+        "mode": "FROZEN",
+        "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+        "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+      },
+      "started_utc": "2026-10-07T05:49:11.073426+00:00",
+      "cache_only": true,
+      "status": "passed",
+      "rpc_requests_this_run": "0",
+      "cache_hits": "0",
+      "account_result_cache_hits": "20",
+      "elapsed_seconds": "2.203"
+    },
+    {
+      "provenance": {
+        "mode": "FROZEN",
+        "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+        "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+      },
+      "started_utc": "2026-10-07T05:49:58.957367+00:00",
+      "cache_only": true,
+      "status": "passed",
+      "rpc_requests_this_run": "0",
+      "cache_hits": "2506",
+      "account_result_cache_hits": "0",
+      "elapsed_seconds": "29.982"
+    },
+    {
+      "provenance": {
+        "mode": "FROZEN",
+        "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+        "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+      },
+      "started_utc": "2026-10-07T05:50:57.311023+00:00",
+      "cache_only": false,
+      "status": "passed",
+      "rpc_requests_this_run": "0",
+      "cache_hits": "0",
+      "account_result_cache_hits": "20",
+      "elapsed_seconds": "2.185"
+    }
+  ]
+}

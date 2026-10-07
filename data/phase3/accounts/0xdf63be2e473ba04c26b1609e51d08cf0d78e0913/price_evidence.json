@@ -1,0 +1,107 @@
+{
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+    "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+  },
+  "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+  "dai": "0x6b175474e89094c44da98b954eedeac495271d0f",
+  "reference_price_raw": "1006454000000000000",
+  "actual_price_raw": "1006454000000000000",
+  "actual_price_source": {
+    "state": "N-1 oracle state",
+    "block": "11335995",
+    "note": "区块内无喂价"
+  },
+  "price_updates": [
+    {
+      "symbol": "UNI",
+      "market": "0x35a18000230da775cac24873d00ff85bccded550",
+      "base_unit": "1000000000000000000",
+      "event_price_raw": "3107750",
+      "price_raw": "3107750000000000000",
+      "price_usd": "3.10775",
+      "reference_price_raw": "3198950000000000000",
+      "changed_from_reference": true,
+      "source": {
+        "tx_hash": "0x75c495b422973b9566992262c5db20e8129090bac38e075f90dd19956fedb44b",
+        "logIndex": "9"
+      },
+      "log": {
+        "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+        "topics": [
+          "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+        ],
+        "data": "0x000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000002f6ba60000000000000000000000000000000000000000000000000000000000000003554e490000000000000000000000000000000000000000000000000000000000",
+        "blockHash": "0x02a722253ad62a111d7fe4e3b7fadb0fb75bb867a327f27e3985b9fc7917cf5d",
+        "blockNumber": "0xacf93c",
+        "blockTimestamp": "0x5fc0054b",
+        "transactionHash": "0x75c495b422973b9566992262c5db20e8129090bac38e075f90dd19956fedb44b",
+        "transactionIndex": "0x43",
+        "logIndex": "0x9",
+        "removed": false
+      }
+    }
+  ],
+  "other_asset_updates": [
+    {
+      "symbol": "UNI",
+      "market": "0x35a18000230da775cac24873d00ff85bccded550",
+      "base_unit": "1000000000000000000",
+      "event_price_raw": "3107750",
+      "price_raw": "3107750000000000000",
+      "price_usd": "3.10775",
+      "reference_price_raw": "3198950000000000000",
+      "changed_from_reference": true,
+      "source": {
+        "tx_hash": "0x75c495b422973b9566992262c5db20e8129090bac38e075f90dd19956fedb44b",
+        "logIndex": "9"
+      },
+      "log": {
+        "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+        "topics": [
+          "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+        ],
+        "data": "0x000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000002f6ba60000000000000000000000000000000000000000000000000000000000000003554e490000000000000000000000000000000000000000000000000000000000",
+        "blockHash": "0x02a722253ad62a111d7fe4e3b7fadb0fb75bb867a327f27e3985b9fc7917cf5d",
+        "blockNumber": "0xacf93c",
+        "blockTimestamp": "0x5fc0054b",
+        "transactionHash": "0x75c495b422973b9566992262c5db20e8129090bac38e075f90dd19956fedb44b",
+        "transactionIndex": "0x43",
+        "logIndex": "0x9",
+        "removed": false
+      }
+    }
+  ],
+  "diagnostic_prices": [
+    {
+      "symbol": "UNI",
+      "market": "0x35a18000230da775cac24873d00ff85bccded550",
+      "base_unit": "1000000000000000000",
+      "event_price_raw": "3107750",
+      "price_raw": "3107750000000000000",
+      "price_usd": "3.10775",
+      "reference_price_raw": "3198950000000000000",
+      "changed_from_reference": true,
+      "source": {
+        "tx_hash": "0x75c495b422973b9566992262c5db20e8129090bac38e075f90dd19956fedb44b",
+        "logIndex": "9"
+      },
+      "log": {
+        "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+        "topics": [
+          "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+        ],
+        "data": "0x000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000002f6ba60000000000000000000000000000000000000000000000000000000000000003554e490000000000000000000000000000000000000000000000000000000000",
+        "blockHash": "0x02a722253ad62a111d7fe4e3b7fadb0fb75bb867a327f27e3985b9fc7917cf5d",
+        "blockNumber": "0xacf93c",
+        "blockTimestamp": "0x5fc0054b",
+        "transactionHash": "0x75c495b422973b9566992262c5db20e8129090bac38e075f90dd19956fedb44b",
+        "transactionIndex": "0x43",
+        "logIndex": "0x9",
+        "removed": false
+      }
+    }
+  ],
+  "receipt_bundle": "data/phase3/receipts/11335996.json"
+}

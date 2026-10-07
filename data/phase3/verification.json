@@ -1,0 +1,56 @@
+{
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+    "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+  },
+  "offline_tests_passed": "31",
+  "foundry_accounts": "19",
+  "phase1_regression": "exact_match",
+  "ordinary_replay": {
+    "provenance": {
+      "mode": "FROZEN",
+      "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+      "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+    },
+    "started_utc": "2026-10-07T05:50:57.311023+00:00",
+    "cache_only": false,
+    "status": "passed",
+    "rpc_requests_this_run": "0",
+    "cache_hits": "0",
+    "account_result_cache_hits": "20",
+    "elapsed_seconds": "2.185"
+  },
+  "forced_offline_fork_replay": {
+    "provenance": {
+      "mode": "FROZEN",
+      "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+      "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+    },
+    "started_utc": "2026-10-07T05:49:58.957367+00:00",
+    "cache_only": true,
+    "status": "passed",
+    "rpc_requests_this_run": "0",
+    "cache_hits": "2506",
+    "account_result_cache_hits": "0",
+    "elapsed_seconds": "29.982"
+  },
+  "five_output_files_byte_identical": true,
+  "sha256": {
+    "data/phase3/experiments.json": "bbf577281bee3d13749038b69e8b66a8f38b54c5348a06b98bb374b71b1a4980",
+    "data/phase3/sensitivity.json": "49ecd0c9eb20c4af9f02d5d21dbc7a21cc69ce00326f655d76f06c5f7270a971",
+    "data/phase2/accounts.json": "3cedf60a0d1cacf35508405423a03f064cb5e00995752b65d75f60e69b6d5b51",
+    "data/phase2/events.json": "777fc8d76b76093f750be2fe0e607a52f98d232860a97b47b9fec261d26293fb",
+    "data/phase2/summary.json": "a29ad428434359047bbf78730f5b14c292da1c176353d7d2b63b6cd84a322e87"
+  },
+  "rpc_request_attempts_total": "1931",
+  "sandbox_blocked_attempts": "1",
+  "upstream_rpc_requests": "1930",
+  "new_successful_rpc_cache_files": "1930",
+  "phase2_refresh_requests": "0",
+  "status_counts": {
+    "passed": "14",
+    "real_not_reproduced": "5",
+    "not_applicable": "1"
+  }
+}

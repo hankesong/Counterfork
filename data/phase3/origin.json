@@ -1,0 +1,7 @@
+{
+  "provenance": {
+    "mode": "LIVE",
+    "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+    "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+  }
+}

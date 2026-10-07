@@ -8,6 +8,16 @@ MODES = {'LIVE', 'FROZEN', 'UI_MOCK'}
 
 
 def require_evidence(document, name):
+    def reject_nested_mock(value):
+        if isinstance(value, dict):
+            if value.get('mode') == 'UI_MOCK':
+                raise ValueError(name + ': UI_MOCK data must not be used as evidence')
+            for child in value.values():
+                reject_nested_mock(child)
+        elif isinstance(value, list):
+            for child in value:
+                reject_nested_mock(child)
+    reject_nested_mock(document)
     if not isinstance(document, dict) or not isinstance(document.get('provenance'), dict):
         raise ValueError(name + ': missing provenance')
     proof = document['provenance']
@@ -45,9 +55,22 @@ def provenance(folder, network_requests, current_run=None):
 
 
 def analyzed_borrowers(path=None):
+    default_path = path is None
+    phase3 = set()
+    batch = ROOT / 'data/phase3/experiments.json'
+    if default_path and batch.exists():
+        document = load(batch)
+        require_evidence(document, 'Phase 3 experiments')
+        for row in document['experiments']:
+            require_evidence(row, 'Phase 3 account')
+            if row['status'] == 'passed':
+                real = row['groups']['real']
+                if real['err'] != '0' or int(real['shortfall']) <= 0:
+                    raise ValueError('Invalid Phase 3 passed account')
+                phase3.add(row['borrower'].lower())
     path = path if path is not None else ROOT / 'data/phase1/single_account.json'
     if not path.exists():
-        return set()
+        return phase3
     result = load(path)
     real = result.get('groups', {}).get('real', {})
     borrower = result.get('borrower')
@@ -57,7 +80,7 @@ def analyzed_borrowers(path=None):
                     and borrower == result.get('sample', {}).get('borrower'))
     except (ValueError, TypeError):
         accepted = False
-    return {borrower.lower()} if accepted else set()
+    return phase3 | ({borrower.lower()} if accepted else set())
 
 
 def display(event):

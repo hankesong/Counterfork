@@ -489,6 +489,9 @@ def outputs(setup, events, checks, run=None):
         require_evidence(obj, name)
         validate(obj)
         save(DIR / (name + '.json'), obj)
+    save(DIR / 'contract_samples.json', {
+        'accounts.json': {'provenance': proof, 'accounts': accounts[:3]},
+        'events.json': {'provenance': proof, 'events': events[:2]}})
     print(json.dumps({'total': total, 'dai_related': related, 'cross_checks': cross}, ensure_ascii=True), flush=True)
 
 

@@ -1,0 +1,191 @@
+{
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+    "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+  },
+  "borrower": "0xdb16bb1e9208c46fa0cd1d64fd290d017958f476",
+  "rank": "20",
+  "sample_event": {
+    "tx_hash": "0xfb57c8807d565dc8efb1f406e10244babcdb0f486897f6c17da5587909e6b085",
+    "blockNumber": "11333059",
+    "blockHash": "0x23050aa5d4653eab454684b431337f16ff6f9f34eab415fb810e6b1b812c8b10",
+    "transactionIndex": "5",
+    "logIndex": "25"
+  },
+  "liquidation_count": "1",
+  "repay_usd_estimate_total": "162755.196060996444694882521133",
+  "input_sha256": "bb07ce83bb4ef4e4f894685d3fabbfb3d3eb0f0e02d1a038a09fe254bd84509d",
+  "limitations": [
+    "单变量假设：正式组只改 DAI 价格，其他资产保持 N−1。",
+    "N−1 是近似状态，没有重放区块 N 的早先交易或账户操作。",
+    "getAccountLiquidity 不计提利息；真实清算会计提借款和抵押市场利息，缺口不等于交易内精确缺口。",
+    "只用首次清算，清算次数按全部事件计。",
+    "临界价格是推导值，固定其他价格并验证 ±0.0001 美元符号翻转。",
+    "1.00 美元是锚定价格，不是当时的市场价。",
+    "不据此认定操纵或整个事件的单一原因。"
+  ],
+  "groups": {
+    "reference": {
+      "dai_price_raw": "1238179000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "21255269761521038513205",
+      "price_usd": "1.238179",
+      "price_source": {
+        "state": "N-1 oracle state",
+        "block": "11333058"
+      },
+      "liquidity_usd": "0",
+      "shortfall_usd": "21255.269761521038513205",
+      "err_interpretation": "protocol error code; no USD unit"
+    },
+    "real": {
+      "dai_price_raw": "1238179000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "21255269761521038513205",
+      "price_usd": "1.238179",
+      "price_source": {
+        "state": "N-1 oracle state",
+        "block": "11333058",
+        "note": "区块内无喂价"
+      },
+      "liquidity_usd": "0",
+      "shortfall_usd": "21255.269761521038513205",
+      "err_interpretation": "protocol error code; no USD unit"
+    },
+    "1.00": {
+      "dai_price_raw": "1000000000000000000",
+      "err": "0",
+      "liquidity": "41360668390575019005106",
+      "shortfall": "0",
+      "price_usd": "1",
+      "price_source": {
+        "assumption": "DAI = $1.00; vm.mockCall"
+      },
+      "liquidity_usd": "41360.668390575019005106",
+      "shortfall_usd": "0",
+      "err_interpretation": "protocol error code; no USD unit"
+    },
+    "1.05": {
+      "dai_price_raw": "1050000000000000000",
+      "err": "0",
+      "liquidity": "28215945692080177411534",
+      "shortfall": "0",
+      "price_usd": "1.05",
+      "price_source": {
+        "assumption": "DAI = $1.05; vm.mockCall"
+      },
+      "liquidity_usd": "28215.945692080177411534",
+      "shortfall_usd": "0",
+      "err_interpretation": "protocol error code; no USD unit"
+    },
+    "1.10": {
+      "dai_price_raw": "1100000000000000000",
+      "err": "0",
+      "liquidity": "15071222993585335817961",
+      "shortfall": "0",
+      "price_usd": "1.1",
+      "price_source": {
+        "assumption": "DAI = $1.10; vm.mockCall"
+      },
+      "liquidity_usd": "15071.222993585335817961",
+      "shortfall_usd": "0",
+      "err_interpretation": "protocol error code; no USD unit"
+    },
+    "1.20": {
+      "dai_price_raw": "1200000000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "11218222403404347369184",
+      "price_usd": "1.2",
+      "price_source": {
+        "assumption": "DAI = $1.20; vm.mockCall"
+      },
+      "liquidity_usd": "0",
+      "shortfall_usd": "11218.222403404347369184",
+      "err_interpretation": "protocol error code; no USD unit"
+    },
+    "1.30": {
+      "dai_price_raw": "1300000000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "37507667800394030556330",
+      "price_usd": "1.3",
+      "price_source": {
+        "assumption": "DAI = $1.30; vm.mockCall"
+      },
+      "liquidity_usd": "0",
+      "shortfall_usd": "37507.66780039403055633",
+      "err_interpretation": "protocol error code; no USD unit"
+    }
+  },
+  "critical_price": {
+    "price_raw": "1157328037035391744",
+    "candidate_raw": "1157328037035391744",
+    "derived": true,
+    "epsilon_raw": "100000000000000",
+    "linear_tolerance_usd": "0.00000001",
+    "sign_flip": true,
+    "reason": "verified sign flip",
+    "below": {
+      "dai_price_raw": "1157228037035391744",
+      "err": "0",
+      "liquidity": "26289445396989823516",
+      "shortfall": "0",
+      "price_usd": "1.157228037035391744",
+      "price_source": {
+        "assumption": "derived critical price below by $0.0001; vm.mockCall"
+      },
+      "liquidity_usd": "26.289445396989823516",
+      "shortfall_usd": "0",
+      "err_interpretation": "protocol error code; no USD unit"
+    },
+    "above": {
+      "dai_price_raw": "1157428037035391744",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "26289445396989542858",
+      "price_usd": "1.157428037035391744",
+      "price_source": {
+        "assumption": "derived critical price above by $0.0001; vm.mockCall"
+      },
+      "liquidity_usd": "0",
+      "shortfall_usd": "26.289445396989542858",
+      "err_interpretation": "protocol error code; no USD unit"
+    },
+    "price_usd": "1.157328037035391744"
+  },
+  "status": "passed",
+  "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+  "price_evidence": {
+    "provenance": {
+      "mode": "FROZEN",
+      "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+      "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+    },
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "dai": "0x6b175474e89094c44da98b954eedeac495271d0f",
+    "reference_price_raw": "1238179000000000000",
+    "actual_price_raw": "1238179000000000000",
+    "actual_price_source": {
+      "state": "N-1 oracle state",
+      "block": "11333058",
+      "note": "区块内无喂价"
+    },
+    "price_updates": [],
+    "other_asset_updates": [],
+    "diagnostic_prices": [],
+    "receipt_bundle": "data/phase3/receipts/11333059.json"
+  },
+  "diagnostic": null,
+  "failure_diagnostics": {
+    "other_asset_updates": [],
+    "same_block_liquidation_count": "1",
+    "repeated_liquidation_same_block": false,
+    "interest_explanation": "getAccountLiquidity 不计提利息；真实清算会计提借款和抵押市场利息，缺口不等于交易内精确缺口。",
+    "state_explanation": "N−1 是近似状态，没有重放区块 N 的早先交易或账户操作。"
+  },
+  "result_sha256": "526b2e9ac571b29f0655f72c59efc57702bfd78bfa968adb8fc438b091c41354"
+}

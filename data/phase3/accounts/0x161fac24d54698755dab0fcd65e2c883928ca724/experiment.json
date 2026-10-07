@@ -1,0 +1,659 @@
+{
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+    "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+  },
+  "borrower": "0x161fac24d54698755dab0fcd65e2c883928ca724",
+  "rank": "8",
+  "sample_event": {
+    "tx_hash": "0xb8331c09fc876669224cf363a43e5bb20626c4ff98e09472d4fae976b68fa551",
+    "blockNumber": "11333040",
+    "blockHash": "0x4ef9f2499b836cc69709a83f32c45447cd93cf8ee767f987aa70b975d1f17713",
+    "transactionIndex": "9",
+    "logIndex": "172"
+  },
+  "liquidation_count": "1",
+  "repay_usd_estimate_total": "942277.468366687937861670943973",
+  "input_sha256": "60cd69ce407f8d09ca2e8fc634fefbd86a9c7f088ff39b15526a9fd819629d38",
+  "limitations": [
+    "单变量假设：正式组只改 DAI 价格，其他资产保持 N−1。",
+    "N−1 是近似状态，没有重放区块 N 的早先交易或账户操作。",
+    "getAccountLiquidity 不计提利息；真实清算会计提借款和抵押市场利息，缺口不等于交易内精确缺口。",
+    "只用首次清算，清算次数按全部事件计。",
+    "临界价格是推导值，固定其他价格并验证 ±0.0001 美元符号翻转。",
+    "1.00 美元是锚定价格，不是当时的市场价。",
+    "不据此认定操纵或整个事件的单一原因。"
+  ],
+  "groups": {
+    "reference": {
+      "dai_price_raw": "1095299000000000000",
+      "err": "0",
+      "liquidity": "5810504977319564715874",
+      "shortfall": "0",
+      "price_usd": "1.095299",
+      "price_source": {
+        "state": "N-1 oracle state",
+        "block": "11333039"
+      },
+      "liquidity_usd": "5810.504977319564715874",
+      "shortfall_usd": "0",
+      "err_interpretation": "protocol error code; no USD unit"
+    },
+    "real": {
+      "dai_price_raw": "1134249000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "66954307404472258765611",
+      "price_usd": "1.134249",
+      "price_source": {
+        "tx_hash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+        "logIndex": "137"
+      },
+      "liquidity_usd": "0",
+      "shortfall_usd": "66954.307404472258765611",
+      "err_interpretation": "protocol error code; no USD unit"
+    },
+    "1.00": {
+      "dai_price_raw": "1000000000000000000",
+      "err": "0",
+      "liquidity": "183844236817431990542883",
+      "shortfall": "0",
+      "price_usd": "1",
+      "price_source": {
+        "assumption": "DAI = $1.00; vm.mockCall"
+      },
+      "liquidity_usd": "183844.236817431990542883",
+      "shortfall_usd": "0",
+      "err_interpretation": "protocol error code; no USD unit"
+    },
+    "1.05": {
+      "dai_price_raw": "1050000000000000000",
+      "err": "0",
+      "liquidity": "90436262001267903917101",
+      "shortfall": "0",
+      "price_usd": "1.05",
+      "price_source": {
+        "assumption": "DAI = $1.05; vm.mockCall"
+      },
+      "liquidity_usd": "90436.262001267903917101",
+      "shortfall_usd": "0",
+      "err_interpretation": "protocol error code; no USD unit"
+    },
+    "1.10": {
+      "dai_price_raw": "1100000000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "2971712814896182708682",
+      "price_usd": "1.1",
+      "price_source": {
+        "assumption": "DAI = $1.10; vm.mockCall"
+      },
+      "liquidity_usd": "0",
+      "shortfall_usd": "2971.712814896182708682",
+      "err_interpretation": "protocol error code; no USD unit"
+    },
+    "1.20": {
+      "dai_price_raw": "1200000000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "189787662447224355960248",
+      "price_usd": "1.2",
+      "price_source": {
+        "assumption": "DAI = $1.20; vm.mockCall"
+      },
+      "liquidity_usd": "0",
+      "shortfall_usd": "189787.662447224355960248",
+      "err_interpretation": "protocol error code; no USD unit"
+    },
+    "1.30": {
+      "dai_price_raw": "1300000000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "376603612079552529211814",
+      "price_usd": "1.3",
+      "price_source": {
+        "assumption": "DAI = $1.30; vm.mockCall"
+      },
+      "liquidity_usd": "0",
+      "shortfall_usd": "376603.612079552529211814",
+      "err_interpretation": "protocol error code; no USD unit"
+    }
+  },
+  "critical_price": {
+    "price_raw": "1098409283136292805",
+    "candidate_raw": "1098409283136292805",
+    "derived": true,
+    "epsilon_raw": "100000000000000",
+    "linear_tolerance_usd": "0.00000001",
+    "sign_flip": true,
+    "reason": "verified sign flip",
+    "below": {
+      "dai_price_raw": "1098309283136292805",
+      "err": "0",
+      "liquidity": "186815949632329270984",
+      "shortfall": "0",
+      "price_usd": "1.098309283136292805",
+      "price_source": {
+        "assumption": "derived critical price below by $0.0001; vm.mockCall"
+      },
+      "liquidity_usd": "186.815949632329270984",
+      "shortfall_usd": "0",
+      "err_interpretation": "protocol error code; no USD unit"
+    },
+    "above": {
+      "dai_price_raw": "1098509283136292805",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "186815949632327075519",
+      "price_usd": "1.098509283136292805",
+      "price_source": {
+        "assumption": "derived critical price above by $0.0001; vm.mockCall"
+      },
+      "liquidity_usd": "0",
+      "shortfall_usd": "186.815949632327075519",
+      "err_interpretation": "protocol error code; no USD unit"
+    },
+    "price_usd": "1.098409283136292805"
+  },
+  "status": "passed",
+  "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+  "price_evidence": {
+    "provenance": {
+      "mode": "FROZEN",
+      "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+      "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+    },
+    "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+    "dai": "0x6b175474e89094c44da98b954eedeac495271d0f",
+    "reference_price_raw": "1095299000000000000",
+    "actual_price_raw": "1134249000000000000",
+    "actual_price_source": {
+      "tx_hash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+      "logIndex": "137"
+    },
+    "price_updates": [
+      {
+        "symbol": "DAI",
+        "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+        "base_unit": "1000000000000000000",
+        "event_price_raw": "1134249",
+        "price_raw": "1134249000000000000",
+        "price_usd": "1.134249",
+        "reference_price_raw": "1095299000000000000",
+        "changed_from_reference": true,
+        "source": {
+          "tx_hash": "0x0a363e6fd757ba7416bce8b1716d86b1837e0ed48668e5c312c055e04f16b577",
+          "logIndex": "8"
+        },
+        "log": {
+          "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+          "topics": [
+            "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000114ea900000000000000000000000000000000000000000000000000000000000000034441490000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x4ef9f2499b836cc69709a83f32c45447cd93cf8ee767f987aa70b975d1f17713",
+          "blockNumber": "0xacedb0",
+          "blockTimestamp": "0x5fbf6dee",
+          "transactionHash": "0x0a363e6fd757ba7416bce8b1716d86b1837e0ed48668e5c312c055e04f16b577",
+          "transactionIndex": "0x1",
+          "logIndex": "0x8",
+          "removed": false
+        }
+      },
+      {
+        "symbol": "DAI",
+        "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+        "base_unit": "1000000000000000000",
+        "event_price_raw": "1134249",
+        "price_raw": "1134249000000000000",
+        "price_usd": "1.134249",
+        "reference_price_raw": "1095299000000000000",
+        "changed_from_reference": true,
+        "source": {
+          "tx_hash": "0x544a3c8d88b26620d4a0d8dfbc9fd202c90e15c099659f3e83e01b9393e23237",
+          "logIndex": "47"
+        },
+        "log": {
+          "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+          "topics": [
+            "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000114ea900000000000000000000000000000000000000000000000000000000000000034441490000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x4ef9f2499b836cc69709a83f32c45447cd93cf8ee767f987aa70b975d1f17713",
+          "blockNumber": "0xacedb0",
+          "blockTimestamp": "0x5fbf6dee",
+          "transactionHash": "0x544a3c8d88b26620d4a0d8dfbc9fd202c90e15c099659f3e83e01b9393e23237",
+          "transactionIndex": "0x2",
+          "logIndex": "0x2f",
+          "removed": false
+        }
+      },
+      {
+        "symbol": "DAI",
+        "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+        "base_unit": "1000000000000000000",
+        "event_price_raw": "1134249",
+        "price_raw": "1134249000000000000",
+        "price_usd": "1.134249",
+        "reference_price_raw": "1095299000000000000",
+        "changed_from_reference": true,
+        "source": {
+          "tx_hash": "0xc92130654bb8ef0f339cc95205a0fccb46873555e6d4abb260bcfb50600d2754",
+          "logIndex": "74"
+        },
+        "log": {
+          "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+          "topics": [
+            "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000114ea900000000000000000000000000000000000000000000000000000000000000034441490000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x4ef9f2499b836cc69709a83f32c45447cd93cf8ee767f987aa70b975d1f17713",
+          "blockNumber": "0xacedb0",
+          "blockTimestamp": "0x5fbf6dee",
+          "transactionHash": "0xc92130654bb8ef0f339cc95205a0fccb46873555e6d4abb260bcfb50600d2754",
+          "transactionIndex": "0x3",
+          "logIndex": "0x4a",
+          "removed": false
+        }
+      },
+      {
+        "symbol": "BTC",
+        "market": "0xc11b1268c1a384e55c48c2391d8d480264a3a7f4",
+        "base_unit": "100000000",
+        "event_price_raw": "16694535000",
+        "price_raw": "166945350000000000000000000000000",
+        "price_usd": "16694.535",
+        "reference_price_raw": "164542799990000000000000000000000",
+        "changed_from_reference": true,
+        "source": {
+          "tx_hash": "0xc92130654bb8ef0f339cc95205a0fccb46873555e6d4abb260bcfb50600d2754",
+          "logIndex": "76"
+        },
+        "log": {
+          "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+          "topics": [
+            "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000003e312635800000000000000000000000000000000000000000000000000000000000000034254430000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x4ef9f2499b836cc69709a83f32c45447cd93cf8ee767f987aa70b975d1f17713",
+          "blockNumber": "0xacedb0",
+          "blockTimestamp": "0x5fbf6dee",
+          "transactionHash": "0xc92130654bb8ef0f339cc95205a0fccb46873555e6d4abb260bcfb50600d2754",
+          "transactionIndex": "0x3",
+          "logIndex": "0x4c",
+          "removed": false
+        }
+      },
+      {
+        "symbol": "COMP",
+        "market": "0x0000000000000000000000000000000000000000",
+        "base_unit": "1000000000000000000",
+        "event_price_raw": "99970000",
+        "price_raw": "99970000000000000000",
+        "price_usd": "99.97",
+        "reference_price_raw": "99375000000000000000",
+        "changed_from_reference": true,
+        "source": {
+          "tx_hash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+          "logIndex": "135"
+        },
+        "log": {
+          "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+          "topics": [
+            "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000005f56bd00000000000000000000000000000000000000000000000000000000000000004434f4d5000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x4ef9f2499b836cc69709a83f32c45447cd93cf8ee767f987aa70b975d1f17713",
+          "blockNumber": "0xacedb0",
+          "blockTimestamp": "0x5fbf6dee",
+          "transactionHash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+          "transactionIndex": "0x6",
+          "logIndex": "0x87",
+          "removed": false
+        }
+      },
+      {
+        "symbol": "DAI",
+        "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+        "base_unit": "1000000000000000000",
+        "event_price_raw": "1134249",
+        "price_raw": "1134249000000000000",
+        "price_usd": "1.134249",
+        "reference_price_raw": "1095299000000000000",
+        "changed_from_reference": true,
+        "source": {
+          "tx_hash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+          "logIndex": "137"
+        },
+        "log": {
+          "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+          "topics": [
+            "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000114ea900000000000000000000000000000000000000000000000000000000000000034441490000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x4ef9f2499b836cc69709a83f32c45447cd93cf8ee767f987aa70b975d1f17713",
+          "blockNumber": "0xacedb0",
+          "blockTimestamp": "0x5fbf6dee",
+          "transactionHash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+          "transactionIndex": "0x6",
+          "logIndex": "0x89",
+          "removed": false
+        }
+      }
+    ],
+    "other_asset_updates": [
+      {
+        "symbol": "BTC",
+        "market": "0xc11b1268c1a384e55c48c2391d8d480264a3a7f4",
+        "base_unit": "100000000",
+        "event_price_raw": "16694535000",
+        "price_raw": "166945350000000000000000000000000",
+        "price_usd": "16694.535",
+        "reference_price_raw": "164542799990000000000000000000000",
+        "changed_from_reference": true,
+        "source": {
+          "tx_hash": "0xc92130654bb8ef0f339cc95205a0fccb46873555e6d4abb260bcfb50600d2754",
+          "logIndex": "76"
+        },
+        "log": {
+          "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+          "topics": [
+            "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000003e312635800000000000000000000000000000000000000000000000000000000000000034254430000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x4ef9f2499b836cc69709a83f32c45447cd93cf8ee767f987aa70b975d1f17713",
+          "blockNumber": "0xacedb0",
+          "blockTimestamp": "0x5fbf6dee",
+          "transactionHash": "0xc92130654bb8ef0f339cc95205a0fccb46873555e6d4abb260bcfb50600d2754",
+          "transactionIndex": "0x3",
+          "logIndex": "0x4c",
+          "removed": false
+        }
+      },
+      {
+        "symbol": "COMP",
+        "market": "0x0000000000000000000000000000000000000000",
+        "base_unit": "1000000000000000000",
+        "event_price_raw": "99970000",
+        "price_raw": "99970000000000000000",
+        "price_usd": "99.97",
+        "reference_price_raw": "99375000000000000000",
+        "changed_from_reference": true,
+        "source": {
+          "tx_hash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+          "logIndex": "135"
+        },
+        "log": {
+          "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+          "topics": [
+            "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000005f56bd00000000000000000000000000000000000000000000000000000000000000004434f4d5000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x4ef9f2499b836cc69709a83f32c45447cd93cf8ee767f987aa70b975d1f17713",
+          "blockNumber": "0xacedb0",
+          "blockTimestamp": "0x5fbf6dee",
+          "transactionHash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+          "transactionIndex": "0x6",
+          "logIndex": "0x87",
+          "removed": false
+        }
+      }
+    ],
+    "diagnostic_prices": [
+      {
+        "symbol": "DAI",
+        "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+        "base_unit": "1000000000000000000",
+        "event_price_raw": "1134249",
+        "price_raw": "1134249000000000000",
+        "price_usd": "1.134249",
+        "reference_price_raw": "1095299000000000000",
+        "changed_from_reference": true,
+        "source": {
+          "tx_hash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+          "logIndex": "137"
+        },
+        "log": {
+          "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+          "topics": [
+            "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000114ea900000000000000000000000000000000000000000000000000000000000000034441490000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x4ef9f2499b836cc69709a83f32c45447cd93cf8ee767f987aa70b975d1f17713",
+          "blockNumber": "0xacedb0",
+          "blockTimestamp": "0x5fbf6dee",
+          "transactionHash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+          "transactionIndex": "0x6",
+          "logIndex": "0x89",
+          "removed": false
+        }
+      },
+      {
+        "symbol": "BTC",
+        "market": "0xc11b1268c1a384e55c48c2391d8d480264a3a7f4",
+        "base_unit": "100000000",
+        "event_price_raw": "16694535000",
+        "price_raw": "166945350000000000000000000000000",
+        "price_usd": "16694.535",
+        "reference_price_raw": "164542799990000000000000000000000",
+        "changed_from_reference": true,
+        "source": {
+          "tx_hash": "0xc92130654bb8ef0f339cc95205a0fccb46873555e6d4abb260bcfb50600d2754",
+          "logIndex": "76"
+        },
+        "log": {
+          "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+          "topics": [
+            "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000003e312635800000000000000000000000000000000000000000000000000000000000000034254430000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x4ef9f2499b836cc69709a83f32c45447cd93cf8ee767f987aa70b975d1f17713",
+          "blockNumber": "0xacedb0",
+          "blockTimestamp": "0x5fbf6dee",
+          "transactionHash": "0xc92130654bb8ef0f339cc95205a0fccb46873555e6d4abb260bcfb50600d2754",
+          "transactionIndex": "0x3",
+          "logIndex": "0x4c",
+          "removed": false
+        }
+      },
+      {
+        "symbol": "COMP",
+        "market": "0x0000000000000000000000000000000000000000",
+        "base_unit": "1000000000000000000",
+        "event_price_raw": "99970000",
+        "price_raw": "99970000000000000000",
+        "price_usd": "99.97",
+        "reference_price_raw": "99375000000000000000",
+        "changed_from_reference": true,
+        "source": {
+          "tx_hash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+          "logIndex": "135"
+        },
+        "log": {
+          "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+          "topics": [
+            "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000005f56bd00000000000000000000000000000000000000000000000000000000000000004434f4d5000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x4ef9f2499b836cc69709a83f32c45447cd93cf8ee767f987aa70b975d1f17713",
+          "blockNumber": "0xacedb0",
+          "blockTimestamp": "0x5fbf6dee",
+          "transactionHash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+          "transactionIndex": "0x6",
+          "logIndex": "0x87",
+          "removed": false
+        }
+      }
+    ],
+    "receipt_bundle": "data/phase3/receipts/11333040.json"
+  },
+  "diagnostic": {
+    "diagnostic_only": true,
+    "result": {
+      "dai_price_raw": "1134249000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "64234803133859103142607",
+      "price_usd": "1.134249",
+      "price_source": {
+        "tx_hash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+        "logIndex": "137"
+      },
+      "liquidity_usd": "0",
+      "shortfall_usd": "64234.803133859103142607",
+      "err_interpretation": "protocol error code; no USD unit"
+    },
+    "prices": [
+      {
+        "symbol": "DAI",
+        "market": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+        "base_unit": "1000000000000000000",
+        "event_price_raw": "1134249",
+        "price_raw": "1134249000000000000",
+        "price_usd": "1.134249",
+        "reference_price_raw": "1095299000000000000",
+        "changed_from_reference": true,
+        "source": {
+          "tx_hash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+          "logIndex": "137"
+        },
+        "log": {
+          "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+          "topics": [
+            "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000114ea900000000000000000000000000000000000000000000000000000000000000034441490000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x4ef9f2499b836cc69709a83f32c45447cd93cf8ee767f987aa70b975d1f17713",
+          "blockNumber": "0xacedb0",
+          "blockTimestamp": "0x5fbf6dee",
+          "transactionHash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+          "transactionIndex": "0x6",
+          "logIndex": "0x89",
+          "removed": false
+        }
+      },
+      {
+        "symbol": "BTC",
+        "market": "0xc11b1268c1a384e55c48c2391d8d480264a3a7f4",
+        "base_unit": "100000000",
+        "event_price_raw": "16694535000",
+        "price_raw": "166945350000000000000000000000000",
+        "price_usd": "16694.535",
+        "reference_price_raw": "164542799990000000000000000000000",
+        "changed_from_reference": true,
+        "source": {
+          "tx_hash": "0xc92130654bb8ef0f339cc95205a0fccb46873555e6d4abb260bcfb50600d2754",
+          "logIndex": "76"
+        },
+        "log": {
+          "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+          "topics": [
+            "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000003e312635800000000000000000000000000000000000000000000000000000000000000034254430000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x4ef9f2499b836cc69709a83f32c45447cd93cf8ee767f987aa70b975d1f17713",
+          "blockNumber": "0xacedb0",
+          "blockTimestamp": "0x5fbf6dee",
+          "transactionHash": "0xc92130654bb8ef0f339cc95205a0fccb46873555e6d4abb260bcfb50600d2754",
+          "transactionIndex": "0x3",
+          "logIndex": "0x4c",
+          "removed": false
+        }
+      },
+      {
+        "symbol": "COMP",
+        "market": "0x0000000000000000000000000000000000000000",
+        "base_unit": "1000000000000000000",
+        "event_price_raw": "99970000",
+        "price_raw": "99970000000000000000",
+        "price_usd": "99.97",
+        "reference_price_raw": "99375000000000000000",
+        "changed_from_reference": true,
+        "source": {
+          "tx_hash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+          "logIndex": "135"
+        },
+        "log": {
+          "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+          "topics": [
+            "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000005f56bd00000000000000000000000000000000000000000000000000000000000000004434f4d5000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x4ef9f2499b836cc69709a83f32c45447cd93cf8ee767f987aa70b975d1f17713",
+          "blockNumber": "0xacedb0",
+          "blockTimestamp": "0x5fbf6dee",
+          "transactionHash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+          "transactionIndex": "0x6",
+          "logIndex": "0x87",
+          "removed": false
+        }
+      }
+    ]
+  },
+  "failure_diagnostics": {
+    "other_asset_updates": [
+      {
+        "symbol": "BTC",
+        "market": "0xc11b1268c1a384e55c48c2391d8d480264a3a7f4",
+        "base_unit": "100000000",
+        "event_price_raw": "16694535000",
+        "price_raw": "166945350000000000000000000000000",
+        "price_usd": "16694.535",
+        "reference_price_raw": "164542799990000000000000000000000",
+        "changed_from_reference": true,
+        "source": {
+          "tx_hash": "0xc92130654bb8ef0f339cc95205a0fccb46873555e6d4abb260bcfb50600d2754",
+          "logIndex": "76"
+        },
+        "log": {
+          "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+          "topics": [
+            "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000003e312635800000000000000000000000000000000000000000000000000000000000000034254430000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x4ef9f2499b836cc69709a83f32c45447cd93cf8ee767f987aa70b975d1f17713",
+          "blockNumber": "0xacedb0",
+          "blockTimestamp": "0x5fbf6dee",
+          "transactionHash": "0xc92130654bb8ef0f339cc95205a0fccb46873555e6d4abb260bcfb50600d2754",
+          "transactionIndex": "0x3",
+          "logIndex": "0x4c",
+          "removed": false
+        }
+      },
+      {
+        "symbol": "COMP",
+        "market": "0x0000000000000000000000000000000000000000",
+        "base_unit": "1000000000000000000",
+        "event_price_raw": "99970000",
+        "price_raw": "99970000000000000000",
+        "price_usd": "99.97",
+        "reference_price_raw": "99375000000000000000",
+        "changed_from_reference": true,
+        "source": {
+          "tx_hash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+          "logIndex": "135"
+        },
+        "log": {
+          "address": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+          "topics": [
+            "0x159e83f4712ba2552e68be9d848e49bf6dd35c24f19564ffd523b6549450a2f4"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000005f56bd00000000000000000000000000000000000000000000000000000000000000004434f4d5000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x4ef9f2499b836cc69709a83f32c45447cd93cf8ee767f987aa70b975d1f17713",
+          "blockNumber": "0xacedb0",
+          "blockTimestamp": "0x5fbf6dee",
+          "transactionHash": "0xd2a8dbd44ec5eef2e96b71f742d091c51a7e6ec93d81371160ced85e72904147",
+          "transactionIndex": "0x6",
+          "logIndex": "0x87",
+          "removed": false
+        }
+      }
+    ],
+    "same_block_liquidation_count": "1",
+    "repeated_liquidation_same_block": false,
+    "interest_explanation": "getAccountLiquidity 不计提利息；真实清算会计提借款和抵押市场利息，缺口不等于交易内精确缺口。",
+    "state_explanation": "N−1 是近似状态，没有重放区块 N 的早先交易或账户操作。"
+  },
+  "result_sha256": "637a3be54d9dfca7c42775d86191bd6be214c3bddc1a3f5b1ecfd8456ae5b2a2"
+}

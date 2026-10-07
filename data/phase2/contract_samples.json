@@ -27,7 +27,7 @@
       {
         "borrower": "0xb1adceddb2941033a090dd166a462fe1c2029484",
         "liquidation_count": "8",
-        "status": "pending",
+        "status": "analyzed",
         "first_liquidation_block": "11333040",
         "last_liquidation_block": "11333125",
         "repay_usd_estimate_total": "23018183.710125373487193679885064",
@@ -73,7 +73,7 @@
       {
         "borrower": "0xed3c4c5d7a9abfd74f33c1042793dfd6a6daef42",
         "liquidation_count": "6",
-        "status": "pending",
+        "status": "analyzed",
         "first_liquidation_block": "11333019",
         "last_liquidation_block": "11333050",
         "repay_usd_estimate_total": "6872183.777287647951871326121604",

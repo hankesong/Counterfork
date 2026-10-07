@@ -1,0 +1,10 @@
+{
+  "method": "eth_getCode",
+  "params": [
+    "0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c",
+    {
+      "blockHash": "0xed2c642c3b105fcc342816754c7b9f55956d6705298e96c8473e6532eb3424e5"
+    }
+  ],
+  "result": "0x"
+}

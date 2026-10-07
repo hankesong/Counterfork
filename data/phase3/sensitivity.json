@@ -1,0 +1,65 @@
+{
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+    "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+  },
+  "valuation_note": "N−1 排序估值；合计这些账户全天偿还估值，不是该价格下模拟清算额或损失。",
+  "selection": "passed accounts only; diagnostic_only excluded",
+  "rows": [
+    {
+      "group": "1.00",
+      "price_usd": "1.00",
+      "liquidatable_accounts": "0",
+      "repay_usd_estimate_total": "0",
+      "shortfall_total_raw": "0",
+      "shortfall_total_usd": "0",
+      "included_accounts": "14"
+    },
+    {
+      "group": "1.05",
+      "price_usd": "1.05",
+      "liquidatable_accounts": "0",
+      "repay_usd_estimate_total": "0",
+      "shortfall_total_raw": "0",
+      "shortfall_total_usd": "0",
+      "included_accounts": "14"
+    },
+    {
+      "group": "1.10",
+      "price_usd": "1.10",
+      "liquidatable_accounts": "5",
+      "repay_usd_estimate_total": "59116804.913314616812024719615577",
+      "shortfall_total_raw": "561171814106875781298195",
+      "shortfall_total_usd": "561171.814106875781298195",
+      "included_accounts": "14"
+    },
+    {
+      "group": "1.20",
+      "price_usd": "1.20",
+      "liquidatable_accounts": "12",
+      "repay_usd_estimate_total": "84700713.576378211796588761415234",
+      "shortfall_total_raw": "6723029865701883595568925",
+      "shortfall_total_usd": "6723029.865701883595568925",
+      "included_accounts": "14"
+    },
+    {
+      "group": "1.30",
+      "price_usd": "1.30",
+      "liquidatable_accounts": "14",
+      "repay_usd_estimate_total": "93185405.046504865016940936808605",
+      "shortfall_total_raw": "14643215898400029888934525",
+      "shortfall_total_usd": "14643215.898400029888934525",
+      "included_accounts": "14"
+    },
+    {
+      "group": "real",
+      "price_usd": null,
+      "liquidatable_accounts": "14",
+      "repay_usd_estimate_total": "93185405.046504865016940936808605",
+      "shortfall_total_raw": "1153528521890625533306683",
+      "shortfall_total_usd": "1153528.521890625533306683",
+      "included_accounts": "14"
+    }
+  ]
+}

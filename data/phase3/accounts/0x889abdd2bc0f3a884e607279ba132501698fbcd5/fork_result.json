@@ -1,0 +1,77 @@
+{
+  "block": "11333028",
+  "oracle": "0x922018674c12a7F0D394ebEEf9B58F186CdE13c1",
+  "underlying": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+  "underlying_decimals": "18",
+  "reference": {
+    "dai_price_raw": "1057500000000000000",
+    "err": "0",
+    "liquidity": "17716560295497546127377",
+    "shortfall": "0"
+  },
+  "real": {
+    "dai_price_raw": "1080000000000000000",
+    "err": "0",
+    "liquidity": "0",
+    "shortfall": "38360886287319012912384"
+  },
+  "sensitivity": [
+    {
+      "dai_price_raw": "1000000000000000000",
+      "err": "0",
+      "liquidity": "161025590451584308117876",
+      "shortfall": "0"
+    },
+    {
+      "dai_price_raw": "1050000000000000000",
+      "err": "0",
+      "liquidity": "36409042489769732473964",
+      "shortfall": "0"
+    },
+    {
+      "dai_price_raw": "1100000000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "88207505472044843169949"
+    },
+    {
+      "dai_price_raw": "1200000000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "337440601395673994457775"
+    },
+    {
+      "dai_price_raw": "1300000000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "586673697319303145745601"
+    }
+  ],
+  "critical_price": {
+    "price_raw": "1064608430054139484",
+    "candidate_raw": "1064608430054139484",
+    "derived": true,
+    "epsilon_raw": "100000000000000",
+    "linear_tolerance_usd": "0.00000001",
+    "sign_flip": true,
+    "reason": "verified sign flip",
+    "below": {
+      "dai_price_raw": "1064508430054139484",
+      "err": "0",
+      "liquidity": "249233095923631509498",
+      "shortfall": "0"
+    },
+    "above": {
+      "dai_price_raw": "1064708430054139484",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "249233095923626793078"
+    }
+  },
+  "diagnostic": null,
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+    "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+  }
+}

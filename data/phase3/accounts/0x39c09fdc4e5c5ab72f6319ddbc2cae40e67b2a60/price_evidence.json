@@ -1,0 +1,20 @@
+{
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+    "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+  },
+  "oracle": "0x922018674c12a7f0d394ebeef9b58f186cde13c1",
+  "dai": "0x6b175474e89094c44da98b954eedeac495271d0f",
+  "reference_price_raw": "1238179000000000000",
+  "actual_price_raw": "1238179000000000000",
+  "actual_price_source": {
+    "state": "N-1 oracle state",
+    "block": "11333049",
+    "note": "区块内无喂价"
+  },
+  "price_updates": [],
+  "other_asset_updates": [],
+  "diagnostic_prices": [],
+  "receipt_bundle": "data/phase3/receipts/11333050.json"
+}

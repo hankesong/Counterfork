@@ -459,5 +459,305 @@
     "cache_hits": "13882",
     "web_requests": "0",
     "elapsed_seconds": "2.080"
+  },
+  {
+    "started_utc": "2026-10-07T05:47:17+00:00",
+    "stages": [
+      {
+        "stage": "prepare",
+        "status": "passed",
+        "elapsed_seconds": "0.193",
+        "rpc_requests": "0",
+        "cache_hits": "100"
+      },
+      {
+        "stage": "headers",
+        "status": "passed",
+        "elapsed_seconds": "0.955",
+        "rpc_requests": "0",
+        "cache_hits": "6533"
+      },
+      {
+        "stage": "logs",
+        "status": "passed",
+        "elapsed_seconds": "0.928",
+        "rpc_requests": "0",
+        "cache_hits": "7026"
+      },
+      {
+        "stage": "decode",
+        "status": "passed",
+        "elapsed_seconds": "0.001",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      },
+      {
+        "stage": "receipts",
+        "status": "passed",
+        "elapsed_seconds": "0.002",
+        "rpc_requests": "0",
+        "cache_hits": "5"
+      },
+      {
+        "stage": "valuation",
+        "status": "passed",
+        "elapsed_seconds": "0.070",
+        "rpc_requests": "0",
+        "cache_hits": "218"
+      },
+      {
+        "stage": "outputs",
+        "status": "passed",
+        "elapsed_seconds": "0.029",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      }
+    ],
+    "cache_only": true,
+    "status": "passed",
+    "rpc_requests_this_run": "0",
+    "cache_hits": "13882",
+    "web_requests": "0",
+    "elapsed_seconds": "2.183"
+  },
+  {
+    "started_utc": "2026-10-07T05:48:35+00:00",
+    "stages": [
+      {
+        "stage": "prepare",
+        "status": "passed",
+        "elapsed_seconds": "0.185",
+        "rpc_requests": "0",
+        "cache_hits": "100"
+      },
+      {
+        "stage": "headers",
+        "status": "passed",
+        "elapsed_seconds": "0.801",
+        "rpc_requests": "0",
+        "cache_hits": "6533"
+      },
+      {
+        "stage": "logs",
+        "status": "passed",
+        "elapsed_seconds": "0.813",
+        "rpc_requests": "0",
+        "cache_hits": "7026"
+      },
+      {
+        "stage": "decode",
+        "status": "passed",
+        "elapsed_seconds": "0.001",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      },
+      {
+        "stage": "receipts",
+        "status": "passed",
+        "elapsed_seconds": "0.002",
+        "rpc_requests": "0",
+        "cache_hits": "5"
+      },
+      {
+        "stage": "valuation",
+        "status": "passed",
+        "elapsed_seconds": "0.061",
+        "rpc_requests": "0",
+        "cache_hits": "218"
+      },
+      {
+        "stage": "outputs",
+        "status": "passed",
+        "elapsed_seconds": "0.031",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      }
+    ],
+    "cache_only": true,
+    "status": "passed",
+    "rpc_requests_this_run": "0",
+    "cache_hits": "13882",
+    "web_requests": "0",
+    "elapsed_seconds": "1.899"
+  },
+  {
+    "started_utc": "2026-10-07T05:49:11+00:00",
+    "stages": [
+      {
+        "stage": "prepare",
+        "status": "passed",
+        "elapsed_seconds": "0.184",
+        "rpc_requests": "0",
+        "cache_hits": "100"
+      },
+      {
+        "stage": "headers",
+        "status": "passed",
+        "elapsed_seconds": "0.824",
+        "rpc_requests": "0",
+        "cache_hits": "6533"
+      },
+      {
+        "stage": "logs",
+        "status": "passed",
+        "elapsed_seconds": "0.812",
+        "rpc_requests": "0",
+        "cache_hits": "7026"
+      },
+      {
+        "stage": "decode",
+        "status": "passed",
+        "elapsed_seconds": "0.001",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      },
+      {
+        "stage": "receipts",
+        "status": "passed",
+        "elapsed_seconds": "0.002",
+        "rpc_requests": "0",
+        "cache_hits": "5"
+      },
+      {
+        "stage": "valuation",
+        "status": "passed",
+        "elapsed_seconds": "0.076",
+        "rpc_requests": "0",
+        "cache_hits": "218"
+      },
+      {
+        "stage": "outputs",
+        "status": "passed",
+        "elapsed_seconds": "0.028",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      }
+    ],
+    "cache_only": true,
+    "status": "passed",
+    "rpc_requests_this_run": "0",
+    "cache_hits": "13882",
+    "web_requests": "0",
+    "elapsed_seconds": "1.931"
+  },
+  {
+    "started_utc": "2026-10-07T05:50:26+00:00",
+    "stages": [
+      {
+        "stage": "prepare",
+        "status": "passed",
+        "elapsed_seconds": "0.181",
+        "rpc_requests": "0",
+        "cache_hits": "100"
+      },
+      {
+        "stage": "headers",
+        "status": "passed",
+        "elapsed_seconds": "0.940",
+        "rpc_requests": "0",
+        "cache_hits": "6533"
+      },
+      {
+        "stage": "logs",
+        "status": "passed",
+        "elapsed_seconds": "0.874",
+        "rpc_requests": "0",
+        "cache_hits": "7026"
+      },
+      {
+        "stage": "decode",
+        "status": "passed",
+        "elapsed_seconds": "0.001",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      },
+      {
+        "stage": "receipts",
+        "status": "passed",
+        "elapsed_seconds": "0.002",
+        "rpc_requests": "0",
+        "cache_hits": "5"
+      },
+      {
+        "stage": "valuation",
+        "status": "passed",
+        "elapsed_seconds": "0.071",
+        "rpc_requests": "0",
+        "cache_hits": "218"
+      },
+      {
+        "stage": "outputs",
+        "status": "passed",
+        "elapsed_seconds": "0.029",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      }
+    ],
+    "cache_only": true,
+    "status": "passed",
+    "rpc_requests_this_run": "0",
+    "cache_hits": "13882",
+    "web_requests": "0",
+    "elapsed_seconds": "2.102"
+  },
+  {
+    "started_utc": "2026-10-07T05:50:57+00:00",
+    "stages": [
+      {
+        "stage": "prepare",
+        "status": "passed",
+        "elapsed_seconds": "0.193",
+        "rpc_requests": "0",
+        "cache_hits": "100"
+      },
+      {
+        "stage": "headers",
+        "status": "passed",
+        "elapsed_seconds": "0.907",
+        "rpc_requests": "0",
+        "cache_hits": "6533"
+      },
+      {
+        "stage": "logs",
+        "status": "passed",
+        "elapsed_seconds": "0.714",
+        "rpc_requests": "0",
+        "cache_hits": "7026"
+      },
+      {
+        "stage": "decode",
+        "status": "passed",
+        "elapsed_seconds": "0.001",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      },
+      {
+        "stage": "receipts",
+        "status": "passed",
+        "elapsed_seconds": "0.002",
+        "rpc_requests": "0",
+        "cache_hits": "5"
+      },
+      {
+        "stage": "valuation",
+        "status": "passed",
+        "elapsed_seconds": "0.088",
+        "rpc_requests": "0",
+        "cache_hits": "218"
+      },
+      {
+        "stage": "outputs",
+        "status": "passed",
+        "elapsed_seconds": "0.036",
+        "rpc_requests": "0",
+        "cache_hits": "0"
+      }
+    ],
+    "cache_only": true,
+    "status": "passed",
+    "rpc_requests_this_run": "0",
+    "cache_hits": "13882",
+    "web_requests": "0",
+    "elapsed_seconds": "1.947"
   }
 ]

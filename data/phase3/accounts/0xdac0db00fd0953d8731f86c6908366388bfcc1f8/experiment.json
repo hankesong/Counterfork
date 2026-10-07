@@ -1,0 +1,33 @@
+{
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+    "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+  },
+  "borrower": "0xdac0db00fd0953d8731f86c6908366388bfcc1f8",
+  "rank": "14",
+  "sample_event": {
+    "tx_hash": "0xe4e7932208610685bff9f98e3e9657e6d27292b635c108d65ffdc14cb7dfef6a",
+    "blockNumber": "11331593",
+    "blockHash": "0x2eb2cdac714d3597f80b9253322d84cac56c2f234b5c4670612adedc827f7422",
+    "transactionIndex": "13",
+    "logIndex": "55"
+  },
+  "liquidation_count": "1",
+  "repay_usd_estimate_total": "315077.67348",
+  "input_sha256": "db779151e03ca2226aac40f5158223a52ff4f33daa8c28383948ba3e189e165b",
+  "limitations": [
+    "单变量假设：正式组只改 DAI 价格，其他资产保持 N−1。",
+    "N−1 是近似状态，没有重放区块 N 的早先交易或账户操作。",
+    "getAccountLiquidity 不计提利息；真实清算会计提借款和抵押市场利息，缺口不等于交易内精确缺口。",
+    "只用首次清算，清算次数按全部事件计。",
+    "临界价格是推导值，固定其他价格并验证 ±0.0001 美元符号翻转。",
+    "1.00 美元是锚定价格，不是当时的市场价。",
+    "不据此认定操纵或整个事件的单一原因。"
+  ],
+  "groups": {},
+  "critical_price": null,
+  "status": "not_applicable",
+  "reason": "与 DAI 无关",
+  "result_sha256": "4b87c4e787f3b588d637c238414587573dc783e8ba80b93bc1958d40c36fbb2d"
+}

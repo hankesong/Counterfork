@@ -62,6 +62,11 @@ cETH 单独处理依据：Etherscan 已验证 CEther 源码继承 CToken，mint(
 | 7 | failed | 0 | 8726 | 1.325 |
 | 8 | failed | 0 | 9206 | 1.335 |
 | 9 | passed | 0 | 13882 | 2.080 |
+| 10 | passed | 0 | 13882 | 2.183 |
+| 11 | passed | 0 | 13882 | 1.899 |
+| 12 | passed | 0 | 13882 | 1.931 |
+| 13 | passed | 0 | 13882 | 2.102 |
+| 14 | passed | 0 | 13882 | 1.947 |
 
 实际失败原文（已脱敏，保留记录；随后从缺失缓存续跑）：
 
@@ -76,7 +81,7 @@ cETH 单独处理依据：Etherscan 已验证 CEther 源码继承 CToken，mint(
 
 **Phase 1 缓存口径：**11332824–11333316 共 493 块的旧 cDAI 日志查询全部强制命中缓存，区块头也复用。但旧缓存的 address 是单个 cDAI，不能当作全部市场查询缓存；首轮另对这 493 块各发一次全市场数组查询，逐块核对其 cDAI 子集与旧缓存完全一致；原窗口有 139 条 cDAI、152 条全市场事件。成功抓取后的完整复跑（运行 3）直接命中全部缓存。这一必要差异已在执行前说明；没有把窄过滤结果冒充全市场缓存。
 
-运行 1 因 SSL EOF 中断，运行 2 从缺失缓存续跑并完成；运行 3 重新执行全部读取、解码、校验、估值与汇总，`rpc_requests_this_run=0`，耗时 2.690 秒。events/accounts/summary 三份 JSON 的重跑前后 SHA-256 一致，见 replay_verification.json。截至本次计时运行合计 4,185.314 秒（含中断等待）；另有初始准备运行未记录耗时。
+运行 1 因 SSL EOF 中断，运行 2 从缺失缓存续跑并完成；运行 3 重新执行全部读取、解码、校验、估值与汇总，`rpc_requests_this_run=0`，耗时 2.690 秒。events/accounts/summary 三份 JSON 的重跑前后 SHA-256 一致，见 replay_verification.json。截至本次计时运行合计 4,195.376 秒（含中断等待）；另有初始准备运行未记录耗时。
 
 ## 汇总与前 20 名
 
@@ -146,7 +151,7 @@ Phase 1 样本交易 0x53e09adb…f3e4、logIndex 59 恰好出现一次：解码
 - 以历史只读 RPC 返回的区块、日志为证据，不自行验证区块共识或日志树包含证明；抽检 5 张收据不等于逐笔收据验证。
 - 偿还额不等于扣押抵押品价值、清算人利润或借款人净损失；seizeTokens 是 cToken 原始数量。
 - 数据并未证明市场操纵、媒体匿名人物身份或所有清算的共同原因。
-- 未进入 Phase 3，未添加 Git remote、未 push、未访问 BOT Chain。
+- Phase 2 仅做事件核对；批量实验另见 docs/phase3.md。未 push、未访问 BOT Chain。
 
 ## 验证
 
@@ -240,7 +245,7 @@ RawLog 的全部字段（均保持 RPC 原值）：
 | rank | string（整数） | 从 1 开始的名次 | 全部借款人估值排名 |
 | top20 | boolean | — | rank ≤ 20 |
 
-status 每次生成时读取 data/phase1/single_account.json；只有文件存在、status=passed、真实组 err=0 且 shortfall>0、顶层 borrower 与 sample.borrower 一致时，该文件指向的借款人才为 analyzed，其余一律 pending。不存在或未通过验收时不凭地址授予 analyzed；不会执行新的实验。文件内容不合法时拒绝生成，防止静默误标。
+status 每次生成时读取 data/phase3/experiments.json 和 data/phase1/single_account.json。Phase 3 状态为 passed（同时校验真实组 err=0、shortfall>0）或 Phase 1 验收通过，两者满足其一即为 analyzed；其余为 pending。拒绝 UI_MOCK、非法 provenance 或自相矛盾的 passed 记录。仅离线读取验收文件，不执行新实验。
 
 **summary.json 顶层字段。** 下述复用类型的每个子字段在后续表中列出。
 
@@ -343,7 +348,7 @@ CrossChecks 及其嵌套字段：
 这样既能分别核对报道的全部总额和 DAI 相关额，也能包含抵押品为 cDAI 的清算，因为其抵押品估值同样受 DAI 价格影响。该标记表示资产关联，不证明 DAI 价格导致了每次清算。两个历史市场的链上 symbol 同为 cDAI，仍按已验证地址区分。
 
 本次输出 provenance：`{'mode': 'FROZEN', 'source': 'Ethereum mainnet via cached eth_getLogs/eth_call', 'capturedAt': '2026-10-07T03:28:30Z'}`。
-借款人状态：analyzed=1，pending=153。
+借款人状态：analyzed=14，pending=140。
 
 追加要求的离线验收（contract_replay_verification.json）：
 

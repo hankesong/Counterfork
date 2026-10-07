@@ -1,0 +1,10 @@
+{
+  "method": "eth_getBalance",
+  "params": [
+    "0x04668ec2f57cc15c381b461b9fedab5d451c8f7f",
+    {
+      "blockHash": "0xb62e489fcf16eb9d4fe74bd7d29897f45d97f8d2e2e50cb6c211285a9f146674"
+    }
+  ],
+  "result": "0x4bd8f0816e3365cb3e"
+}

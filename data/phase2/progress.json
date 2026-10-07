@@ -1,24 +1,24 @@
 {
-  "started_utc": "2026-10-07T05:12:07+00:00",
+  "started_utc": "2026-10-07T05:50:57+00:00",
   "stages": [
     {
       "stage": "prepare",
       "status": "passed",
-      "elapsed_seconds": "0.181",
+      "elapsed_seconds": "0.193",
       "rpc_requests": "0",
       "cache_hits": "100"
     },
     {
       "stage": "headers",
       "status": "passed",
-      "elapsed_seconds": "0.978",
+      "elapsed_seconds": "0.907",
       "rpc_requests": "0",
       "cache_hits": "6533"
     },
     {
       "stage": "logs",
       "status": "passed",
-      "elapsed_seconds": "0.818",
+      "elapsed_seconds": "0.714",
       "rpc_requests": "0",
       "cache_hits": "7026"
     },
@@ -39,14 +39,14 @@
     {
       "stage": "valuation",
       "status": "passed",
-      "elapsed_seconds": "0.077",
+      "elapsed_seconds": "0.088",
       "rpc_requests": "0",
       "cache_hits": "218"
     },
     {
       "stage": "outputs",
       "status": "passed",
-      "elapsed_seconds": "0.019",
+      "elapsed_seconds": "0.036",
       "rpc_requests": "0",
       "cache_hits": "0"
     }

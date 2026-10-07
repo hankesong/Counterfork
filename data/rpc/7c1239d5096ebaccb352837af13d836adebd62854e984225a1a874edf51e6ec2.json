@@ -1,0 +1,10 @@
+{
+  "method": "eth_getTransactionCount",
+  "params": [
+    "0xbb8be4772faa655c255309afc3c5207aa7b896fd",
+    {
+      "blockHash": "0xd74aba6bda8f548ea857c12f01af97514c13c5a19a387286b628671b4273b724"
+    }
+  ],
+  "result": "0x1"
+}

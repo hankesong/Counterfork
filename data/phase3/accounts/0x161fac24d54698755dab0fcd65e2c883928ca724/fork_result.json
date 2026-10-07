@@ -1,0 +1,85 @@
+{
+  "block": "11333039",
+  "oracle": "0x922018674c12a7F0D394ebEEf9B58F186CdE13c1",
+  "underlying": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+  "underlying_decimals": "18",
+  "reference": {
+    "dai_price_raw": "1095299000000000000",
+    "err": "0",
+    "liquidity": "5810504977319564715874",
+    "shortfall": "0"
+  },
+  "real": {
+    "dai_price_raw": "1134249000000000000",
+    "err": "0",
+    "liquidity": "0",
+    "shortfall": "66954307404472258765611"
+  },
+  "sensitivity": [
+    {
+      "dai_price_raw": "1000000000000000000",
+      "err": "0",
+      "liquidity": "183844236817431990542883",
+      "shortfall": "0"
+    },
+    {
+      "dai_price_raw": "1050000000000000000",
+      "err": "0",
+      "liquidity": "90436262001267903917101",
+      "shortfall": "0"
+    },
+    {
+      "dai_price_raw": "1100000000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "2971712814896182708682"
+    },
+    {
+      "dai_price_raw": "1200000000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "189787662447224355960248"
+    },
+    {
+      "dai_price_raw": "1300000000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "376603612079552529211814"
+    }
+  ],
+  "critical_price": {
+    "price_raw": "1098409283136292805",
+    "candidate_raw": "1098409283136292805",
+    "derived": true,
+    "epsilon_raw": "100000000000000",
+    "linear_tolerance_usd": "0.00000001",
+    "sign_flip": true,
+    "reason": "verified sign flip",
+    "below": {
+      "dai_price_raw": "1098309283136292805",
+      "err": "0",
+      "liquidity": "186815949632329270984",
+      "shortfall": "0"
+    },
+    "above": {
+      "dai_price_raw": "1098509283136292805",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "186815949632327075519"
+    }
+  },
+  "diagnostic": {
+    "diagnostic_only": true,
+    "result": {
+      "dai_price_raw": "1134249000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "64234803133859103142607"
+    }
+  },
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+    "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+  }
+}

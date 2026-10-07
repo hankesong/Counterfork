@@ -123,7 +123,7 @@ def main():
         '- 以历史只读 RPC 返回的区块、日志为证据，不自行验证区块共识或日志树包含证明；抽检 5 张收据不等于逐笔收据验证。',
         '- 偿还额不等于扣押抵押品价值、清算人利润或借款人净损失；seizeTokens 是 cToken 原始数量。',
         '- 数据并未证明市场操纵、媒体匿名人物身份或所有清算的共同原因。',
-        '- 未进入 Phase 3，未添加 Git remote、未 push、未访问 BOT Chain。', '']
+        '- Phase 2 仅做事件核对；批量实验另见 docs/phase3.md。未 push、未访问 BOT Chain。', '']
     lines += ['## 验证', '',
               '`python -m unittest discover -s test -p test_phase2_events.py -v` 用于离线验证。'
               '覆盖真实样本解码、非法区块/主题/地址/交易位置及重复事件拒绝、跨精度估值、'

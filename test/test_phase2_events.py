@@ -150,7 +150,7 @@ class EventIntegrity(unittest.TestCase):
         accounts = p.load(p.DIR / 'accounts.json')['accounts']
         actual = {a['borrower'] for a in accounts if a['status'] == 'analyzed'}
         self.assertEqual(actual, analyzed_borrowers())
-        self.assertEqual(len(actual), 1)
+        self.assertIn(p.load(p.ROOT / 'data/phase1/single_account.json')['borrower'], actual)
         self.assertTrue(all(a['status'] in {'pending', 'analyzed'} for a in accounts))
 
     def test_report_rejects_mock_in_any_input(self):
@@ -189,8 +189,12 @@ class EventIntegrity(unittest.TestCase):
         self.assertEqual([{k: v for k, v in e.items() if k != 'display'} for e in current_events], old['events'])
         self.assertEqual([{k: v for k, v in a.items() if k != 'status'} for a in current_accounts], old['accounts'])
         current = p.load(p.DIR / 'summary.json')
-        self.assertEqual(current['total'], old['summary']['total'])
-        self.assertEqual(current['dai_related'], old['summary']['dai_related'])
+        current.pop('provenance')
+        for key in ('markets', 'market_totals'):
+            for market in current[key]:
+                market.pop('market_label')
+        current['cross_checks']['report_comparison'] = old['summary']['cross_checks']['report_comparison']
+        self.assertEqual(current, old['summary'])
 
 
 if __name__ == '__main__':

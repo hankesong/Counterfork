@@ -1,0 +1,9 @@
+{
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+    "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+  },
+  "returncode": "0",
+  "output": "No files changed, compilation skipped\n\nRan 1 test for test/Phase3.t.sol:Phase3Test\n[PASS] testBatchAccount() (gas: 2966784)\nSuite result: ok. 1 passed; 0 failed; 0 skipped; finished in 103.02ms (102.53ms CPU time)\n\nRan 1 test suite in 106.58ms (103.02ms CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)\n2026-10-07T05:50:09.991331Z  WARN cache: non-matching block metadata\n"
+}

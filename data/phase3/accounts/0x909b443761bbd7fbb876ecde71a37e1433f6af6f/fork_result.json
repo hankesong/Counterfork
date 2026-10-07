@@ -1,0 +1,77 @@
+{
+  "block": "11333036",
+  "oracle": "0x922018674c12a7F0D394ebEEf9B58F186CdE13c1",
+  "underlying": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+  "underlying_decimals": "18",
+  "reference": {
+    "dai_price_raw": "1080000000000000000",
+    "err": "0",
+    "liquidity": "119323202441326601289267",
+    "shortfall": "0"
+  },
+  "real": {
+    "dai_price_raw": "1095299000000000000",
+    "err": "0",
+    "liquidity": "0",
+    "shortfall": "61726547573096117664531"
+  },
+  "sensitivity": [
+    {
+      "dai_price_raw": "1000000000000000000",
+      "err": "0",
+      "liquidity": "1066050439591063023036037",
+      "shortfall": "0"
+    },
+    {
+      "dai_price_raw": "1050000000000000000",
+      "err": "0",
+      "liquidity": "474345916372477759444306",
+      "shortfall": "0"
+    },
+    {
+      "dai_price_raw": "1100000000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "117358606846107504147426"
+    },
+    {
+      "dai_price_raw": "1200000000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "1300767653283278031330890"
+    },
+    {
+      "dai_price_raw": "1300000000000000000",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "2484176699720448558514353"
+    }
+  ],
+  "critical_price": {
+    "price_raw": "1090083005770537829",
+    "candidate_raw": "1090083005770537829",
+    "derived": true,
+    "epsilon_raw": "100000000000000",
+    "linear_tolerance_usd": "0.00000001",
+    "sign_flip": true,
+    "reason": "verified sign flip",
+    "below": {
+      "dai_price_raw": "1089983005770537829",
+      "err": "0",
+      "liquidity": "1183409046437171095440",
+      "shortfall": "0"
+    },
+    "above": {
+      "dai_price_raw": "1090183005770537829",
+      "err": "0",
+      "liquidity": "0",
+      "shortfall": "1183409046437169958928"
+    }
+  },
+  "diagnostic": null,
+  "provenance": {
+    "mode": "FROZEN",
+    "source": "Ethereum mainnet via cached eth_getLogs/eth_call",
+    "capturedAt": "2026-10-07T05:16:29.680161+00:00"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "method": "eth_getStorageAt",
+  "params": [
+    "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "0xac71f786b4964876bf0a1d9704efff18f0506bfb6793300fa8fe01de419e1a6f",
+    {
+      "blockHash": "0xbdb1b927d9200def6e61c034b77421ce47fde833c957cffda3aabd83c8f34589"
+    }
+  ],
+  "result": "0x000000000000000000000000000000000000000000000000000004e500855450"
+}

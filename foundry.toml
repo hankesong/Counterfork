@@ -5,4 +5,4 @@ out = "out"
 cache_path = "cache"
 solc = ".tools/solc.exe"
 evm_version = "istanbul"
-fs_permissions = [{ access = "write", path = "./data/phase0" }, { access = "write", path = "./data/phase1" }]
+fs_permissions = [{ access = "write", path = "./data/phase0" }, { access = "write", path = "./data/phase1" }, { access = "write", path = "./data/phase3" }]

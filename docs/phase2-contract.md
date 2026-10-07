@@ -86,7 +86,7 @@ RawLog 的全部字段（均保持 RPC 原值）：
 | rank | string（整数） | 从 1 开始的名次 | 全部借款人估值排名 |
 | top20 | boolean | — | rank ≤ 20 |
 
-status 每次生成时读取 data/phase1/single_account.json；只有文件存在、status=passed、真实组 err=0 且 shortfall>0、顶层 borrower 与 sample.borrower 一致时，该文件指向的借款人才为 analyzed，其余一律 pending。不存在或未通过验收时不凭地址授予 analyzed；不会执行新的实验。文件内容不合法时拒绝生成，防止静默误标。
+status 每次生成时读取 data/phase3/experiments.json 和 data/phase1/single_account.json。Phase 3 状态为 passed（同时校验真实组 err=0、shortfall>0）或 Phase 1 验收通过，两者满足其一即为 analyzed；其余为 pending。拒绝 UI_MOCK、非法 provenance 或自相矛盾的 passed 记录。仅离线读取验收文件，不执行新实验。
 
 **summary.json 顶层字段。** 下述复用类型的每个子字段在后续表中列出。
 

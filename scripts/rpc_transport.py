@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 READ_ONLY = {"eth_chainId", "eth_getBlockByNumber", "eth_getBlockByHash",
              "eth_getLogs", "eth_call", "eth_getTransactionReceipt", "eth_getCode",
              "eth_getStorageAt", "eth_getBalance", "eth_getTransactionCount",
-             "eth_blockNumber", "net_version"}
+             "eth_blockNumber", "net_version", "eth_getBlockReceipts"}
 STATS = {"network_requests": 0, "cache_hits": 0}
 _thread_lock = threading.Lock()
 
@@ -136,7 +136,10 @@ def rpc_proxy(upstream, observations=None, *, cached=False):
                     "code": -32000, "message": redact(exc)}}).encode()
                 self.send_response(502)
                 self.end_headers()
-                self.wfile.write(encoded)
+                try:
+                    self.wfile.write(encoded)
+                except (ConnectionError, OSError):
+                    pass  # Client may close after an unsupported-method response.
     server = ThreadingHTTPServer(("127.0.0.1", 0), Handler)
     thread = threading.Thread(target=server.serve_forever, daemon=True)
     thread.start()
