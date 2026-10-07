@@ -1,0 +1,16 @@
+{
+  "purpose": "BOT Chain mainnet read-only preflight; no broadcast",
+  "broadcast": false,
+  "chain_id": 677,
+  "gas_price_wei": 20000000000,
+  "deployer": "0xea68b4bFdEd757281911520b03374B9E7D70043a",
+  "balance_wei": "0",
+  "balance_native": "0",
+  "status": "simulated_only",
+  "estimated_gas": 942579,
+  "estimated_fee_wei": "18851580000000000",
+  "estimated_fee_native": "0.01885158",
+  "balance_sufficient": false,
+  "simulation_output": "No files changed, compilation skipped\nScript ran successfully.\n\n== Return ==\nregistry: contract InvestigationRegistry 0x797D1F34D8946e5F19aCae8Ff0ea47b7763d8607\n\n## Setting up 1 EVM.\n\n==========================\n\nChain 677\n\nEstimated gas price: 20 gwei\n\nEstimated total gas used for script: 942579\n\nEstimated amount required: 0.01885158 ETH\n\n==========================\n\nSIMULATION COMPLETE. To broadcast these transactions, add --broadcast and wallet configuration(s) to the previous command. See forge script --help for more.\n\nTransactions saved to: F:/hankesong/hanworkspace/out-botchain/broadcast\\DeployRegistry.s.sol\\677\\dry-run\\run-latest.json\n\nSensitive values saved to: F:/hankesong/hanworkspace/out-botchain/cache\\DeployRegistry.s.sol\\677\\dry-run\\run-latest.json",
+  "recorded_at_utc": "2026-10-07T07:04:02.943519+00:00"
+}
