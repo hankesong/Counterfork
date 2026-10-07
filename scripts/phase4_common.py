@@ -12,7 +12,9 @@ EXP = 'data/phase3/experiments.json'
 SENS = 'data/phase3/sensitivity.json'
 SUMMARY = 'data/phase2/summary.json'
 HYP = 'data/phase4/hypotheses.json'
-ALLOWED = (EXP, SENS, SUMMARY, HYP)
+FEATURES = 'data/phase4/features.json'
+CONSTANTS = 'data/phase4/constants.json'
+ALLOWED = (EXP, SENS, SUMMARY, HYP, FEATURES, CONSTANTS)
 REF = re.compile(r'\{\{ref:([^{}]+)\}\}')
 LITERALS = ('N−1', 'Compound v2', '2020-11-26', 'Phase 3', 'H1', 'H2', 'H3', 'H4')
 STATUSES = ('SUPPORTED', 'NOT_SUPPORTED', 'UNVERIFIED', 'DIAGNOSTIC_ONLY')
@@ -38,7 +40,7 @@ def reject_mock(value):
 
 
 def sources(include_hyp=False):
-    result = {p: load(ROOT / p) for p in (ALLOWED if include_hyp else ALLOWED[:3])}
+    result = {p: load(ROOT / p) for p in ALLOWED if include_hyp or p != HYP}
     for path, value in result.items():
         reject_mock(value)
         if value.get('provenance', {}).get('mode') not in ('FROZEN', 'LIVE'):
@@ -90,20 +92,23 @@ def check_text(text, data):
     for literal in LITERALS:
         clean = re.sub(r'(?<![A-Za-z0-9])' + re.escape(literal) + r'(?![A-Za-z0-9])', '', clean)
     if re.search(r'\d', clean):
-        raise ValueError('bare digit outside reference')
+        raise ValueError('bare digit outside reference; offending text: ' + text)
 
 
-def check_all_text(value, data):
+def check_all_text(value, data, location='$'):
     reject_mock(value)
     if isinstance(value, str):
-        check_text(value, data)
+        try:
+            check_text(value, data)
+        except ValueError as exc:
+            raise ValueError(location + ': ' + str(exc)) from exc
     elif isinstance(value, list):
-        for item in value:
-            check_all_text(item, data)
+        for index, item in enumerate(value):
+            check_all_text(item, data, location + '/' + str(index))
     elif isinstance(value, dict):
         for key, item in value.items():
             check_text(key, data)
-            check_all_text(item, data)
+            check_all_text(item, data, location + '/' + key)
     elif value is not None and type(value) is not bool:
         raise ValueError('model must never output numeric JSON values')
 
@@ -144,6 +149,10 @@ def env_config():
     return {k: values[k] for k in ('LLM_BASE_URL', 'LLM_MODEL', 'LLM_API_KEY')}
 
 
+class ValidationExhausted(ValueError):
+    """Only this error permits the explicitly authorized audit model fallback."""
+
+
 class Client:
     def __init__(self, config, cache_dir=None, cache_only=False):
         self.config = config
@@ -153,6 +162,7 @@ class Client:
         self.hits = 0
         self.rejections = []
         self.keys = []
+        self.rounds = []
 
     def ask(self, prompt, inputs, validator):
         feedback = []
@@ -202,8 +212,9 @@ class Client:
                 error = str(exc)
                 self.rejections.append({'cache_key': key, 'attempt': str(attempt + 1), 'error': error})
                 feedback.append({'error': error, 'previous_response': response})
-        dump(self.cache_dir / 'validation_failures.json', self.rejections)
-        raise ValueError('LLM validation failed after initial attempt and two retries; rules unchanged')
+        # Keep each exhausted round; do not overwrite the original failed run.
+        dump(self.cache_dir / ('validation_failures_' + self.keys[-1] + '.json'), self.rejections)
+        raise ValidationExhausted('LLM validation failed after initial attempt and two retries; rules unchanged')
 
 
 RULES = '''你是证据受限的调查 Agent。只输出结构化 JSON，不输出 Markdown。

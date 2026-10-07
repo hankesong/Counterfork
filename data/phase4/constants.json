@@ -1,0 +1,88 @@
+{
+  "critical_price_epsilon_usd": "0.0001",
+  "derivation": "epsilon_raw / (groups[\"1.00\"].dai_price_raw / groups[\"1.00\"].price_usd)",
+  "provenance": {
+    "evidence": [
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/0/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/0/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/1/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/1/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/2/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/2/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/3/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/3/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/4/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/4/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/5/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/5/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/6/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/6/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/7/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/7/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/8/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/8/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/9/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/9/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/10/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/10/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/11/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/11/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/12/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/12/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/14/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/14/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/15/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/15/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/16/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/16/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/17/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/17/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/18/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/18/groups/1.00"
+      },
+      {
+        "epsilon_raw": "data/phase3/experiments.json#/experiments/19/critical_price/epsilon_raw",
+        "price_scale_group": "data/phase3/experiments.json#/experiments/19/groups/1.00"
+      }
+    ],
+    "experimentsHash": "0x648b16990df0fdde322d8edf3b474d38848da65f2fdd23575e0a8476834685b2",
+    "mode": "FROZEN",
+    "source": "Unit conversion of recorded Phase 3 critical-price epsilon, no invented tolerance"
+  },
+  "schemaVersion": "1"
+}

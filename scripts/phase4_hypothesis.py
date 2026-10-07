@@ -1,6 +1,6 @@
 """Hypothesis LLM: structured Phase 2 features, closed experiment vocabulary."""
 from decimal import Decimal
-from phase4_common import (ROOT, EXP, SENS, SUMMARY, HYP, RULES, Client,
+from phase4_common import (ROOT, EXP, SENS, SUMMARY, HYP, FEATURES, RULES, Client,
     check_all_text, dump, env_config, evidence, ref, resolve, sources)
 
 CANDIDATES = {'H1': '预言机 DAI 价格异常', 'H2': '抵押品真实下跌',
@@ -82,23 +82,28 @@ def derived_evidence(data):
 def run(client, data):
     summary = data[SUMMARY]
     fields = ('window', 'dai_related', 'dai_repaid', 'total', 'market_totals', 'valuation_note', 'scope')
-    features = {k: summary[k] for k in fields}
-    # No raw logs, account files or outcome data are given to the hypothesis model.
+    summary_features = {k: summary[k] for k in fields}
+    # Raw logs remain local. Additional structured features are deterministic.
     prompt = RULES + '''
 从固定候选中选择值得实验的假设，逐一解释理由。返回 {"hypotheses":[...]}，按候选顺序各列一次。
 每项字段：id、reason、run_experiment 布尔、template、parameters、status、evidence_refs。
 唯一模板 dai_price_override 只适用于 H1；参数 prices 是给定 price_choices 中完整引用的列表。
 做实验时 status 为 EXPERIMENT_COVERED；这只表示已有对应实验，不表示原因得到验证。
 未实验时 template=null、parameters={}、status=UNVERIFIED。其他假设没有可用模板。
-只根据 summary 的结构化事件特征选择，不推测缺失的前排账户信息或日内分布。'''
-    value = client.ask(prompt, {'candidates': CANDIDATES, 'summary_file': SUMMARY, 'summary': features,
-        'unavailable_features': ['intraday_histogram', 'top_twenty_accounts'],
+根据 summary 和 features 的结构化事实选择；features.hourly_utc 是小时分布，top_accounts 是排名账户摘要。
+诊断组其他资产价格变动账户数只是已记录事实，不能据此声称 H2 已验证。
+选择理由应引用 features.json 中相关特征的真实路径。不要把输入对象的标签当成结果文件字段。
+没有对应模板代表本阶段未实验，不代表假设不值得调查或已被排除。'''
+    value = client.ask(prompt, {'candidates': CANDIDATES, 'summary_file': SUMMARY, 'summary': summary_features,
+        'features_file': FEATURES, 'features': data[FEATURES],
+        'feature_reference_examples': [ref(FEATURES, '/hourly_utc/8/event_count'),
+            ref(FEATURES, '/top_accounts/0/borrower'), ref(FEATURES, '/diagnostic_other_asset_price_changes/account_count')],
         'price_choices': [ref(SENS, f'/rows/{i}/price_usd') for i in range(5)],
         'price_choice_values': list(PRICES)}, lambda v: validate_hypotheses(v, data))
     value.update({'schemaVersion': '1', 'model': client.config['LLM_MODEL'],
-        'provenance': {'mode': 'FROZEN', 'source': 'LLM selection of frozen structured Phase 2 summary'},
+        'provenance': {'mode': 'FROZEN', 'source': 'LLM selection of frozen Phase 2 summary and deterministic Phase 4 features'},
         'evidence_summary': derived_evidence(data),
-        'feature_limitations': ['summary.json 不含日内时间直方图或前二十账户明细；未向假设模型提供这些数据。']})
+        'feature_limitations': ['小时统计和排名账户估值沿用 N−1 排序口径；诊断组其他资产价格变动仅作事实输入，不证明归因。']})
     return value
 
 

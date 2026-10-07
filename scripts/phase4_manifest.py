@@ -3,7 +3,7 @@ import hashlib
 import platform
 import subprocess
 from canonical import canonical_bytes, canonical_hash, keccak256, load
-from phase4_common import ROOT, EXP, SENS, SUMMARY, HYP, reject_mock, resolve
+from phase4_common import ROOT, EXP, SENS, SUMMARY, HYP, FEATURES, CONSTANTS, reject_mock, resolve
 
 CASE_ID = 'compound-2020-11-26-dai'
 RESULT_FIELDS = ('borrower', 'sample_event', 'groups', 'critical_price', 'status')
@@ -18,7 +18,7 @@ RESULTS_DEFINITION = {
     'recursiveExcludedKeys': list(VOLATILE),
     'scope': 'Only deterministic Phase 3 results; excludes diagnostic, price_evidence, LLM outputs and all nonselected account/top-level fields.',
 }
-FILES = (SUMMARY, EXP, SENS, HYP, 'data/phase4/report.json')
+FILES = (SUMMARY, EXP, SENS, FEATURES, CONSTANTS, HYP, 'data/phase4/report.json')
 
 
 def strip_volatile(value):

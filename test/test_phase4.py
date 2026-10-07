@@ -10,10 +10,11 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from canonical import canonical_bytes, canonical_hash, keccak256, loads
-from phase4_common import (EXP, SENS, SUMMARY, HYP, Client, check_text, check_all_text,
+from phase4_common import (ROOT, EXP, SENS, SUMMARY, HYP, FEATURES, CONSTANTS, Client, ValidationExhausted, check_text, check_all_text,
     evidence, ref, resolve, sources, reject_mock, env_config)
 from phase4_hypothesis import CANDIDATES, derived_evidence, validate_hypotheses
-from phase4_audit import claim_specs, fixed_sections, validate_report, markdown
+from phase4_audit import claim_specs, fixed_sections, validate_report, markdown, run as audit_run
+from phase4_features import generate, make_features
 from phase4_manifest import (RESULTS_DEFINITION, cross_validate, results_hash,
                             require_clean, reproduction_status)
 
@@ -75,6 +76,68 @@ class HypothesisAuditTests(unittest.TestCase):
         validate_hypotheses(self.hyp, self.data)
         validate_report(self.report, self.data)
 
+    def test_wrapper_feedback_lists_missing_and_extra_fields(self):
+        for outer in ('required_sections', 'report', 'data'):
+            with self.subTest(outer=outer), self.assertRaises(ValueError) as error:
+                validate_report({outer: self.report}, self.data)
+            message = str(error.exception)
+            self.assertIn('missing top-level fields=', message)
+            self.assertIn('sensitivity_summary', message)
+            self.assertIn('extra top-level keys=', message)
+            self.assertIn(outer, message)
+
+    def test_digit_feedback_includes_path_and_verbatim_text(self):
+        text = '临界价按 ±0.0001 美元验证。'
+        self.report['conclusions'][0]['explanation'] = text
+        with self.assertRaises(ValueError) as error:
+            validate_report(self.report, self.data)
+        self.assertIn('$/conclusions/0/explanation', str(error.exception))
+        self.assertIn(text, str(error.exception))
+
+    def test_constants_are_references_not_new_whitelist(self):
+        self.report['conclusions'][0]['explanation'] = '临界价按 ±' + ref(CONSTANTS, '/critical_price_epsilon_usd') + ' 美元验证。'
+        validate_report(self.report, self.data)
+        self.assertEqual(resolve(ref(CONSTANTS, '/critical_price_epsilon_usd'), self.data), '0.0001')
+        with self.assertRaises(ValueError):
+            check_text('±0.0001', self.data)
+
+    def test_fallback_same_rules_then_cached_replay(self):
+        config = {'LLM_BASE_URL': 'https://offline.invalid/v1', 'LLM_MODEL': 'deepseek-v4.1-flash', 'LLM_API_KEY': 'fixture-key'}
+        models = []
+        requests = []
+        def wire(req, timeout):
+            request = json.loads(req.data)
+            models.append(request['model'])
+            requests.append(request)
+            content = '{"required_sections":{}}' if len(models) <= 3 else json.dumps(self.report, ensure_ascii=False)
+            return io.BytesIO(json.dumps({'choices': [{'message': {'content': content}}]}).encode())
+        with tempfile.TemporaryDirectory() as folder, patch('urllib.request.urlopen', side_effect=wire):
+            client = Client(config, Path(folder))
+            report = audit_run(client, self.data)
+            self.assertEqual(models, ['deepseek-v4.1-flash'] * 3 + ['glm-5.3'])
+            self.assertEqual(report['model'], 'glm-5.3')
+            system = requests[0]['messages'][0]['content']
+            self.assertIn('不要用任何外层对象包裹，例如 required_sections、report、data', system)
+            self.assertIn('完整输出 JSON 骨架', system)
+            feedback = json.loads(requests[1]['messages'][1]['content'])['validation_feedback'][0]['error']
+            self.assertIn('missing top-level fields=', feedback)
+            replay = Client(config, Path(folder), cache_only=True)
+            with patch('urllib.request.urlopen', side_effect=AssertionError('network forbidden')):
+                self.assertEqual(audit_run(replay, self.data), report)
+            self.assertEqual((replay.requests, replay.hits), (0, 4))
+
+    def test_both_model_rounds_stop_at_six_attempts(self):
+        config = {'LLM_BASE_URL': 'https://offline.invalid/v1', 'LLM_MODEL': 'deepseek-v4.1-flash', 'LLM_API_KEY': 'fixture-key'}
+        def wire(*args, **kwargs):
+            return io.BytesIO(json.dumps({'choices': [{'message': {'content': '{"report":{}}'}}]}).encode())
+        with tempfile.TemporaryDirectory() as folder, patch('urllib.request.urlopen', side_effect=wire):
+            client = Client(config, Path(folder))
+            with self.assertRaises(ValidationExhausted):
+                audit_run(client, self.data)
+            self.assertEqual(client.requests, 6)
+            self.assertEqual(len(client.rejections), 6)
+            self.assertEqual([r['model'] for r in client.rounds], ['deepseek-v4.1-flash', 'glm-5.3'])
+
     def test_disallowed_template(self):
         self.hyp['hypotheses'][0]['template'] = 'arbitrary_code'
         with self.assertRaises(ValueError):
@@ -123,6 +186,49 @@ class HypothesisAuditTests(unittest.TestCase):
             self.assertIn(item, rendered)
         self.assertIn('0xf2df969f59b2c86e4b230da88918cdebcfc4ccbc', rendered)
         self.assertIn('补实验回路未实现', rendered)
+
+
+class FeatureTests(unittest.TestCase):
+    def test_exact_hourly_totals_top_accounts_and_diagnostics(self):
+        from decimal import Decimal, localcontext
+        from canonical import load
+        data = generate()
+        features = data[FEATURES]
+        summary = load(ROOT / SUMMARY)
+        with localcontext() as context:
+            context.prec = 100
+            self.assertEqual(sum(Decimal(r['event_count']) for r in features['hourly_utc']), Decimal(summary['total']['event_count']))
+            self.assertEqual(sum(Decimal(r['repay_usd_estimate_total']) for r in features['hourly_utc']), Decimal(summary['total']['repay_usd_estimate']))
+        self.assertEqual(len(features['hourly_utc']), 24)
+        self.assertEqual(len(features['top_accounts']), 20)
+        self.assertEqual(features['top_accounts'][0]['borrower'], '0x909b443761bbd7fbb876ecde71a37e1433f6af6f')
+        self.assertEqual(features['top_accounts'][13]['dai_related'], False)
+        diagnostic = features['diagnostic_other_asset_price_changes']
+        self.assertEqual(int(diagnostic['account_count']), len(diagnostic['accounts']))
+        for path, value in data.items():
+            self.assertEqual(value, load(ROOT / path))
+
+    def test_every_numeric_feature_is_a_string(self):
+        def walk(value):
+            self.assertNotIn(type(value), (int, float))
+            if isinstance(value, dict):
+                for item in value.values():
+                    walk(item)
+            elif isinstance(value, list):
+                for item in value:
+                    walk(item)
+        walk(generate())
+
+    def test_feature_inputs_reject_mock_and_inconsistent_accounts(self):
+        from canonical import load
+        from phase4_features import EVENTS, ACCOUNTS
+        documents = [load(ROOT / p) for p in (EVENTS, ACCOUNTS, EXP, SUMMARY)]
+        documents[1]['accounts'][0]['liquidation_count'] = '999'
+        with self.assertRaisesRegex(ValueError, 'does not match events'):
+            make_features(*documents)
+        documents[0]['provenance']['mode'] = 'UI_MOCK'
+        with self.assertRaisesRegex(ValueError, 'UI_MOCK'):
+            make_features(*documents)
 
 
 class CanonicalTests(unittest.TestCase):

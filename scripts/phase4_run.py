@@ -7,6 +7,7 @@ from canonical import canonical_hash, load
 from phase4_common import ROOT, HYP, EXP, SENS, Client, dump, env_config, sources, render
 import phase4_hypothesis
 import phase4_audit
+import phase4_features
 from phase4_manifest import (build, cross_validate, require_clean, script_fingerprints,
                              verify_manifest, results_hash)
 
@@ -21,6 +22,8 @@ def agents(config, cache_only):
     client = Client(config, cache_only=cache_only)
     data = sources()
     hypothesis = phase4_hypothesis.run(client, data)
+    client.rounds.append({'agent': 'hypothesis', 'model': config['LLM_MODEL'], 'status': 'accepted',
+        'requests': str(client.requests), 'cache_hits': str(client.hits), 'rejections': str(len(client.rejections))})
     data[HYP] = hypothesis
     report = phase4_audit.run(client, data)
     return client, data, hypothesis, report
@@ -28,7 +31,7 @@ def agents(config, cache_only):
 
 def stats(client):
     return {'llm_requests': str(client.requests), 'cache_hits': str(client.hits),
-            'validation_rejections': client.rejections, 'cache_keys': client.keys}
+            'validation_rejections': client.rejections, 'cache_keys': client.keys, 'rounds': client.rounds}
 
 
 def write_docs(report, data, manifest, verification):
@@ -43,10 +46,13 @@ def write_docs(report, data, manifest, verification):
         '首次运行要求整个工作区干净，先提交脚本；捕获当时 HEAD 为 script_commit。生成期间若其他会话改动或提交则停止。',
         '已有 manifest 时仍要求干净工作区，验证文件哈希与脚本指纹后使用缓存重新生成并逐字节比较，保留原始 script_commit，绝不改写为重跑时 HEAD。',
         '`--verify-replay` 在一次干净起点的运行内再执行一次仅缓存重跑，并断言三个 JSON 主文件 SHA-256 不变；不会重新标记首次生成版本。',
-        'LLM 校验失败最多重试两次，累计三次失败立即停止，不放宽规则。拒绝裸数字、无效引用、缺失证据、非法模板参数及 UI_MOCK。',
+        '每轮校验最多重试两次。审核 deepseek-v4.1-flash 耗尽后仅允许 glm-5.3 再一轮，仍失败立即停止；不放宽规则。拒绝裸数字、无效引用、缺失证据、非法模板参数及 UI_MOCK。',
         '每个必需结论的文字、状态、证据和账户绑定是确定性证据契约；审核模型逐条解释，并生成不确定性文字。',
         '固定文字白名单：N−1、Compound v2、2020-11-26、Phase 3、H1、H2、H3、H4；参数数字也使用引用。',
-        'Phase 2 summary 不含前二十账户列表或日内直方图，未向假设模型提供或编造这些特征。', '',
+        'features.json 从 Phase 2 events/accounts 精确聚合 UTC 小时事件数、偿还估值、前二十账户摘要；诊断组非 DAI 资产价格变化账户数只统计事实，不作因果判断。',
+        'constants.json 的美元临界价扰动幅度由 experiments 中 epsilon_raw 和实际价格缩放比确定性换算；未扩展固定词白名单。',
+        '审核系统提示词提供完整 JSON 骨架和类型说明，禁止 required_sections/report/data 外层包装；失败反馈含缺失字段、多余字段或违规文字路径及原文。',
+        '此前失败批次与五次模型缓存仍保留；data/phase4/llm/validation_failures.json 是历史失败记录，本次验收以 verification.json 为准。', '',
         '## 哈希与清单', '',
         '- script_commit：`' + manifest['script_commit'] + '`',
         '- manifestHash：`' + canonical_hash(manifest) + '`',
@@ -95,6 +101,7 @@ def main():
         if script_fingerprints() != manifest['scriptSha256']:
             raise ValueError('CONTEXT_DIFFERENT: scripts changed since manifest generation')
         before = sha_outputs()
+    phase4_features.write_or_verify(existing=True)
     client, data, hypothesis, report = agents(config, args.cache_only)
     if existing:
         if hypothesis != load(ROOT / HYP) or report != load(folder / 'report.json'):
@@ -128,6 +135,13 @@ def main():
         verification['secondRunSha256'] = sha_outputs()
         verification['secondRunUnchanged'] = True
     dump(folder / 'verification.json', verification)
+    previous_status = load(folder / 'status.json')
+    if previous_status.get('status') != 'COMPLETED':
+        dump(folder / 'status.json', {'schemaVersion': '1', 'status': 'COMPLETED',
+            'manifestHash': canonical_hash(manifest), 'script_commit': commit,
+            'model': report['model'], 'previous_attempt': previous_status,
+            'verification': 'data/phase4/verification.json',
+            'provenance': {'mode': 'FROZEN', 'source': 'Strict audited Phase 4 completion'}})
     write_docs(report, data, manifest, verification)
     print(json.dumps({'manifestHash': canonical_hash(manifest), 'resultsHash': manifest['resultsHash'],
         'script_commit': commit, 'runs': verification['runs']}, ensure_ascii=True))
